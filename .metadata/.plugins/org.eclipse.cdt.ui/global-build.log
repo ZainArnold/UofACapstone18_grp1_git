@@ -1,0 +1,112 @@
+
+**** Clean-only build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 clean -O 
+cleaning ../src/sysbios ...
+DEL /F  "tirtos_builds_CC1350_LAUNCHXL_release_ccs.lib"  "../src/makefile.libs" "configPkg\linker.cmd" "configPkg\compiler.opt" 
+RMDIR /S/Q  "configPkg\" 
+Could Not Find C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1350_LAUNCHXL_release_ccs\Debug\tirtos_builds_CC1350_LAUNCHXL_release_ccs.lib
+Could Not Find C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1350_LAUNCHXL_release_ccs\src\../src/makefile.libs
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: Entering directory 'C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug'
+'Building file: ../release.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_50_03_33_core/xs" --xdcpath="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source;C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages;C:/ti/ccsv7/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC1350F128 -r release -c "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS" --compileOptions " -DDeviceFamily_CC13X0 " "../release.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring release.xem3 from package/cfg/release_pem3.cfg ...
+generating custom ROM library makefile ... 
+Starting build of library sources ...
+making C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Entering directory `C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/src/sysbios'
+clem3 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/BIOS.c ...
+asmem3 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 rom_sysbios.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/release_pem3.c ...
+'Finished building: ../release.cfg'
+' '
+gmake[1]: Leaving directory 'C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug'
+        1 file(s) copied.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Thermostat_CC1350_Concentrator ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 clean -O 
+DEL /F  "Thermostat_CC1350_Concentrator.hex"  "Thermostat_CC1350_Concentrator.out" 
+DEL /F "CC1350_LAUNCHXL.obj" "ConcentratorRadioTask.obj" "ConcentratorTask.obj" "ccfg.obj" "rfWsnConcentrator.obj" "easylink\EasyLink.obj" "smartrf_settings\smartrf_settings.obj" "smartrf_settings\smartrf_settings_predefined.obj" 
+DEL /F "CC1350_LAUNCHXL.d" "ConcentratorRadioTask.d" "ConcentratorTask.d" "ccfg.d" "rfWsnConcentrator.d" "easylink\EasyLink.d" "smartrf_settings\smartrf_settings.d" "smartrf_settings\smartrf_settings_predefined.d" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../ccfg.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: ../ccfg.c'
+' '
+'Building file: ../CC1350_LAUNCHXL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
+'Finished building: ../CC1350_LAUNCHXL.c'
+' '
+'Building file: ../ConcentratorRadioTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+'Finished building: ../ConcentratorRadioTask.c'
+' '
+'Building file: ../ConcentratorTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+"../ConcentratorTask.c", line 266: warning #225-D: function "printf" declared implicitly
+'Finished building: ../ConcentratorTask.c'
+' '
+'Building file: ../rfWsnConcentrator.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: ../rfWsnConcentrator.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: ../smartrf_settings/smartrf_settings.c'
+' '
+'Building file: ../smartrf_settings/smartrf_settings_predefined.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: ../smartrf_settings/smartrf_settings_predefined.c'
+' '
+'Building file: ../easylink/EasyLink.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: ../easylink/EasyLink.c'
+' '
+'Building target: Thermostat_CC1350_Concentrator.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: Thermostat_CC1350_Concentrator.out'
+' '
+
+**** Build Finished ****

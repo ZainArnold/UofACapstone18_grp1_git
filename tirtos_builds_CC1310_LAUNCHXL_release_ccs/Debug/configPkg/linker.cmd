@@ -9,8 +9,8 @@
  */
 
 
--l"C:\Users\ZainLaptop\workspace_v7\tirtos_builds_CC1310_LAUNCHXL_release_ccs\Debug\configPkg\package\cfg\release_pem3.oem3"
--l"C:\Users\ZainLaptop\workspace_v7\tirtos_builds_CC1310_LAUNCHXL_release_ccs\src\sysbios\rom_sysbios.aem3"
+-l"C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1310_LAUNCHXL_release_ccs\Debug\configPkg\package\cfg\release_pem3.oem3"
+-l"C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1310_LAUNCHXL_release_ccs\src\sysbios\rom_sysbios.aem3"
 -l"C:\ti\simplelink_cc13x0_sdk_1_50_00_08\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\boot.aem3"
 -l"C:\ti\simplelink_cc13x0_sdk_1_50_00_08\kernel\tirtos\packages\ti\targets\arm\rtsarm\lib\auto_init.aem3"
 

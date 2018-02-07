@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/release_pem3.c"/>
     </sources>
     <configscripts>
-        <srcFile name="C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"/>
+        <srcFile name="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/release_pem3.cfg"
         xCfgPrefix="package/cfg/release_pem3"
-        cfgScript="C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"
+        cfgScript="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/release_pem3.cfg"
         xCfgPrefix="package/cfg/release_pem3"
-        cfgScript="C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"
+        cfgScript="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/release.cfg"
         cfgArgs="null"
         />
     </executables>

@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v16.9.6                     
 ******************************************************************************
->> Linked Tue Feb 06 17:32:48 2018
+>> Linked Wed Feb 07 15:00:35 2018
 
 OUTPUT FILE NAME:   <Sensor_CC1310_Node.out>
 ENTRY POINT SYMBOL: "ResetISR"  address: 00007b05
@@ -1418,8 +1418,8 @@ section   page    origin      length       input sections
 *          0    00000000    00000008     DSECT
                   00000000    00000008     boot.aem3 : boot.oem3 (.bootVecs)
 
-xdc.meta   0    00000000    00000108     COPY SECTION
-                  00000000    00000108     release_pem3.oem3 (xdc.meta)
+xdc.meta   0    00000000    00000106     COPY SECTION
+                  00000000    00000106     release_pem3.oem3 (xdc.meta)
 
 xdc.noload 
 *          0    00000000    00000000     COPY SECTION
@@ -1455,7 +1455,7 @@ MODULE SUMMARY
     +--+---------------------------------+-------+---------+---------+
        Total:                            3174    17172     1172   
                                                                   
-    C:\Users\ZainLaptop\workspace_v7\tirtos_builds_CC1310_LAUNCHXL_release_ccs\Debug\configPkg\package\cfg\
+    C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1310_LAUNCHXL_release_ccs\Debug\configPkg\package\cfg\
        release_pem3.oem3                 832     1551      1750   
     +--+---------------------------------+-------+---------+---------+
        Total:                            832     1551      1750   
@@ -1509,7 +1509,7 @@ MODULE SUMMARY
     +--+---------------------------------+-------+---------+---------+
        Total:                            7594    28        786    
                                                                   
-    C:\Users\ZainLaptop\workspace_v7\tirtos_builds_CC1310_LAUNCHXL_release_ccs\src\sysbios\rom_sysbios.aem3
+    C:\git\UofACapstone18_grp1_git\tirtos_builds_CC1310_LAUNCHXL_release_ccs\src\sysbios\rom_sysbios.aem3
        rom_sysbios.obj                   2505    0         0      
     +--+---------------------------------+-------+---------+---------+
        Total:                            2505    0         0      
@@ -2112,11 +2112,11 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 00009533  UART_write                                                                
 0000dfec  Watchdog_count                                                            
 00000000  __ASM__                                                                   
-00000082  __ISA__                                                                   
-00000094  __PLAT__                                                                  
+00000080  __ISA__                                                                   
+00000092  __PLAT__                                                                  
 20005000  __STACK_END                                                               
 00000400  __STACK_SIZE                                                              
-000000bb  __TARG__                                                                  
+000000b9  __TARG__                                                                  
 0000e418  __TI_CINIT_Base                                                           
 0000e478  __TI_CINIT_Limit                                                          
 0000e3d0  __TI_Handler_Table_Base                                                   
@@ -2129,7 +2129,7 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start                                                      
 0000e028  __TI_static_base__                                                        
 0000946d  __TI_zero_init                                                            
-000000e0  __TRDR__                                                                  
+000000de  __TRDR__                                                                  
 0000639d  __aeabi_cdcmpeq                                                           
 0000639d  __aeabi_cdcmple                                                           
 00006423  __aeabi_cdrcmple                                                          
@@ -2811,10 +2811,10 @@ address   name
 00000001  xdc_runtime_Startup__EXECFXN__C                                           
 00000001  xdc_runtime_Startup__RESETFXN__C                                          
 0000003d  EasyLink_configure                                                        
-00000082  __ISA__                                                                   
-00000094  __PLAT__                                                                  
-000000bb  __TARG__                                                                  
-000000e0  __TRDR__                                                                  
+00000080  __ISA__                                                                   
+00000092  __PLAT__                                                                  
+000000b9  __TARG__                                                                  
+000000de  __TRDR__                                                                  
 00000400  __STACK_SIZE                                                              
 00000835  xdc_runtime_System_doPrint__I                                             
 00000b71  PowerCC26XX_auxISR                                                        

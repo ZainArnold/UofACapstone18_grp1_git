@@ -17,10 +17,10 @@ easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdlib.h
-easylink/EasyLink.obj: C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings_predefined.h
+easylink/EasyLink.obj: C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings_predefined.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_hs_mailbox.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_hs_cmd.h
-easylink/EasyLink.obj: C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings.h
+easylink/EasyLink.obj: C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Clock.h
 easylink/EasyLink.obj: C:/ti/xdctools_3_50_03_33_core/packages/xdc/std.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdarg.h
@@ -194,7 +194,7 @@ easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../driverlib/rom.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/inc/hw_ccfg.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/inc/hw_ccfg_simple_struct.h
-easylink/EasyLink.obj: C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/Board.h
+easylink/EasyLink.obj: C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/Board.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADCBuf.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h
@@ -203,7 +203,7 @@ easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/UART.h
 easylink/EasyLink.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stddef.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/Watchdog.h
-easylink/EasyLink.obj: C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/CC1350_LAUNCHXL.h
+easylink/EasyLink.obj: C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/CC1350_LAUNCHXL.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PIN.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/ioc.h
 easylink/EasyLink.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../inc/hw_ioc.h
@@ -233,10 +233,10 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/linkage.h:
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdlib.h: 
-C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings_predefined.h: 
+C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings_predefined.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_hs_mailbox.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_hs_cmd.h: 
-C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings.h: 
+C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/smartrf_settings/smartrf_settings.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Clock.h: 
 C:/ti/xdctools_3_50_03_33_core/packages/xdc/std.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stdarg.h: 
@@ -410,7 +410,7 @@ C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../inc
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../driverlib/rom.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/inc/hw_ccfg.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/inc/hw_ccfg_simple_struct.h: 
-C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/Board.h: 
+C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/Board.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADCBuf.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h: 
@@ -419,7 +419,7 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stddef.h:
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/UART.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include/stddef.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/Watchdog.h: 
-C:/Users/ZainLaptop/workspace_v7/Thermostat_CC1350_Concentrator/CC1350_LAUNCHXL.h: 
+C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator/CC1350_LAUNCHXL.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PIN.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/ioc.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../inc/hw_ioc.h: 

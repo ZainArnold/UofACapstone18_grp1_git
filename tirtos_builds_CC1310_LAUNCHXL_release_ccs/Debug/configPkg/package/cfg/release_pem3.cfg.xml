@@ -2935,7 +2935,7 @@
         <module name="xdc.cfg.SourceDir"
                 used="true"
                 uses="">
-            <feature name="outputDir" type="string" value="C%3A%5CUsers%5CZainLaptop%5Cworkspace_v7%5Ctirtos_builds_CC1310_LAUNCHXL_release_ccs/src"/>
+            <feature name="outputDir" type="string" value="C%3A%5Cgit%5CUofACapstone18_grp1_git%5Ctirtos_builds_CC1310_LAUNCHXL_release_ccs/src"/>
             <feature name="toBuildDir" type="string" value=".."/>
             <feature name="makefileName" type="string" value="makefile.libs"/>
             <feature name="verbose" type="number" value="2"/>
@@ -7311,7 +7311,7 @@ examine the Exception view for the ti.sysbios.family.arm.m3.Hwi module using ROV
                 uses="">
         </module>
     </package>
-    <package name="configPkg" version="" repository="C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/">
+    <package name="configPkg" version="" repository="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/">
     </package>
     <package name="xdc.services.io" version="1,0,0,0" repository="C:/ti/xdctools_3_50_03_33_core/packages/">
         <module name="xdc.services.io.File"

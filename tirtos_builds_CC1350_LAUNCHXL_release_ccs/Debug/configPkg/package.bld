@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1350_LAUNCHXL_release_ccs/release.cfg',
+        cfgScript: 'C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/release.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../release.cfg',
-    outputPath: 'C:/Users/ZainLaptop/workspace_v7/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg',
+    outputPath: 'C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg',
     exeName:    'release' + suffix,
     exeIntName: 'release' + suffix.replace('.', '_'),
     targ:       targ,
