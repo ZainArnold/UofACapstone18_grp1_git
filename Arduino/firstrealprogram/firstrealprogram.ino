@@ -1,4 +1,3 @@
-//test
 #include <SPI.h>
 #include "Adafruit_GFX.h"
 #include "Adafruit_RA8875.h"
@@ -6,11 +5,44 @@
 #define RA8875_CS 10
 #define RA8875_RESET 9
 
+
+///////////
+#if ARDUINO >= 100
+ #include "Arduino.h"
+ #include "Print.h"
+#else
+ #include "WProgram.h"
+#endif
+
+#ifdef __AVR
+  #include <avr/pgmspace.h>
+#elif defined(ESP8266)
+  #include <pgmspace.h>
+#endif
+///////////
+
+
 Adafruit_RA8875 tft = Adafruit_RA8875(RA8875_CS, RA8875_RESET);
 uint16_t tx, ty;
 int32_t currentpage = 0; 
-int32_t x;
-int32_t y;
+
+// Touch screen cal structs
+ struct Point
+{
+   int32_t x;
+   int32_t y;
+} tsPoint_t;
+
+typedef struct //Matrix
+{
+  int32_t An,
+          Bn,
+          Cn,
+          Dn,
+          En,
+          Fn,
+          Divider ;
+} tsMatrix_t;
 
 void setup() 
 {
@@ -59,18 +91,21 @@ void setup()
   tft.textSetCursor(270, 50); /*temperature*/
   tft.textEnlarge(2);
   tft.textTransparent(RA8875_WHITE);
-  tft.textWrite("Outside");
+  tft.textWrite("Outside.....");
 
   tft.touchEnable(1);
-
 }
 
 void loop() 
 {
   /*homescreen*/
-  if (currentpage == '0') {
+  if (currentpage == 0) {
     if(tft.touched()){
-      tft.touchRead(x, y);
+      tft.touchRead(uint16_t *x, uint16_t *y);
+      if ((x>=10) && (x<=250) && (y>=10) && (y<=150)) {
+        currentpage == 1;
+        tft.fillScreen(RA8875_BLACK);
+      }
     }
   }
 }
