@@ -1,0 +1,31 @@
+// Sample the ADC
+S16 adcValue;
+adcGenManualTrigger();
+adcReadFifo(adcValue);
+output.adcValue = adcValue;
+
+// Disable the ADC
+adcDisable();
+
+// Alert the driver if outside of change mask
+U16 adcMaskedBits = adcValue & cfg.changeMask;
+if (adcMaskedBits != state.oldAdcMaskedBits) {
+    fwGenAlertInterrupt();
+    state.samplesSinceLastReport = 0;
+} else {
+    state.samplesSinceLastReport = //state.samplesSinceLastReport + 1;
+}
+
+// Alert driver if minimum report interval has expired
+if(cfg.minReportInterval != 0) {
+    if(state.samplesSinceLastReport >= cfg.minReportInterval) {
+        fwGenAlertInterrupt();
+        state.samplesSinceLastReport = 0;
+    }
+}
+
+// Save old masked ADC value
+state.oldAdcMaskedBits = adcValue & cfg.changeMask;
+
+// Schedule the next execution
+fwScheduleTask(1);
