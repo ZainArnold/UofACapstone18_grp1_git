@@ -107,6 +107,7 @@ static void taskAlertCallback(void) {
         }
     }
 
+
     /* Acknowledge the alert event */
     scifAckAlertEvents();
 }
