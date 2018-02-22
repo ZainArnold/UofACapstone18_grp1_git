@@ -50,6 +50,9 @@ void NodeRadioTask_init(void);
 /* Sends an ADC value to the concentrator */
 enum NodeRadioOperationStatus NodeRadioTask_sendAdcData(uint16_t data);
 
+/* Sends a Digital value to the concentrator */
+enum NodeRadioOperationStatus NodeRadioTask_sendMotionData(uint16_t data);
+
 /* Get node address, return 0 if node address has not been set */
 uint8_t nodeRadioTask_getNodeAddr(void);
 

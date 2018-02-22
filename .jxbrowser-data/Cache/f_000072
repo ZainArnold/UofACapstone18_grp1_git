@@ -1,0 +1,482 @@
+[
+  {
+    "text": "adcbufcontinuous",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 74,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/adcbufcontinuous/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "adcsinglechannel",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 34,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcsinglechannel&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/adcsinglechannel/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "display",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 37,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/display&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/display/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "empty",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 34,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/empty&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/empty/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "gpiointerrupt",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/gpiointerrupt&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/gpiointerrupt/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "i2ctmp007",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/i2ctmp007&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/i2ctmp007/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "nvs",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/nvs&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/nvs/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "nvsspi",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/nvsspi&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/nvsspi/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "pinInterrupt",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/pinInterrupt/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "pinShutdown",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 31,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinShutdown&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/pinShutdown/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "pinStandby",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinStandby&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/pinStandby/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "pwmled",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pwmled&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/pwmled/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfCarrierWave",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 75,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfCarrierWave&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfCarrierWave/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfListenBeforeTalk",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 87,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfListenBeforeTalk&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfListenBeforeTalk/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfPacketErrorRate",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 137,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfPacketErrorRate&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfPacketErrorRate/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfPacketRx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 87,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfPacketRx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfPacketRx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfPacketTx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 75,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfPacketTx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfPacketTx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfSynchronizedPacketRx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 97,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfSynchronizedPacketRx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfSynchronizedPacketRx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfSynchronizedPacketTx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 97,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfSynchronizedPacketTx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfSynchronizedPacketTx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfWakeOnRadioRx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 87,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfWakeOnRadioRx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfWakeOnRadioRx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "rfWakeOnRadioTx",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 75,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/rfWakeOnRadioTx&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/rfWakeOnRadioTx/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "uartecho",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/uartecho&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/uartecho/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "uartmonitor",
+    "type": "folder",
+    "numChildren": 3,
+    "numChildrenLocal": 40,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/uartmonitor&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/uartmonitor/README.html",
+    "packageOrder": 22
+  },
+  {
+    "text": "watchdog",
+    "type": "folder",
+    "numChildren": 6,
+    "numChildrenLocal": 66,
+    "children": true,
+    "allowPartialDownload": false,
+    "state": {
+      "opened": false
+    },
+    "package": "SimpleLink CC13x0 SDK",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33::com.ti.SIMPLELINK_ACADEMY_CC13X0SDK__1.14.02.04&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/watchdog&removeoffline=true",
+    "overviewLink": "simplelink_cc13x0_sdk_1_50_00_08/examples/rtos/CC1310_LAUNCHXL/drivers/watchdog/README.html",
+    "packageOrder": 22
+  }
+]

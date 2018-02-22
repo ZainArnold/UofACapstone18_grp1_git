@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs&apos; to &apos;Node_Example&apos;" description="Rename resource &apos;rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/rfWsnNode_CC1310_LAUNCHXL_tirtos_ccs" name="Node_Example" stamp="1519256957480" updateReferences="true"/>
+</session>

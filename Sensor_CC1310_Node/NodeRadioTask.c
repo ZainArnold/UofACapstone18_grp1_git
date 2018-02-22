@@ -76,6 +76,7 @@
 
 #define RADIO_EVENT_ALL                 0xFFFFFFFF
 #define RADIO_EVENT_SEND_ADC_DATA       (uint32_t)(1 << 0)
+#define RADIO_EVENT_SEND_DIGITAL_DATA   (uint32_t)(1 << 5)
 #define RADIO_EVENT_DATA_ACK_RECEIVED   (uint32_t)(1 << 1)
 #define RADIO_EVENT_ACK_TIMEOUT         (uint32_t)(1 << 2)
 #define RADIO_EVENT_SEND_FAIL           (uint32_t)(1 << 3)
@@ -109,6 +110,7 @@ Semaphore_Struct radioResultSem;  /* not static so you can see in ROV */
 static Semaphore_Handle radioResultSemHandle;
 static struct RadioOperation currentRadioOperation;
 static uint16_t adcData;
+static uint16_t digitalData;
 static uint8_t nodeAddress = 0;
 static struct DualModeSensorPacket dmSensorPacket;
 
@@ -271,6 +273,32 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
             sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
         }
 
+        // If we should send Digital Data
+        if (events & RADIO_EVENT_SEND_DIGITAL_DATA)
+                {
+                    uint32_t currentTicks;
+
+                    currentTicks = Clock_getTicks();
+                    //check for wrap around
+                    if (currentTicks > prevTicks)
+                    {
+                        //calculate time since last reading in 0.1s units
+                        dmSensorPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;
+                    }
+                    else
+                    {
+                        //calculate time since last reading in 0.1s units
+                        dmSensorPacket.time100MiliSec += ((prevTicks - currentTicks) * Clock_tickPeriod) / 100000;
+                    }
+                    prevTicks = currentTicks;
+
+                    dmSensorPacket.batt = AONBatMonBatteryVoltageGet();
+                    dmSensorPacket.digitalValue = digitalData;
+                    dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
+
+                    sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
+                }
+
         /* If we get an ACK from the concentrator */
         if (events & RADIO_EVENT_DATA_ACK_RECEIVED)
         {
@@ -340,10 +368,10 @@ enum NodeRadioOperationStatus NodeRadioTask_sendMotionData(uint16_t data)
     Semaphore_pend(radioAccessSemHandle, BIOS_WAIT_FOREVER);
 
     // Save data to send
-    adcData = data;
+    digitalData = data;
 
     // Raise RADIO_EVENT_SEND_ADC_DATA event
-    Event_post(radioOperationEventHandle, RADIO_EVENT_SEND_ADC_DATA);
+    Event_post(radioOperationEventHandle, RADIO_EVENT_SEND_DIGITAL_DATA);
 
     // Wait for result
     Semaphore_pend(radioResultSemHandle, BIOS_WAIT_FOREVER);

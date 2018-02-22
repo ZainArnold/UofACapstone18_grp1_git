@@ -1,0 +1,632 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AiltoC7W_sfo&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.h",
+    "_id": "u3AiltoC7W_sfo",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AiltoC7W_sfo?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AgOAmOehln1w&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL.c",
+    "_id": "u3AgOAmOehln1w",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AgOAmOehln1w?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AqBkW60IfRpI&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL.h",
+    "_id": "u3AqBkW60IfRpI",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AqBkW60IfRpI?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AE4jowIvftck&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "_id": "u3AE4jowIvftck",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AE4jowIvftck?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.cmd",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3Ayx6kv8gIvx4&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.html",
+    "_id": "u3Ayx6kv8gIvx4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3Ayx6kv8gIvx4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ANOQN5TbpyAU&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.html",
+    "_id": "u3ANOQN5TbpyAU",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ANOQN5TbpyAU?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ADo-VC6tdC6M&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.md",
+    "_id": "u3ADo-VC6tdC6M",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ADo-VC6tdC6M?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AYIPxhyzblSI&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.md",
+    "_id": "u3AYIPxhyzblSI",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AYIPxhyzblSI?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AEQPa8KqLc_w&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "adcBufContinuousSampling.c",
+    "_id": "u3AEQPa8KqLc_w",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AEQPa8KqLc_w?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "adcBufContinuousSampling.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AyrW-0untUJE&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "ccfg.c",
+    "_id": "u3AyrW-0untUJE",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AyrW-0untUJE?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "ccfg.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ACULIgsHh9_g&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "main_tirtos.c",
+    "_id": "u3ACULIgsHh9_g",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ACULIgsHh9_g?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "main_tirtos.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AgALuohrj3HQ&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "makefile.defs",
+    "_id": "u3AgALuohrj3HQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AgALuohrj3HQ?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.defs",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "makefile.defs",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AKyEIl4Sr-xc&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "overview.rov.json",
+    "_id": "u3AKyEIl4Sr-xc",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AKyEIl4Sr-xc?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.json",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AU_YOQKJkrgw&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "release.cfg",
+    "_id": "u3AU_YOQKJkrgw",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AU_YOQKJkrgw?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.cfg",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "release.cfg",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ARgK0rxHh_L4&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/adcbufcontinuous/TI-RTOS/CCS Compiler/adcbufcontinuous&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.html",
+    "_id": "u3ARgK0rxHh_L4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ARgK0rxHh_L4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2Fadcbufcontinuous%2FTI-RTOS%2FCCS%20Compiler%2Fadcbufcontinuous&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_0.dependency.tirex.json",
+    "parentID": "u3AG6poSuXjcnk",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/adcbufcontinuous/TI-RTOS/CCS%20Compiler/adcbufcontinuous&package=c2000ware_software_package__1.00.02.00::com.ti.SAIL__1.10.00.06::com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45::com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.03.33",
+    "packageOrder": 22
+  }
+]

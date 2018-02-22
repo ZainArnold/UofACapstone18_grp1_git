@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project Node_Example ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../NodeTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Node_Example" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"../NodeTask.c", line 332: error #20: identifier "latestDigitalValue" is undefined
+"../NodeTask.c", line 335: error #20: identifier "NODE_EVENT_NEW_DIGITAL_VALUE" is undefined
+"../NodeTask.c", line 329: warning #179-D: function "digitalCallback" was declared but never referenced
+2 errors detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,606 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Examples Users Guide &mdash; cc13x0 Proprietary RF User&#39;s Guide 1.50.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="cc13x0 Proprietary RF User&#39;s Guide 1.50.00 documentation" href="../../index.html"/>
+        <link rel="next" title="RF Core" href="../../rf-core/index.html"/>
+        <link rel="prev" title="Proprietary RF Quick Start Guide" href="../quickstart/index.html"/> 
+    <script language="JavaScript">
+        var tiPageName;
+        tiPageName = "sug cc13x0 examplesusersguide index";
+
+        if (location.protocol == "file:"){
+            var ci_analytics_poc_load = true;
+        }
+    </script> 
+
+    <script src="http://www.ti.com/assets/js/headerfooter/analytics.js" type="text/javascript" charset="utf-8">     
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cc13x0 Proprietary RF User's Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.50.00
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Proprietary RF Quick Start Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples Users Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#rf-driver-examples">RF Driver Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#easylink-examples">EasyLink Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-examples-in-code-composer-studio-ccs">Running examples in Code Composer Studio (CCS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-examples-in-iar">Running examples in IAR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-examples-from-command-line">Building the examples from command line</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../rf-core/index.html">RF Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rf-proprietary/index.html">Proprietary physical layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../easylink/index.html">EasyLink layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../oad-easylink/oad.html">Over the Air Download (OAD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cc1101-migration-guide/index.html">CC1101 Migration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference.html">API References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">cc13x0 Proprietary RF User's Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Examples Users Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="examples-users-guide">
+<h1>Examples Users Guide<a class="headerlink" href="#examples-users-guide" title="Permalink to this headline">¶</a></h1>
+<p>The Proprietary RF examples are split in to 2 types:</p>
+<ul class="simple">
+<li>RF Driver Examples</li>
+<li>EasyLink Examples</li>
+</ul>
+<p>The RF driver offers very low-level API&#8217;s to run radio operation commands on
+the RF core and send and receive raw packets.</p>
+<p>The <a class="reference internal" href="../../easylink/index.html"><span class="doc">EasyLink layer</span></a> is an abstraction layer above the
+RF driver API&#8217;s for the more convenience. It uses the RF driver and executes
+<a class="reference internal" href="../../rf-core/radio-operation-commands.html#sec-rf-radio-operation-commands"><span class="std std-ref">radio operation commands</span></a>. The
+EasyLink library was developed to be simple enough for developers to extend
+for their needs and should be seen as a starting point for adding an API on
+top of the RF driver. The EasyLink examples show how to develop an RF
+application on top of the EasyLink API.</p>
+<div class="section" id="rf-driver-examples">
+<h2>RF Driver Examples<a class="headerlink" href="#rf-driver-examples" title="Permalink to this headline">¶</a></h2>
+<p>RF driver examples are available for the <a class="reference external" href="../../../../simplelink_mcu_sdk/Users_Guide.html#ti-rtos-kernel">TI-RTOS kernel</a>, but can
+also be used without any RTOS at all. That is possible with the <a class="reference external" href="../../../../simplelink_mcu_sdk/Users_Guide.html#nortos">NoRTOS Driver
+Porting Layer</a>.</p>
+<p>The RF Driver examples can be imported from the SDK directory:
+<code class="docutils literal"><span class="pre">C:/ti/simplelink_cc13x0_sdk_${VERSION}/examples/rtos/&lt;PLATFORM&gt;/drivers/</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Packet RX/TX:</th><td class="field-body"><p class="first">Shows how to send and receive packets using the RF driver. The PHY/RF settings
+can be modified using SmartRF Studio. Commands exported and used directly in
+code. Out of the box IEEE 802.15.4g GFSK 50kbps is used. Easy to change to
+e.g. Long Range Mode or custom PHY settings.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfPacketRx_README.html">rfPacketRx example README</a></li>
+<li><a class="reference external" href="rfPacketTx_README.html">rfPacketTx example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Synchronized Packet RX/TX:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">In this example you will learn how to build a time-synchronized connection
+between one transmitter and a receiver. This leads to the lowest possible
+power consumption on both sides. Time synchronization builds also the
+foundation for Frequency and Time Division Multiple Access, FDMA and TDMA
+respectively.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfSynchronizedPacketRx_README.html">rfSynchronizedPacketRx example README</a></li>
+<li><a class="reference external" href="rfSynchronizedPacketTx_README.html">rfSynchronizedPacketTx example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Wake On Radio RX/TX:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">These examples showcase the Wake-on-Radio (WoR) functionality of the CC13X0
+family to significantly lower the power consumption of an RF link by duty
+cycling the RF core. It shows how to use the RF Driver to schedule automatic
+wake-ups and send messages with long preambles.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfWakeOnRadioRx_README.html">rfWakeOnRadioRx example README</a></li>
+<li><a class="reference external" href="rfWakeOnRadioTx_README.html">rfWakeOnRadioTx example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Listen Before Talk:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">The Listen Before Talk (LBT) TX example illustrates how
+to implement a simple, proprietary LBT algorithm using the command chaining
+feature of the CC13X0 family.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfListenBeforeTalk_README.html">rfListenBeforeTalk example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Packet Error Rate:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">System example that showcases all available PHY configurations in one application.
+Multiple packets are transmitted or received and the packet error rate is calculated.
+The result is shown on the Display as well as a VT-100 compatible UART console.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfPacketErrorRate_README.html">rfPacketErrorRate example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Carrier Wave:</th><td class="field-body"><p class="first">Basic example for RF performance measurements and testing,
+written directly on top of the TI-RTOS RF driver. Set the radio into various
+test modes. Transmission of modulated or unmodulated signal. Easy to change
+radio configuration. Use radio settings exported from SmartRF Studio.</p>
+<ul class="last simple">
+<li><a class="reference external" href="rfCarrierWave_README.html">rfCarrierWave example README</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="easylink-examples">
+<h2>EasyLink Examples<a class="headerlink" href="#easylink-examples" title="Permalink to this headline">¶</a></h2>
+<p>The EasyLink examples can be imported from the SDK directory:
+<code class="docutils literal"><span class="pre">C:/ti/simplelink_cc13x0_sdk_${VERSION}/examples/rtos/&lt;PLATFORM&gt;/easylink/</span></code>
+Only the RX, TX and listenBeforeTalk EasyLink examples are available for No-
+RTOS. The others can only be used together with TI-RTOS.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">EasyLink RX/TX:</th><td class="field-body"><p class="first">The EasyLink RX and TX examples show how to use the EasyLink API,
+how to set the frequency, and how to transmit and receive packets.
+One board can run the RX example while the other runs the TX example.
+The transmitter sends a packet every 100 ms, with a delay of 300ms
+between every 10th packet. The LED on the receiver board will blink for
+every packet received.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfEasyLink_rx_README.html">rfEasyLink RX example README</a></li>
+<li><a class="reference external" href="rfEasyLink_tx_README.html">rfEasyLink TX example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">EasyLink Listen Before Talk:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">The EasyLink Listen Before Talk (LBT) TX example illustrates how
+to use the LBT capabilities of the EasyLink library.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfEasyLink_listenBeforeTalk_README.html">rfEasyLink Listen-Before-Talk example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">EasyLink Network Processor:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">The EasyLink API has been exposed over an AT Command
+Interface such that it can be exercised by Host SW (running on a PC, MPU or
+MCU) or by a human using a serial terminal emulator over a UART.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfEasyLink_networkProcessor_README.html">rfEasyLink Network Processor example README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Wireless Sensor Network:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">The Wireless Sensor Network (WSN) Node and
+Concentrator examples illustrate how to create a very basic sensor network
+consisting of one or many Node device(s) and a Concentrator device. The
+example shows how to form one-to-many network where the Nodes send messages to
+the Concentrator.</p>
+<p>The Node use the Sensor Controller Engine to periodically
+read the value of the light sensor. Whenever the sensor value change, the main
+controller wakes up and sends a packet with the value to the Concentrator. The
+Concentrator is always waiting for incoming packet. Once a packet is received,
+the Concentrator sends an acknowledgement packet in return and displays the
+data on an LCD (if the kit has one)</p>
+<ul class="simple">
+<li><a class="reference external" href="rfWsnConcentrator_README.html">rfWsnConcentrator example README</a></li>
+<li><a class="reference external" href="rfWsnNode_README.html">rfWsnNode example README</a></li>
+</ul>
+<p>Additional versions of the Wireless Sensor Network example show :ref`over-the-air
+downloading (OAD)&lt;sec-oad&gt;` of new firmware images. The node comes in two versions:
+using an external flash to keep the new images (off-chip) and using the internal flash
+only (on-chip).</p>
+<ul class="simple">
+<li><a class="reference external" href="rfWsnConcentratorOad_README.html">rfWsnConcentratorOad example README</a></li>
+<li><a class="reference external" href="rfWsnNodeOad_externalFlash_README.html">rfWsnNode OAD example with external flash README</a></li>
+<li><a class="reference external" href="rfWsnNodeOad_internalFlash_README.html">rfWsnNode OAD example with internal flash README</a></li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Wireless Sensor Network Dual Mode:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">Extended versions of the Wireless Sensor Network examples that show how to
+combine BLE advertisements and a simple sub-1GHz Wireless Sensor Network.</p>
+<ul class="simple">
+<li><a class="reference external" href="rfWsnConcentratorDm_README.html">rfWsnDmConcentrator example README</a></li>
+<li><a class="reference external" href="rfWsnNodeDm_README.html">rfWsnDmNode example README</a></li>
+</ul>
+<p>Additional versions of the Wireless Sensor Network example show <a class="reference internal" href="../oad-easylink/oad.html#sec-oad"><span class="std std-ref">over-the-air
+downloading (OAD)</span></a> of new firmware images. The node comes in two versions:
+using an external flash to keep the new images (off-chip) and using the internal flash
+only (on-chip).</p>
+<ul class="last simple">
+<li><a class="reference external" href="rfWsnConcentratorDmOad_README.html">rfWsnConcentrator Dual-mode OAD example README</a></li>
+<li><a class="reference external" href="rfWsnNodeDmOad_externalFlash_README.html">rfWsnNode Dual-mode OAD example with external flash README</a></li>
+<li><a class="reference external" href="rfWsnNodeDmOad_internalFlash_README.html">rfWsnNode Dual-mode OAD example with internal flash README</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="running-examples-in-code-composer-studio-ccs">
+<span id="running-examples-in-ccs"></span><h2>Running examples in Code Composer Studio (CCS)<a class="headerlink" href="#running-examples-in-code-composer-studio-ccs" title="Permalink to this headline">¶</a></h2>
+<p>The following walks through importing and building one of the proprietary RF
+examples using the CCS IDE and the TI Resource Explorer.</p>
+<ol class="arabic">
+<li><p class="first">If CCS v7 is not already installed; download and install CCS from here:
+<a class="reference external" href="http://processors.wiki.ti.com/index.php/Download_CCS">http://processors.wiki.ti.com/index.php/Download_CCS</a>.</p>
+<p>If it is installed it is recommended that you install the available updates
+(Arm 16.9.0.LTS or higher is required).</p>
+</li>
+<li><p class="first">Download and install the CC13x0 MCU SDK from
+<a class="reference external" href="http://www.ti.com/product/CC1310/toolssoftware#softTools">http://www.ti.com/product/CC1310/toolssoftware#softTools</a>.</p>
+<p>This step is recommended, but optional as the TI Resource exploerer can
+download the examples from the resource explorer server. The rest of
+this section will assume that you have downloaded the SDK.</p>
+</li>
+<li><p class="first">Open CCS, and use the menu option <code class="docutils literal"><span class="pre">View-&gt;</span> <span class="pre">Resource</span> <span class="pre">Explorer</span></code>.</p>
+</li>
+<li><p class="first">Browse to the example of interest in the Resource Explorer.</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<img alt="../../_images/trex-examples.PNG" src="../../_images/trex-examples.PNG" />
+<p class="caption"><span class="caption-number">Figure 5. </span><span class="caption-text">CCS Resoure Explorer Examples</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">EasyLink examples can be found in the EasyLink folder and the RF Driver
+examples can be found in the TI Drivers directory.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Select the CCS or GCC compiler, we recommend using the CCS compiler, but
+compiling with GCC in the CCS IDE is also possible. Then select the example
+name and click the CCS icon in the top left to import it into your
+workspace.</p>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/trex-import.PNG" src="../../_images/trex-import.PNG" />
+<p class="caption"><span class="caption-number">Figure 6. </span><span class="caption-text">CCS Project Selection</span></p>
+</div>
+<p>You will notice that 2 projects have been included in the workspace:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">rfEasyLinkTx_CC1310_LAUNCHXL_tirtos_ccs</span></code></li>
+<li><code class="docutils literal"><span class="pre">tirtos_builds_CC1310_LAUNCHXL_release_ccs</span></code></li>
+</ul>
+<p>As well as the example selected there is also the tirtos_builds project which
+is a platform and compiler specific TIRTOS build. This will only build once
+and is shared by all the projects for that platform and compiler in your
+workspace.</p>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/projectworkspace.PNG" src="../../_images/projectworkspace.PNG" />
+<p class="caption"><span class="caption-number">Figure 7. </span><span class="caption-text">CCS Project workspace</span></p>
+</div>
+</li>
+<li><p class="first">Build and download and debug the project by clicking on the &#8216;bug&#8217;.
+The first time it will take some time due to the TI-RTOS build.</p>
+<div class="figure align-center" id="id5">
+<img alt="../../_images/bug.PNG" src="../../_images/bug.PNG" />
+<p class="caption"><span class="caption-number">Figure 8. </span><span class="caption-text">CCS Debug</span></p>
+</div>
+</li>
+<li><p class="first">Click run to run the example.</p>
+<div class="figure align-center" id="id6">
+<img alt="../../_images/run.PNG" src="../../_images/run.PNG" />
+<p class="caption"><span class="caption-number">Figure 9. </span><span class="caption-text">CCS Run</span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="running-examples-in-iar">
+<span id="id1"></span><h2>Running examples in IAR<a class="headerlink" href="#running-examples-in-iar" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">If IAR ARM Workbench v7.80.3 or higher is not already installed, download
+and install IAR Workbench for ARM from <a class="reference external" href="http://www.iar.com">http://www.iar.com</a> .</p>
+</li>
+<li><p class="first">Download and install the CC13x0 MCU SDK from
+<a class="reference external" href="http://www.ti.com/product/CC1310/toolssoftware#softTools">http://www.ti.com/product/CC1310/toolssoftware#softTools</a> .</p>
+</li>
+<li><p class="first">Open IAR and create a new workspace with the menu option
+<code class="docutils literal"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">New</span>&#160; <span class="pre">-&gt;</span> <span class="pre">Workspace</span></code></p>
+<p>You can use this workspace for one or more examples.</p>
+</li>
+<li><p class="first">Import the IAR Custom Argument Variables file with the menu option
+<code class="docutils literal"><span class="pre">Tools</span> <span class="pre">-&gt;</span> <span class="pre">Configure</span> <span class="pre">Custom</span> <span class="pre">Argument</span> <span class="pre">Variables</span></code>.  The location and file to
+be imported is <code class="docutils literal"><span class="pre">C:/ti/simplelink_cc13x0_sdk_1_xx_xx_xx/tools/iar/SIMPLELINK_CC13XX_CC26XX_SDK.custom_argvars</span></code>.</p>
+<div class="figure align-center" id="id7">
+<img alt="../../_images/iar-argvars.PNG" src="../../_images/iar-argvars.PNG" />
+<p class="caption"><span class="caption-number">Figure 10. </span><span class="caption-text">Custom Argument Variables</span></p>
+</div>
+</li>
+<li><p class="first">Save the Workspace with the menu option
+<code class="docutils literal"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Save</span> <span class="pre">Workspace</span> <span class="pre">As...</span></code>.</p>
+</li>
+<li><p class="first">To enable the Custom Argument Variables for this workspace close and open
+the workspace with the menu options <code class="docutils literal"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Close</span> <span class="pre">Workspace</span></code> and
+<code class="docutils literal"><span class="pre">File</span> <span class="pre">-&gt;</span> <span class="pre">Open</span> <span class="pre">-&gt;</span> <span class="pre">Workspace</span></code>.</p>
+</li>
+<li><p class="first">Select the menu option <code class="docutils literal"><span class="pre">Help</span> <span class="pre">-&gt;</span> <span class="pre">Information</span> <span class="pre">Center</span></code> and select the
+Integrated Solutions icon:</p>
+<div class="figure align-center" id="id8">
+<img alt="../../_images/iar-integratedsolutions.PNG" src="../../_images/iar-integratedsolutions.PNG" />
+<p class="caption"><span class="caption-number">Figure 11. </span><span class="caption-text">Integrated Solutions</span></p>
+</div>
+</li>
+<li><p class="first">Select the Texas Instruments Example projects and then click on the example
+applications link.</p>
+<div class="figure align-center" id="id9">
+<img alt="../../_images/iar-ti.PNG" src="../../_images/iar-ti.PNG" />
+<p class="caption"><span class="caption-number">Figure 12. </span><span class="caption-text">Texas Instruments Examples</span></p>
+</div>
+</li>
+<li><p class="first">Follow the instructions on this page to import and build the project.</p>
+</li>
+<li><p class="first">When you click on one of the examples, it will ask you to place a copy of
+the project file in another folder. Save it in a sub-folder of your workspace.
+If you are going to import only one example into your workspace, you can
+put the project file into the same folder as the workspace file.</p>
+</li>
+<li><p class="first">Download and debug the example with the menu option
+<code class="docutils literal"><span class="pre">Project</span> <span class="pre">-&gt;</span> <span class="pre">Download</span> <span class="pre">and</span> <span class="pre">Debug</span></code>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="building-the-examples-from-command-line">
+<span id="running-examples-makefiles"></span><h2>Building the examples from command line<a class="headerlink" href="#building-the-examples-from-command-line" title="Permalink to this headline">¶</a></h2>
+<p>All examples can be built from command line using plain makefiles in 3 steps:</p>
+<ol class="arabic simple">
+<li>Configure the toolchain paths</li>
+<li>Build the kernel (only when using TI-RTOS kernel)</li>
+<li>Build the example</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To avoid problems with spaces in paths, it is recommended to use a Unix shell like
+<a class="reference external" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> as command line environment instead of the native
+command interpreter <cite>cmd.exe</cite> in Windows.</p>
+</div>
+<p>The toolchain paths are configured in a <code class="docutils literal"><span class="pre">imports.mak</span></code> in the SDK
+installation root folder. Open the file in an editor and modify the toolchain
+install paths lines depending on which toolchain you are going to use and
+where they are installed on your system.</p>
+<div class="highlight-make"><div class="highlight"><pre><span></span><span class="c"># The shown versions are just examples.</span>
+<span class="nv">XDC_INSTALL_DIR</span>        <span class="o">?=</span> c:/ti/xdctools_3_50_03_33_core
+
+<span class="nv">CCS_ARMCOMPILER</span>        <span class="o">?=</span> c:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS
+<span class="nv">GCC_ARMCOMPILER</span>        <span class="o">?=</span> c:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update
+<span class="nv">IAR_ARMCOMPILER</span>        <span class="o">?=</span> c:/Program Files <span class="o">(</span>x86<span class="o">)</span>/IAR Systems/Embedded Workbench <span class="m">8</span>.0/arm
+</pre></div>
+</div>
+<p>Once that is done, the TI-RTOS kernel can be built. This step is not necessary
+for No-RTOS examples.  In order to build the kernel, select a specific
+development board and build the <code class="docutils literal"><span class="pre">release</span></code> configuration. The makefile can be
+found in the folder
+<code class="docutils literal"><span class="pre">&lt;SDK_INSTALL_DIR&gt;/kernel/tirtos/builds/&lt;BOARD&gt;/release/&lt;TOOLCHAIN&gt;</span></code>.
+Example:</p>
+<div class="highlight-sh"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /c/ti/simplelink_cc13x0_sdk_1_xx_xx_xx/kernel/tirtos/builds/CC1310_LAUNCHXL/release/gcc
+$ make
+</pre></div>
+</div>
+<p>Finally, the examples can be built. Navigate to the desired example and invoke <cite>make</cite>:</p>
+<div class="highlight-sh"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /c/ti/simplelink_cc13x0_sdk_1_xx_xx_xx/rtos/CC1310_LAUNCHXL/drivers/rfSynchronizedPacketRx/tirtos/gcc
+$ make -j4
+</pre></div>
+</div>
+<p>The resulting <code class="docutils literal"><span class="pre">.out</span></code> file is a regular
+<a class="reference external" href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format">ELF</a> file that can be flashed to
+the device or converted into a binary or an Intel Hex file for other purpose,
+for instance, over-the-air download. Example for <cite>objcopy</cite> from the <cite>GNU
+binutils</cite> package:</p>
+<div class="highlight-sh"><div class="highlight"><pre><span></span>$ arm-none-eabi-objcopy -S --gap-fill 0xff -O binary rfSynchronizedPacketRx.out rfSynchronizedPacketRx.bin
+$ arm-none-eabi-objcopy -S -O ihex rfSynchronizedPacketRx.out rfSynchronizedPacketRx.hex
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../rf-core/index.html" class="btn btn-neutral float-right" title="RF Core" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../quickstart/index.html" class="btn btn-neutral" title="Proprietary RF Quick Start Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2017, Texas Instruments.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.50.00',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

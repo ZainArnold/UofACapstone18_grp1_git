@@ -226,7 +226,8 @@
 static void NodeTaskFunction(UArg arg0, UArg arg1);
 static void updateLcd(void);
 static void fastReportTimeoutCallback(UArg arg0);
-static void TempCallback(uint16_t TempValue);
+static void adcCallback(uint16_t adcValue);
+static void digitalCallback(uint16_t digitalValue);
 static void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 
 /***** Function definitions *****/
@@ -575,15 +576,17 @@ static void NodeTaskFunction(UArg arg0, UArg arg1)
     /* Check if the selected Display type was found and successfully opened */
     if (hDisplaySerial)
     {
-        Display_printf(hDisplaySerial, 0, 0, "Waiting for SCE ADC reading...");
+        Display_printf(hDisplaySerial, 0, 0, "Waiting for SCE1 reading...");
     }
 
     // SCE - Sensor Controller Engine
     // Start the SCE Temp ADC task with 1s sample period and reacting to change in ADC value
     //SceAdc_init(sampling time, minimum report interval, TempChangeMask)
     SceAdc_init(0x00010000, NODE_TEMPTASK_REPORTINTERVAL_FAST, NODE_TEMPTASK_CHANGE_MASK);
-    SceAdc_registerAdcCallback(TempCallback);
+    SceAdc_registerAdcCallback(adcCallback);
     SceAdc_start();
+
+
 
     /* setup timeout for fast report timeout */
     Clock_setTimeout(fastReportTimeoutClockHandle,
@@ -623,6 +626,17 @@ static void NodeTaskFunction(UArg arg0, UArg arg1)
 
             /* Send ADC value to concentrator */
             NodeRadioTask_sendAdcData(latestTempValue);
+
+            // Update LCD
+            updateLcd();
+        }
+        if (events & NODE_EVENT_MOTIONSENSE)
+        {
+            // Toggle activity LED
+            PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED2,!PIN_getOutputValue(NODE_ACTIVITY_LED2));
+
+            /* Send ADC value to concentrator */
+            NodeRadioTask_sendMotionData(latestMotionData);
 
             // Update LCD
             updateLcd();
@@ -675,7 +689,8 @@ static void updateLcd(void)
     // \033[2J clears screen | \033[0 resets special formatting | %02x does 2 character hex output | https://www.student.cs.uwaterloo.ca/~cs452/terminal.html
     Display_printf(hDisplaySerial, 0, 0, "\033[2J \033[0;0HNode ID: 0x%02x", nodeAddress);
     // %04d does 4 character integer output | http://www.cplusplus.com/reference/cstdio/printf/
-    Display_printf(hDisplaySerial, 0, 0, "Node Temp Reading: %04d", latestTempValue);
+    Display_printf(hDisplaySerial, 0, 0, "Node Temp Reading  : %04d", latestTempValue);
+    Display_printf(hDisplaySerial, 0, 0, "Node Motion Reading: %04d", latestMotionData);
 
 #ifdef FEATURE_BLE_ADV
     if (advertisementType == BleAdv_AdertiserMs)
@@ -712,14 +727,24 @@ static void updateLcd(void)
 
 //------------------------------------------------------------------------------------------------------------------------
 // TempCallback
-static void TempCallback(uint16_t TempValue)
+static void adcCallback(uint16_t adcValue)
 {
 
     // Save Latest Temp Value
-    latestTempValue = TempValue;
+    latestTempValue = adcValue;
 
     // Post Event
     Event_post(nodeEventHandle, NODE_EVENT_NEW_TEMP_VALUE);
+}
+
+static void digitalCallback(uint16_t digitalValue)
+{
+
+    // Save Latest Temp Value
+    latestMotionData = digitalValue;
+
+    // Post Event
+    Event_post(nodeEventHandle, NODE_EVENT_MOTIONSENSE);
 }
 
 //------------------------------------------------------------------------------------------------------------------------
