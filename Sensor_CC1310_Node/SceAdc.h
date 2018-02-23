@@ -43,7 +43,7 @@
 // Note: Pulls happen in SceAdc.c
 //
 typedef void(*SceAdc_adcCallback)(uint16_t adcValue);
-typedef void(*SceDigital_digitalCallback)(uint16_t digitalValue);
+//typedef void(*SceDigital_digitalCallback)(uint16_t digitalValue);
 
 /* Intializes the SCE ADC sampling task.
  *
@@ -76,7 +76,7 @@ void SceAdc_setReportInterval(uint32_t minReportInterval, uint16_t adcChangeMask
  */
 void SceAdc_registerAdcCallback(SceAdc_adcCallback callback);
 
-void SceDigital_registerDigitalCallback(SceDigital_digitalCallback callback);
+//void SceDigital_registerDigitalCallback(SceDigital_digitalCallback callback);
 
 /* Starts the SCE ADC sampling task.
  *

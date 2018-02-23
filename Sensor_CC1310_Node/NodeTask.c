@@ -90,7 +90,7 @@
 
     #define NODE_EVENT_ALL                                  0xFFFFFFFF
     #define NODE_EVENT_NEW_TEMP_VALUE                       (uint32_t)(1 << 0)
-    #define NODE_EVENT_MOTIONSENSE                          (uint32_t)(1 << 2)
+    //#define NODE_EVENT_MOTIONSENSE                          (uint32_t)(1 << 0)
     #define NODE_EVENT_UPDATE_LCD                           (uint32_t)(1 << 1)
 
     // A change mask of 0xFF0 means that changes in the lower 4 bits does not trigger a wakeup.
@@ -576,7 +576,7 @@ static void NodeTaskFunction(UArg arg0, UArg arg1)
     /* Check if the selected Display type was found and successfully opened */
     if (hDisplaySerial)
     {
-        Display_printf(hDisplaySerial, 0, 0, "Waiting for SCE1 reading...");
+        Display_printf(hDisplaySerial, 0, 0, "Waiting for SCE reading...");
     }
 
     // SCE - Sensor Controller Engine
@@ -613,6 +613,13 @@ static void NodeTaskFunction(UArg arg0, UArg arg1)
     while (1)
     {
         // Waits for any general event
+
+        /*------------------------------------------------------------------------------------------
+        // Variable Explanation | Reference is in std.h
+        // Type:        (ti_sysbios_knl_Event_Handle    , xdc_UInt  , xdc_UInt      , xdc_UInt32)
+        // Variable     (Event Handle                   , andMask   , orMask        , timeout)
+        //              (nodeEventHandle                , 0         , NODE_EVENT_ALL, BIOS_WAIT_FOREVER)*/
+        // Also, look in Event.c
         uint32_t events = Event_pend(nodeEventHandle, 0, NODE_EVENT_ALL, BIOS_WAIT_FOREVER);
 
         //--------------------------------------------------
@@ -630,34 +637,23 @@ static void NodeTaskFunction(UArg arg0, UArg arg1)
             // Update LCD
             updateLcd();
         }
-        if (events & NODE_EVENT_MOTIONSENSE)
-        {
-            // Toggle activity LED
-            PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED2,!PIN_getOutputValue(NODE_ACTIVITY_LED2));
-
-            /* Send ADC value to concentrator */
-            NodeRadioTask_sendMotionData(latestMotionData);
-
-            // Update LCD
-            updateLcd();
-        }
 
         //--------------------------------------------------
         // Motion Event
         //      -If new Motion Ping, send data
         //
-
 //        if (events & NODE_EVENT_MOTIONSENSE)
 //        {
 //            // Toggle activity LED
-//            PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED2,!PIN_getOutputValue(NODE_ACTIVITY_LED2));
+//            PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED1,!PIN_getOutputValue(NODE_ACTIVITY_LED1));
 //
-//            // Send Motion Ping
+//            /* Send Motion Data to concentrator */
 //            NodeRadioTask_sendMotionData(latestMotionData);
 //
 //            // Update LCD
 //            updateLcd();
 //        }
+
         if (events & NODE_EVENT_UPDATE_LCD) {
             /* update display */
             updateLcd();
@@ -690,7 +686,7 @@ static void updateLcd(void)
     Display_printf(hDisplaySerial, 0, 0, "\033[2J \033[0;0HNode ID: 0x%02x", nodeAddress);
     // %04d does 4 character integer output | http://www.cplusplus.com/reference/cstdio/printf/
     Display_printf(hDisplaySerial, 0, 0, "Node Temp Reading  : %04d", latestTempValue);
-    Display_printf(hDisplaySerial, 0, 0, "Node Motion Reading: %04d", latestMotionData);
+   // Display_printf(hDisplaySerial, 0, 0, "Node Motion Reading: %04d", latestMotionData);
 
 #ifdef FEATURE_BLE_ADV
     if (advertisementType == BleAdv_AdertiserMs)
@@ -737,15 +733,15 @@ static void adcCallback(uint16_t adcValue)
     Event_post(nodeEventHandle, NODE_EVENT_NEW_TEMP_VALUE);
 }
 
-static void digitalCallback(uint16_t digitalValue)
-{
-
-    // Save Latest Temp Value
-    latestMotionData = digitalValue;
-
-    // Post Event
-    Event_post(nodeEventHandle, NODE_EVENT_MOTIONSENSE);
-}
+//static void digitalCallback(uint16_t digitalValue)
+//{
+//
+//    // Save Latest Temp Value
+//    latestMotionData = digitalValue;
+//
+//    // Post Event
+//    Event_post(nodeEventHandle, NODE_EVENT_MOTIONSENSE);
+//}
 
 //------------------------------------------------------------------------------------------------------------------------
 // buttonCallback

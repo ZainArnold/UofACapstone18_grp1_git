@@ -1,4 +1,610 @@
-/*!
- * Bootstrap customization and styles for Resource Explorer tiles. 
- * @author pegah
- */.panel-heading a:after{font-family:'Glyphicons Halflings';content:"\e114";float:right;color:grey}.panel-heading a.collapsed:after{content:"\e080"}.treeNodeHighlight{color:#000;font-weight:bold;cursor:help}.url-wrap{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-break:break-all;word-break:break-word}.tile{height:90px;width:200px;display:block;cursor:pointer;-webkit-perspective:0;-webkit-transform-style:preserve-3d;-webkit-transition:-webkit-transform .2s;float:left;min-width:75px;min-height:75px;text-align:left;opacity:.75;background-color:#fff;z-index:1;border:2px #eee solid;color:#fff;box-shadow:7px 7px 5px #888}.tileSelected{height:90px;width:200px;background:#eee;position:relative;box-shadow:3px 3px 3px #c00;opacity:1}.tileSelected::before{content:"";width:36px;height:36px;top:0;right:0;position:absolute}.tile:hover{opacity:1}.ace_editor{font-family:'Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro',monospace;font-size:12px;line-height:normal}.nav-tabs>li>a{background-color:#f0f0f0;color:#333;font-weight:400;border-radius:.2em .2em 0 0;margin:0 1em 0 -.4em;padding:.7em .7em .7em .7em;box-shadow:0 1px 0 #000}.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{z-index:10;background-color:#555;color:#fff;font-weight:600;border-radius:.2em .2em 0 0;margin:0 1em 0 -.4em;padding:.7em .7em .7em .7em;box-shadow:0 1px 0 #000}.nav-tabs>li>a:hover{text-decoration:underline}.nav-tabs li.active>a:after{border-left:1em solid #555}.nav-tabs li>a:after{position:absolute;top:.1em;right:-1em;width:0;height:0;border-top:2.9em solid transparent;border-bottom:0 solid transparent;border-left:1em solid #f0f0f0;content:'';box-shadow:0 1px 0 #000}@-moz-document url-prefix(){.nav-tabs li>a:after{top:0}}.jstree-default .jstree-wholerow-clicked{background:#eee;background:-moz-linear-gradient(top,#eee 0,#ddd 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#eee),color-stop(100%,#ddd));background:-webkit-linear-gradient(top,#eee 0,#ddd 100%);background:-o-linear-gradient(top,#eee 0,#ddd 100%);background:-ms-linear-gradient(top,#eee 0,#ddd 100%);background:linear-gradient(to bottom,#eee 0,#ddd 100%)}#screen{position:absolute;top:40px;bottom:0;left:0;right:0}.breadcrumb{padding:7px 14px;margin:0 0 18px;background-color:#fbfbfb;background-image:-moz-linear-gradient(top,#fff,#f5f5f5);background-image:-ms-linear-gradient(top,#fff,#f5f5f5);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f5f5f5));background-image:-webkit-linear-gradient(top,#fff,#f5f5f5);background-image:-o-linear-gradient(top,#fff,#f5f5f5);background-image:linear-gradient(to bottom,#fff,#f5f5f5);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f5f5f5',GradientType=0);border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 0 1px 0 #fff;-moz-box-shadow:inset 0 1px 0 #fff;box-shadow:inset 0 1px 0 #fff}.breadcrumb li{display:inline-block;text-shadow:0 1px 0 #fff}.breadcrumb .divider{padding:0 5px;color:#999}.breadcrumb .active a{color:#333}html{height:100%}body{height:100%}div.header-title{display:flex;flex-direction:column}div.headerp{height:auto}div.panelp{height:auto}div.select2-search{height:auto}div.select2-drop-mask{height:auto}div.select2-results{height:auto}div.select2-drop{height:auto}#fancybox-loading{height:auto}#waiting-overlay{left:0;position:absolute;top:0;width:100%;height:100%;z-index:900;background-color:#000;opacity:.4;filter:alpha(opacity=40);text-align:center;display:block}#searchinput{width:200px;height:29px}#searchclear{margin:0;font-size:14px;cursor:pointer;color:#666;z-index:1}#searchclear2{position:relative;height:10px;left:340px;top:-25px;margin:0;font-size:14px;cursor:pointer;color:#666}#searchclear3{position:absolute;height:10px;right:185px;top:2px;margin:0;font-size:14px;cursor:pointer;color:#666}#searchglass{font-size:14px;cursor:pointer;color:#aaa}#searchglass2{font-size:14px;cursor:pointer;color:#aaa}#searchglass3{right:185px;top:2px;font-size:14px;cursor:pointer;color:#aaa}.ui-layout-west{overflow:hidden !important}.ui-layout-pane{overflow:hidden !important}.ui-layout-pane-west{overflow:hidden !important}#welcome-images{background-color:white}#welcome-images.table{border-collapse:collapse}#welcome-images.td{padding-top:.5em;padding-bottom:.5em}.welcome-page-link{font-size:1.2em;width:80%;padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-radius:3px;border-left-color:#f0ad4e}.welcome-page-link>p>a{cursor:pointer;outline:0 none;text-decoration:none;color:#189}.welcome-page-link>p>a:visited{color:#2ab}.welcome-page-link>p>a:hover{color:#c00;text-decoration:underline}.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{padding:3px}.table>tbody>tr>th{height:20px}.select2-container .select2-choice{height:30px;border-radius:4px}.btn{border-color:#c5c5c5;border-color:rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25)}.btn-mini{padding:1px 6px;font-size:10.5px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px}.btn{display:inline-block;margin-bottom:0;font-size:14px;line-height:20px;color:#333;text-align:center;text-shadow:0 1px 1px rgba(255,255,255,0.75);vertical-align:middle;cursor:pointer;background-color:#f5f5f5;background-image:-moz-linear-gradient(top,#fff,#e6e6e6);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));background-image:-webkit-linear-gradient(top,#fff,#e6e6e6);background-image:-o-linear-gradient(top,#fff,#e6e6e6);background-image:linear-gradient(to bottom,#fff,#e6e6e6);background-repeat:repeat-x;border:1px solid #bbb;border-color:#e6e6e6 #e6e6e6 #bfbfbf;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);border-bottom-color:#a2a2a2;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05)}.icon-size{width:30px !important}.ace_print-margin{background:#fff !important}.tooltip-inner{height:23px}.container-fluid{padding-left:10px}.select2-container .select2-choice{background-color:#fff;background-image:none;background:#fff}.select2-container .select2-choice,.select2-container .select2-choice .select2-arrow{-webkit-border-radius:1;border-radius:0;border-color:#ccc}.select2-drop-active{border:1px solid rgba(102,175,233,0.6);border-top:0}.select2-drop.select2-drop-above.select2-drop-active{border-top:1px solid rgba(102,175,233,0.6)}.select2-container-active .select2-choice,.select2-container-active .select2-choices{border:1px solid rgba(102,175,233,0.6);outline:0;-webkit-box-shadow:0 0 10px rgba(102,175,233,0.6);box-shadow:0 0 10px rgba(102,175,233,0.6)}.select2-results{max-height:400px}div.ui-layout-west.ui-layout-pane.ui-layout-pane-west{padding:0 5px 10px 0 !important}.app-modal-window .modal-dialog{width:600px;height:630px}.packageModal .modal-dialog,.installedModal .modal-dialog,.dependencyModal .modal-dialog,.badgeModal .modal-dialog{top:10%;height:auto;width:500px}.packageModal .modal-content,.installedModal .modal-content,.dependencyModal .modal-content,.badgeModal .modal-content{border-radius:5px !important}.packageModal .modal-body .panel{margin:0;border-radius:5px 5px 0 0}.packageModal .modal-body{padding:0}.packageModal .modal-body .table{margin-bottom:0}.packageModal .modal-body .table tr>td{padding:0 5px 0 5px}.packageModal .modal-footer{margin:0;border:0;padding:10px}.packageModal .checkbox{margin:0;padding-top:5px;padding-bottom:5px}.packageModal tr{cursor:pointer}.packageModal input[type~=checkbox]{cursor:pointer}.remove-modal-window .modal-dialog{width:400px;height:220px}.remove-modal-window .modal-header{height:auto;padding:0 0 15px 0}.remove-modal-window p{margin-bottom:0;padding:15px 0 15px 0}.remove-modal-window .modal-footer{border:0;height:auto;margin:0;padding:25px 0 15px 0}.preferenceModal .modal-dialog{top:10%;height:auto;width:430px}.preferenceModal .modal-body{border-radius:5px;padding:0}.preferenceModal .modal-header{border-radius:5px;background-color:#ebebeb;font-size:16px;font-weight:bold;padding:5px}.preferenceModal .content{font-size:14px;padding:20px;margin:0}.preferenceModal .device-counter{display:inline-block;width:55%}.preferenceModal .onoffswitch{display:inline-block;width:40%;text-align:right}.preferenceModal .modal-footer{border:0;margin:0;padding:0 20px 20px 20px}.installedModal .modal-header,.dependencyModal .modal-header,.badgeModal .modal-header{border-radius:5px 5px 0 0;background-color:#ebebeb;font-size:16px;font-weight:bold;padding:5px}.installedModal tr>th{cursor:default}.installedModal span.glyphicon-info-sign,.dependencyModal span.glyphicon-info-sign,.badgeModal span.glyphicon-info-sign{font-size:1.5em}.installedModal .info-text .text,.dependencyModal .info-text .text,.badgeModal .info-text .text{padding:5px;position:relative;top:-4.5px}.installedModal .list-group{padding-top:10px;margin:0 !important;cursor:pointer}.installedModal .name,.badgeModal .name{font-size:14px;font-weight:bold;display:inline-block}.installedModal .version{font-size:14px;font-weight:bold;display:inline-block}.installedModal .message{font-size:12px;display:block}.installedModal .well{font-size:13px;margin:10px;max-height:100px;overflow-y:auto}.installedModal .download-message{display:block;font-size:12px;text-align:center}.installedModal .progress{margin:5px 20px 20px 20px}.installedModal .progress-bar{min-width:2em}.installedModal .modal-footer,.badgeModal .modal-footer{margin:0 !important;padding:0 20px 20px 20px;border:0}.dependencyModal .info-text{padding:15px 15px 10px 15px}.dependencyModal .modal-body{padding:0}.dependencyModal .table{cursor:pointer;margin-bottom:0;border-radius:5px 5px 0 0}.dependencyModal .table tr>td{padding:0 10px 0 10px}.dependencyModal .modal-footer{margin:0 !important;padding:20px}.dependencyModal .checkbox{display:inline-block;width:92%}.dependencyModal .name,.dependencyModal .version{font-weight:bold}.dependencyModal .message{font-size:11px;display:block}.dependencyModal .description{display:inline-block;padding-right:5px}.dependencyModal i.glyphicon{font-size:1.5em;top:5px}.dependencyModal .description-box{display:block;font-size:12px;padding:0 20px}.dependencyModal .well{background-color:white !important;padding:15px}.dependencyModal .nav{max-height:100px;overflow-y:auto}.dependencyModal .download-message{display:block;font-size:12px;text-align:center}.dependencyModal .progress{margin:5px 20px 20px 20px}.dependencyModal .progress-bar{min-width:2em}.message-padding{padding-bottom:16px}.italic{font-style:italic}.grad{padding-top:1em;height:4.2em;background-color:white;background-image:-webkit-linear-gradient(bottom,white 40%,#d9f1f4 100%);background-image:-moz-linear-gradient(bottom,white 40%,#d9f1f4 100%);background-image:-ms-linear-gradient(bottom,white 40%,#d9f1f4 100%);background-image:-o-linear-gradient(bottom,white 40%,#d9f1f4 100%)}.grad3{background-image:-webkit-linear-gradient(bottom,#dedee4,#f2f8fe);background-image:-moz-linear-gradient(bottom,#f0f0f5,#f2f8fe);background-image:-ms-linear-gradient(bottom,#f0f0f5,#f2f8fe);background-image:-o-linear-gradient(bottom,#f0f0f5,#f2f8fe)}.toolbar{border-bottom:2px solid #eee}.popover-content{width:230px;height:10px !important}.popover{background:#eee}.popover.top>.arrow:after{border-top-color:#eee}.popover.botom>.arrow:after{border-bottom-color:#eee}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{border-width:10px;content:""}.popover.top>.arrow{left:50%;margin-left:-11px;border-bottom-width:0;border-top-color:#eee;border-top-color:rgba(0,0,0,0.25);bottom:-11px}.popover.top>.arrow:after{content:" ";bottom:1px;margin-left:-10px;border-bottom-width:0;border-top-color:#eee}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-left-width:0;border-right-color:#eee;border-right-color:rgba(0,0,0,0.25)}.popover.right>.arrow:after{content:" ";left:1px;bottom:-10px;border-left-width:0;border-right-color:#eee}.popover.bottom>.arrow{left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#eee;border-bottom-color:rgba(0,0,0,0.25);top:-11px}.popover.bottom>.arrow:after{content:" ";top:1px;margin-left:-10px;border-top-width:0;border-bottom-color:#eee}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#eee;border-left-color:rgba(0,0,0,0.25)}.popover.left>.arrow:after{content:" ";right:1px;border-right-width:0;border-left-color:#eee;bottom:-10px}.pull-right{float:none !important}.dropdown-menu{margin-top:5px;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);overflow:visible}.disabled-link,.disabled-link:visited,.disabled-link:active,.disabled-link:hover{background-color:#fff !important;color:#aaa !important}.inner-addon{position:relative}.inner-addon .glyphicon{position:absolute;padding:5px}.left-addon .glyphicon{left:0}.right-addon .glyphicon{right:0}.left-addon input{padding-left:30px}.right-addon input{padding-right:30px}.title{background-color:white}#navMainTitle{color:#fff;padding-right:20px;font-weight:500;font-size:115%}#navMainTitle a{border:0}#navMainTitle a:hover{color:#fff}#navMenuList{list-style-type:none;display:block;height:40px;vertical-align:bottom;margin:0;padding:0}#navMenuList li{height:100%}.navMenuListLiActive{background-color:#900}#navMenuHome,#navMenuTour{color:#189;display:inline-block;cursor:pointer;padding:10px;font-size:1.5em}#navMenuHome:hover,#navMenuTour:hover{color:#c00}#navMenuBadge{cursor:pointer;display:inline-block;padding:10px}.hoverMenu,.welcometd{display:block;z-index:999;position:absolute;border-radius:0 0 2px 2px;padding:1em;margin-left:-1px;top:40px;background-color:#fdfdfd;border:1px solid #aaa;border-top:0;box-shadow:2px 2px 2px rgba(44,44,44,0.4);height:auto}.hoverMenu li{color:#189}.hoverMenu li:hover{background-color:#e1eef4;color:#156}#navMenuLogo{float:left;list-style-type:none;padding:0;margin-right:3px;height:40px}#tiToolsHoverMenu{display:block;z-index:999;position:fixed;top:47px;left:15px;padding:2px;box-shadow:2px 2px 3px #888;border-radius:2px}#appsIcon{font-size:24px;color:#fff;position:relative;padding:8px;cursor:pointer}.bubble{position:relative;padding:0;margin:0;background:#fff;border:#000 solid 1px;height:auto !important}.bubble:after{content:"";position:absolute;top:-7px;left:7px;border-style:solid;border-width:0 7px 7px;border-color:#fff transparent;display:block;width:0;z-index:1}.bubble:before{content:"";position:absolute;top:-8px;left:7px;border-style:solid;border-width:0 7px 7px;border-color:#000 transparent;display:block;width:0;z-index:0}.tiToolsHeader a{color:#c00;font-weight:bold;font-size:16px}.tiToolsHeader a:hover{color:#900}.tiToolsApp{float:left;word-wrap:break-word;text-align:center;border:1px solid #fff;border-radius:3px;height:100px;width:100px;padding:5px;margin:3px 1px 3px 1px}#tiToolsHoverMenu .tiToolsApp:nth-child(3n+1){clear:both}.tiToolsApp a img{display:block;margin-left:auto;margin-right:auto;height:38px}.tiToolsApp:hover{border-color:#189;background-color:#eff8fb}.tiToolsApp a:hover{color:#189;text-decoration:none}.errorMain{background:url('../icons/error.GIF') no-repeat bottom left;padding-left:40px;padding-top:32px;color:red}#statusBar{text-align:center;padding-top:16px}.rexAboutSpan{padding-bottom:.3em;font-weight:900;font-size:large;text-decoration:underline}.copyrightSpan{font-size:.7em;padding-top:1em}.unsavedFileNameSpan{color:#fff}#aboutMenu #aboutMainTextAndImg{padding-top:2px;padding-bottom:10px;border-bottom:1px solid #ddd}#aboutMenu #aboutMainTextAndImg img{height:34px;padding-right:9px;padding-left:2px;position:relative;left:2px}#aboutMenu #aboutMainText{position:relative;top:3px;font-weight:900}#copyrightText{font-size:10px;padding-top:8px;border-top:1px solid #ddd}.navMenuSubText{text-decoration:none;padding:.8em 1em;color:#fff;font-weight:600;font-size:1.2em}@media screen and (max-width:720px){.navMenuSubText{font-size:90%;position:relative;top:2px}}@media screen and (max-width:320px){.navMenuSubText{font-size:70%}}@media screen and (max-width:300px){.navMenuSubText{display:none}}.resource-header{margin:0;display:inline;font-size:14px;font-weight:bold}.introjs-skipbutton{color:#555}.ui-layout-toggler-south,.ui-layout-toggler-west-open{border:1px solid #C00;background-color:#C00 !important}.ui-layout-toggler-south-hover,.ui-layout-resizer-south-hover .ui-layout-toggler-south-hover,.ui-layout-toggler-west-open-hover,.ui-layout-resizer-west-open-hover .ui-layout-toggler-west-open-hover{background-color:#F00 !important;opacity:1.00;filter:alpha(opacity=100)}.ui-layout-resizer-west{z-index:0 !important}.jspContainer{overflow:hidden;position:relative}.jspPane{position:absolute}.jspVerticalBar{position:absolute;top:0;right:0;width:16px;height:100%;background:red}.jspHorizontalBar{position:absolute;bottom:0;left:0;width:100%;height:16px;background:red}.jspCap{display:none}.jspHorizontalBar .jspCap{float:left}.jspTrack{background:#dde;position:relative}.jspDrag{background:#bbd;position:relative;top:0;left:0;cursor:pointer}.jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float:left;height:100%}.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer;padding:0;margin:0}.jspArrow.jspDisabled{cursor:default;background:#80808d}.jspVerticalBar .jspArrow{height:16px}.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%}.jspVerticalBar .jspArrow:focus{outline:0}.jspCorner{background:#eeeef4;float:left;height:100%}* html .jspCorner{margin:0 -3px 0 0}.toggleTreeBtn{position:absolute;line-height:0;height:20px;margin-top:2px;padding:0 3px 6px 3px;right:0;font-family:"Open sans";font-size:25px;font-weight:bold;cursor:pointer;background:white;-webkit-transition:background-color .2s;transition:background-color .2s;border:0;border-radius:2px;color:#999}.toggleTreeBtn:hover{background-color:#f2f2f2 !important}.ui-layout-toggler-west-closed{background-color:transparent !important}.content{margin-top:0 !important}.headerBtn{font-weight:bold;padding-top:3px;padding-bottom:3px;margin-top:2px;margin-right:4px;margin-left:4px;cursor:pointer;background:#e25454;-webkit-transition:background-color .2s;transition:background-color .2s;border:0;border-radius:3.01px;color:#fff}.headerBtn:hover{background-color:#e66}.headerBtn:focus{outline:0}#navBar{position:relative;top:0;left:0;width:100%;min-width:100%;height:40px;padding:0;display:block;box-sizing:content-box;box-shadow:0 1px 0 #ddd}#navMenuList li#navMenuToolNameContainer{float:left;padding:3px 10px 0 0;cursor:default}#navMenuToolNameText{display:inline;color:#fff;text-decoration:none;font-size:1.6em;font-weight:600;position:relative;left:-1px}#navMenuAboutContainer:hover{background-color:#fff}.navMenuListLi:hover #aboutBtn{color:#c00}#aboutBtn,#tourBtn{background-repeat:no-repeat;background-position:10px center;padding:0 20px 0 20px;color:#fff;text-decoration:none;color:#fff;font-size:1.2em;cursor:pointer}#tourBtn{position:relative;padding:0;margin-right:16px;margin-left:8px;top:7px;color:#fff;font-size:1em;cursor:pointer}#navMenuList li#navMenuAboutContainer{cursor:default;border-left:1px solid #a00}#navMenuList li.navMenuListLi,#navMenuList li.navMenuListLi0{float:left;padding-top:8px}.navMenuListLiRight{float:right}#navMenuFilter,#navMenuOffline,#navMenuPackagePicker,#navMenuInstalledPackages{cursor:pointer;display:inline-block;float:right;font-size:14px}#navMenuPackagePicker,#navMenuFilter,#navMenuOffline,#navMenuInstalledPackages{padding:10px !important}#navMenuOffline a:hover{text-decoration:none}#navMenuFilter:hover,#navMenuOffline:hover,#navMenuPackagePicker:hover,#navMenuInstalledPackages:hover{color:#c00}#filterHoverBox{right:46px !important}#navMenuRightHam #hamMenuIcon{font-size:24px;position:relative;color:#fff;cursor:pointer;top:7px;display:inline;list-style-type:none;padding:12px 8px 0 8px}#navMenuRightHam{list-style-type:none;padding:0;display:initial;cursor:pointer}#hamHoverMenu{display:block;z-index:1;position:absolute;top:40px;right:0}#hamHoverMenu ul#mainList{list-style-type:none;padding:0;margin:0;float:right;width:150px;box-shadow:0 2px 3px #888;background-color:white}#hamHoverMenu ul li{padding:10px 13px;font-size:14px}#hamHoverMenu ul li.info{border-bottom:1px solid #888;cursor:default;margin:0 6px;color:#000}#hamHoverMenu ul li.link{border-bottom:1px solid #eee;cursor:pointer}#hamHoverMenu ul li.link i{color:#c00;position:relative;right:5px}#hamHoverMenu ul li.link .hamMenuText{color:#444}#hamHoverMenu ul>li:last-child{border-bottom:0}#hamHoverMenu a:hover{text-decoration:none}#hamHoverMenu ul li.link:hover .hamMenuText{color:#c00}#hamHoverMenu ul li.link:hover i{color:#ff1f1f}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.textselect{-webkit-touch-callout:text;-webkit-user-select:text;-khtml-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}.hamHoverBox{padding:5px;margin:0;box-shadow:0 2px 3px #888;right:151px;top:0;display:inline-block;position:absolute;z-index:99;text-align:left;background-color:white;cursor:auto}#hamAboutHoverBox #aboutMainTextAndImg{padding-top:2px;padding-bottom:10px;border-bottom:1px solid #ddd}#hamAboutHoverBox #aboutMainTextAndImg img{height:34px;padding-right:9px;padding-left:2px;position:relative;left:2px}#hamAboutHoverBox #aboutMainText{position:relative;top:3px;font-weight:900}#hamAboutHoverBox li{color:#189;list-style-type:circle;padding:0 !important}#hamAboutHoverBox li:hover{background-color:#e1eef4;color:#156}.tree-overlay{z-index:1;right:-17px;width:0}.overlay{z-index:1;right:8px;width:0}.overlaySE{top:5px}.overlayNE{top:-5px}.tree-overlay.glyphicon,.overlay.glyphicon{font-size:9px;opacity:1.0}.offline{color:#5bc236}.partial{color:grey;opacity:.7}.btn-info[disabled]{background-color:transparent !important;border-color:transparent !important;pointer-events:none}.checkbox-highlight{background-color:#e5f2ff}.grey{opacity:.6}#navMenuDeviceContainer{margin-top:-3px;margin-left:5px;font-size:14px}@media screen and (max-width:710px){#navMenuDeviceContainer{display:none}}#navMenuSearchContainer{margin-top:5px;margin-right:5px}@media screen and (max-width:920px){#navMenuSearchContainer{display:none}}.circleIndicator{border-radius:50%;width:17px;height:17px;padding-top:2.9px;background:#c00;color:#fff;text-align:center;font-size:8px;position:fixed;top:5px;right:40px}.container img{height:100%}.badge{background:#c00}.hidden{display:none}_:-ms-lang(x),.cloud{top:2px !important;position:relative}_:-ms-lang(x),.glyphicon-home{top:-1px !important;position:relative}.tile-block .row{margin:20px 20px 50px 20px;display:inline-block;height:100%}.tile-block .overlay{position:absolute;top:0;left:0;z-index:10;width:inherit;height:inherit}.tile-block .overlay:hover{background-color:black;opacity:.7}.tile-block .block{border:1.24px solid #189;border-radius:5px;padding:10px}.tile-block .container{width:160px;height:100px;padding-left:0 !important;padding-right:0 !important;overflow:hidden}.tile-block .description{width:160px}.tile-block .name{height:40px;padding-top:10px;margin-bottom:3px;font-size:11px;font-weight:bold}.tile-block .company-name{font-size:11px}.tile-block .line{background:#189;height:1px}.banner{background:grey;border:0;border-top:1px dotted #f0f0f0;height:1px;margin-bottom:10px;width:100%}.banner .all{cursor:pointer;display:inline-block;font-size:14px;padding:1px;position:relative;top:6px}.banner .checkbox{display:inline-block;padding:1px !important}.banner .text{display:inline-block;top:-2.5px;position:relative}.banner .apply-block{margin:0 22px 0 10px;cursor:pointer;border-radius:5px;color:white;display:inline-block;font-size:12px;font-weight:bold;padding:7px 7px 0 7px;height:35px}.banner .button{height:20px;padding:0 !important}.tile-block .select-block{padding:10px 0}.tile-block .download{cursor:pointer;border-radius:2px;display:inline-block;background:#189;padding:2px 5px 0 5px}.tile-block .download:hover{background:#11719a}.tile-block .form-control{position:relative;top:-3px;display:inline-block;width:130px;height:26px;font-size:12px}.tooltip-inner{max-width:none;white-space:nowrap}#tree{height:auto !important}#step4{height:auto !important}.left-panel-content-container{height:100%}.left-panel-content{height:100%}.resource-file-display{height:100%;margin:0}.file-table>tbody>tr>td,.file-table>tbody>tr>th{border-bottom:1px solid #ddd}.scanTable{width:100%;margin:10px 0 10px 0;border-top:1px solid #ddd}.scanTable td{padding:3px 5px;font-size:13px}.scanTable tr:hover{background-color:#ececec}.scanTable th{text-align:left;border-bottom:1px solid #ddd;font-size:13px}.endCol{align-content:center;text-align:center}.pathCol{line-height:100%;width:60%;word-wrap:break-word;word-break:break-all}.errorBox{color:red;float:left;width:60%;font-size:10px;text-align:left}.infoList{font-size:90%;list-style-type:disc;padding-left:40px;padding-top:3px}.removeBtn{background-color:transparent;font-size:10px;line-height:11px;border-radius:20%;color:black;padding:3px 5px}.removeBtn:focus{outline:0}
+/* Copyright (c) 2006 Kelvin Luck (kelvin AT kelvinluck DOT com || http://www.kelvinluck.com)
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) 
+ * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+ * 
+ * See http://kelvinluck.com/assets/jquery/jScrollPane/
+ * $Id: jScrollPane.js 79 2009-08-03 09:37:45Z kelvin.luck@gmail.com $
+ */
+
+/**
+ * Replace the vertical scroll bars on any matched elements with a fancy
+ * styleable (via CSS) version. With JS disabled the elements will
+ * gracefully degrade to the browsers own implementation of overflow:auto.
+ * If the mousewheel plugin has been included on the page then the scrollable areas will also
+ * respond to the mouse wheel.
+ *
+ * @example jQuery(".scroll-pane").jScrollPane();
+ *
+ * @name jScrollPane
+ * @type jQuery
+ * @param Object	settings	hash with options, described below.
+ *								scrollbarWidth	-	The width of the generated scrollbar in pixels
+ *								scrollbarMargin	-	The amount of space to leave on the side of the scrollbar in pixels
+ *								wheelSpeed		-	The speed the pane will scroll in response to the mouse wheel in pixels
+ *								showArrows		-	Whether to display arrows for the user to scroll with
+ *								arrowSize		-	The height of the arrow buttons if showArrows=true
+ *								animateTo		-	Whether to animate when calling scrollTo and scrollBy
+ *								dragMinHeight	-	The minimum height to allow the drag bar to be
+ *								dragMaxHeight	-	The maximum height to allow the drag bar to be
+ *								animateInterval	-	The interval in milliseconds to update an animating scrollPane (default 100)
+ *								animateStep		-	The amount to divide the remaining scroll distance by when animating (default 3)
+ *								maintainPosition-	Whether you want the contents of the scroll pane to maintain it's position when you re-initialise it - so it doesn't scroll as you add more content (default true)
+ *								tabIndex		-	The tabindex for this jScrollPane to control when it is tabbed to when navigating via keyboard (default 0)
+ *								enableKeyboardNavigation - Whether to allow keyboard scrolling of this jScrollPane when it is focused (default true)
+ *								animateToInternalLinks - Whether the move to an internal link (e.g. when it's focused by tabbing or by a hash change in the URL) should be animated or instant (default false)
+ *								scrollbarOnLeft	-	Display the scrollbar on the left side?  (needs stylesheet changes, see examples.html)
+ *								reinitialiseOnImageLoad - Whether the jScrollPane should automatically re-initialise itself when any contained images are loaded (default false)
+ * @return jQuery
+ * @cat Plugins/jScrollPane
+ * @author Kelvin Luck (kelvin AT kelvinluck DOT com || http://www.kelvinluck.com)
+ */
+
+(function($) {
+
+$.jScrollPane = {
+	active : []
+};
+$.fn.jScrollPane = function(settings)
+{
+	settings = $.extend({}, $.fn.jScrollPane.defaults, settings);
+
+	var rf = function() { return false; };
+	
+	return this.each(
+		function()
+		{
+			var $this = $(this);
+			var paneEle = this;
+			
+			if ($(this).parent().is('.jScrollPaneContainer')) {
+				var currentScrollPosition = settings.maintainPosition ? $this.position().top : 0;
+				var $c = $(this).parent();
+				var paneWidth = $c.innerWidth();
+				var paneHeight = $c.outerHeight();
+				var trackHeight = paneHeight;
+				$('>.jScrollPaneTrack, >.jScrollArrowUp, >.jScrollArrowDown', $c).remove();
+				$this.css({'top':0});
+			} else {
+				$this.data('originalStyleTag', $this.attr('style'));
+				// Switch the element's overflow to hidden to ensure we get the size of the element without the scrollbars [http://plugins.jquery.com/node/1208]
+				$this.css('overflow', 'hidden');
+				var currentScrollPosition = 0;
+				this.originalPadding = $this.css('paddingTop') + ' ' + $this.css('paddingRight') + ' ' + $this.css('paddingBottom') + ' ' + $this.css('paddingLeft');
+				this.originalSidePaddingTotal = (parseInt($this.css('paddingLeft')) || 0) + (parseInt($this.css('paddingRight')) || 0);
+				var paneWidth = $this.innerWidth();
+				var paneHeight = $this.innerHeight();
+				var trackHeight = paneHeight;
+				var $container = $(
+					'<div class="jScrollPaneContainer"'
+				+	' style="height:'+ paneHeight +'px; width:'+ paneWidth +'px;"></div>'
+				);
+				if (settings.enableKeyboardNavigation) {
+					$container.attr( 'tabindex',  settings.tabIndex );
+				}
+				$this.wrap($container);
+				// deal with text size changes (if the jquery.em plugin is included)
+				// and re-initialise the scrollPane so the track maintains the
+				// correct size
+				$(document).bind(
+					'emchange', 
+					function(e, cur, prev)
+					{
+						$this.jScrollPane(settings);
+					}
+				);
+				
+			}
+			
+			if (settings.reinitialiseOnImageLoad) {
+				// code inspired by jquery.onImagesLoad: http://plugins.jquery.com/project/onImagesLoad
+				// except we re-initialise the scroll pane when each image loads so that the scroll pane is always up to size...
+				// TODO: Do I even need to store it in $.data? Is a local variable here the same since I don't pass the reinitialiseOnImageLoad when I re-initialise?
+				var $imagesToLoad = $.data(paneEle, 'jScrollPaneImagesToLoad') || $('img', $this);
+				var loadedImages = [];
+				
+				if ($imagesToLoad.length) {
+					$imagesToLoad.each(function(i, val)	{
+						$(this).bind('load readystatechange', function() {
+							if($.inArray(i, loadedImages) == -1){ //don't double count images
+								loadedImages.push(val); //keep a record of images we've seen
+								$imagesToLoad = $.grep($imagesToLoad, function(n, i) {
+									return n != val;
+								});
+								$.data(paneEle, 'jScrollPaneImagesToLoad', $imagesToLoad);
+								var s2 = $.extend(settings, {reinitialiseOnImageLoad:false});
+								$this.jScrollPane(s2); // re-initialise
+							}
+						}).each(function(i, val) {
+							if(this.complete || this.complete===undefined) { 
+								//needed for potential cached images
+								this.src = this.src; 
+							} 
+						});
+					});
+				};
+			}
+
+			var p = this.originalSidePaddingTotal;
+			var realPaneWidth = paneWidth - settings.scrollbarWidth - settings.scrollbarMargin - p;
+
+			var cssToApply = {
+				'height':'auto',
+				'width': realPaneWidth + 'px'
+			}
+
+			if(settings.scrollbarOnLeft) {
+				cssToApply.paddingLeft = settings.scrollbarMargin + settings.scrollbarWidth + 'px';
+			} else {
+				cssToApply.paddingRight = settings.scrollbarMargin + 'px';
+			}
+
+			$this.css(cssToApply);
+
+			var contentHeight = $this.outerHeight();
+			var percentInView = paneHeight / contentHeight;
+
+			if (percentInView < .99) {
+				var $container	= $this.parent()
+				,	width		= ' style="width: '+ settings.scrollbarWidth +'px;">';
+				$container.append(
+					'<div class="jScrollPaneTrack"'+ width
+				+		'<div class="jScrollPaneDrag"'+ width
+				+			'<div class="jScrollPaneDragTop"'+ width +'</div>'
+				+			'<div class="jScrollPaneDragBottom"'+ width +'</div>'
+				+	'</div></div>'
+				);
+
+				var $track = $('>.jScrollPaneTrack', $container);
+				var $drag = $('>.jScrollPaneTrack .jScrollPaneDrag', $container);
+				var currentArrowDirection;
+				var currentArrowTimerArr = [];// Array is used to store timers since they can stack up when dealing with keyboard events. This ensures all timers are cleaned up in the end, preventing an acceleration bug.
+				var currentArrowInc;
+				var whileArrowButtonDown = function() 
+				{
+					if (currentArrowInc > 4 || currentArrowInc % 4 == 0) {
+						positionDrag(dragPosition + currentArrowDirection * mouseWheelMultiplier);
+					}
+					currentArrowInc++;
+				};
+
+				if (settings.enableKeyboardNavigation) {
+					$container.bind(
+						'keydown.jscrollpane',
+						function(e) 
+						{
+							switch (e.keyCode) {
+								case 38: //up
+									currentArrowDirection = -1;
+									currentArrowInc = 0;
+									whileArrowButtonDown();
+									currentArrowTimerArr[currentArrowTimerArr.length] = setInterval(whileArrowButtonDown, 100);
+									return false;
+								case 40: //down
+									currentArrowDirection = 1;
+									currentArrowInc = 0;
+									whileArrowButtonDown();
+									currentArrowTimerArr[currentArrowTimerArr.length] = setInterval(whileArrowButtonDown, 100);
+									return false;
+								case 33: // page up
+								case 34: // page down
+									// TODO
+									return false;
+								default:
+							}
+						}
+					).bind(
+						'keyup.jscrollpane',
+						function(e) 
+						{
+							if (e.keyCode == 38 || e.keyCode == 40) {
+								for (var i = 0; i < currentArrowTimerArr.length; i++) {
+									clearInterval(currentArrowTimerArr[i]);
+								}
+								return false;
+							}
+						}
+					);
+				}
+
+				if (settings.showArrows) {
+					
+					var currentArrowButton;
+					var currentArrowInterval;
+
+					var onArrowMouseUp = function(event)
+					{
+						$('html').unbind('mouseup', onArrowMouseUp);
+						currentArrowButton.removeClass('jScrollActiveArrowButton');
+						clearInterval(currentArrowInterval);
+					};
+					var onArrowMouseDown = function() {
+						$('html').bind('mouseup', onArrowMouseUp);
+						currentArrowButton.addClass('jScrollActiveArrowButton');
+						currentArrowInc = 0;
+						whileArrowButtonDown();
+						currentArrowInterval = setInterval(whileArrowButtonDown, 100);
+					};
+					$container
+						.append(
+							$('<a></a>')
+								.attr({ 'href':'javascript:;', 'class':'jScrollArrowUp', 'tabindex':-1 })
+								.css({'width':settings.scrollbarWidth+'px'})
+								.html('Scroll up')
+								.bind('mousedown', function()
+								{
+									currentArrowButton = $(this);
+									currentArrowDirection = -1;
+									onArrowMouseDown();
+									this.blur();
+									return false;
+								})
+								.bind('click', rf),
+							$('<a></a>')
+								.attr({'href':'javascript:;', 'class':'jScrollArrowDown', 'tabindex':-1})
+								.css({'width':settings.scrollbarWidth+'px'})
+								.html('Scroll down')
+								.bind('mousedown', function()
+								{
+									currentArrowButton = $(this);
+									currentArrowDirection = 1;
+									onArrowMouseDown();
+									this.blur();
+									return false;
+								})
+								.bind('click', rf)
+						);
+					var $upArrow = $('>.jScrollArrowUp', $container);
+					var $downArrow = $('>.jScrollArrowDown', $container);
+					if (settings.arrowSize) {
+						trackHeight = paneHeight - settings.arrowSize - settings.arrowSize;
+						$track
+							.css({'height': trackHeight+'px', top:settings.arrowSize+'px'})
+					} else {
+						var topArrowHeight = $upArrow.height();
+						settings.arrowSize = topArrowHeight;
+						trackHeight = paneHeight - topArrowHeight - $downArrow.height();
+						$track
+							.css({'height': trackHeight+'px', top:topArrowHeight+'px'})
+					}
+				}
+				
+				var $pane = $(this).css({'position':'absolute', 'overflow':'visible'});
+				
+				var currentOffset;
+				var maxY;
+				var mouseWheelMultiplier;
+				// store this in a seperate variable so we can keep track more accurately than just updating the css property..
+				var dragPosition = 0;
+				var dragMiddle = percentInView*paneHeight/2;
+				
+				// pos function borrowed from tooltip plugin and adapted...
+				var getPos = function (event, c) {
+					var p = c == 'X' ? 'Left' : 'Top';
+					return event['page' + c] || (event['client' + c] + (document.documentElement['scroll' + p] || document.body['scroll' + p])) || 0;
+				};
+				
+				var ignoreNativeDrag = function() {	return false; };
+				
+				var initDrag = function()
+				{
+					ceaseAnimation();
+					var dragOffset = $drag.offset();
+					currentOffset = { top: dragOffset.top, left:dragOffset.left };
+					currentOffset.top -= dragPosition;
+					maxY = trackHeight - $drag[0].offsetHeight;
+					mouseWheelMultiplier = 2 * settings.wheelSpeed * maxY / contentHeight;
+				};
+				
+				var onStartDrag = function(event)
+				{
+					initDrag();
+					dragMiddle = getPos(event, 'Y') - dragPosition - currentOffset.top;
+					$('html').bind('mouseup', onStopDrag).bind('mousemove', updateScroll);
+					/*if ($.browser.msie) {
+						$('html').bind('dragstart', ignoreNativeDrag).bind('selectstart', ignoreNativeDrag);
+					}
+					*/
+					return false;
+				};
+				var onStopDrag = function()
+				{
+					$('html').unbind('mouseup', onStopDrag).unbind('mousemove', updateScroll);
+					dragMiddle = percentInView*paneHeight/2;
+					/*if ($.browser.msie) {
+						$('html').unbind('dragstart', ignoreNativeDrag).unbind('selectstart', ignoreNativeDrag);
+					}
+					*/
+				};
+				var positionDrag = function(destY)
+				{
+					$container.scrollTop(0);
+					destY = destY < 0 ? 0 : (destY > maxY ? maxY : destY);
+					dragPosition = destY;
+					$drag.css({'top':destY+'px'});
+					var p = destY / maxY;
+					$this.data('jScrollPanePosition', (paneHeight-contentHeight)*-p);
+					$pane.css({'top':((paneHeight-contentHeight)*p) + 'px'});
+					$this.trigger('scroll');
+					if (settings.showArrows) {
+						$upArrow[destY == 0 ? 'addClass' : 'removeClass']('disabled');
+						$downArrow[destY == maxY ? 'addClass' : 'removeClass']('disabled');
+					}
+				};
+				var updateScroll = function(e)
+				{
+					positionDrag(getPos(e, 'Y') - currentOffset.top - dragMiddle);
+				};
+				
+				var dragH = Math.max(Math.min(percentInView*(paneHeight-settings.arrowSize*2), settings.dragMaxHeight), settings.dragMinHeight);
+				
+				$drag.css(
+					{'height':dragH+'px'}
+				).bind('mousedown', onStartDrag);
+				
+				var trackScrollInterval;
+				var trackScrollInc;
+				var trackScrollMousePos;
+				var doTrackScroll = function()
+				{
+					if (trackScrollInc > 8 || trackScrollInc%4==0) {
+						positionDrag((dragPosition - ((dragPosition - trackScrollMousePos) / 2)));
+					}
+					trackScrollInc ++;
+				};
+				var onStopTrackClick = function()
+				{
+					clearInterval(trackScrollInterval);
+					$('html').unbind('mouseup', onStopTrackClick).unbind('mousemove', onTrackMouseMove);
+				};
+				var onTrackMouseMove = function(event)
+				{
+					trackScrollMousePos = getPos(event, 'Y') - currentOffset.top - dragMiddle;
+				};
+				var onTrackClick = function(event)
+				{
+					initDrag();
+					onTrackMouseMove(event);
+					trackScrollInc = 0;
+					$('html').bind('mouseup', onStopTrackClick).bind('mousemove', onTrackMouseMove);
+					trackScrollInterval = setInterval(doTrackScroll, 100);
+					doTrackScroll();
+					return false;
+				};
+				
+				$track.bind('mousedown', onTrackClick);
+				
+				$container.bind(
+					'mousewheel',
+					function (event, delta) {
+						delta = delta || (event.wheelDelta ? event.wheelDelta / 120 : (event.detail) ? -event.detail/3 : 0);
+						initDrag();
+						ceaseAnimation();
+						var d = dragPosition;
+						positionDrag(dragPosition - delta * mouseWheelMultiplier);
+						var dragOccured = d != dragPosition;
+						return !dragOccured;
+					}
+				);
+
+				var _animateToPosition;
+				var _animateToInterval;
+				function animateToPosition()
+				{
+					var diff = (_animateToPosition - dragPosition) / settings.animateStep;
+					if (diff > 1 || diff < -1) {
+						positionDrag(dragPosition + diff);
+					} else {
+						positionDrag(_animateToPosition);
+						ceaseAnimation();
+					}
+				}
+				var ceaseAnimation = function()
+				{
+					if (_animateToInterval) {
+						clearInterval(_animateToInterval);
+						delete _animateToPosition;
+					}
+				};
+				var scrollTo = function(pos, preventAni)
+				{
+					if (typeof pos == "string") {
+						$e = $(pos, $this);
+						if (!$e.length) return;
+						pos = $e.offset().top - $this.offset().top;
+					}
+					ceaseAnimation();
+					var maxScroll = contentHeight - paneHeight;
+					pos = pos > maxScroll ? maxScroll : pos;
+					$this.data('jScrollPaneMaxScroll', maxScroll);
+					var destDragPosition = pos/maxScroll * maxY;
+					if (preventAni || !settings.animateTo) {
+						positionDrag(destDragPosition);
+					} else {
+						$container.scrollTop(0);
+						_animateToPosition = destDragPosition;
+						_animateToInterval = setInterval(animateToPosition, settings.animateInterval);
+					}
+				};
+				$this[0].scrollTo = scrollTo;
+				
+				$this[0].scrollBy = function(delta)
+				{
+					var currentPos = -parseInt($pane.css('top')) || 0;
+					scrollTo(currentPos + delta);
+				};
+				
+				initDrag();
+				
+				scrollTo(-currentScrollPosition, true);
+			
+				// Deal with it when the user tabs to a link or form element within this scrollpane
+				$('*', this).bind(
+					'focus',
+					function(event)
+					{
+						var $e = $(this);
+						
+						// loop through parents adding the offset top of any elements that are relatively positioned between
+						// the focused element and the jScrollPaneContainer so we can get the true distance from the top
+						// of the focused element to the top of the scrollpane...
+						var eleTop = 0;
+						
+						while ($e[0] != $this[0]) {
+							eleTop += $e.position().top;
+							$e = $e.offsetParent();
+						}
+						
+						var viewportTop = -parseInt($pane.css('top')) || 0;
+						var maxVisibleEleTop = viewportTop + paneHeight;
+						var eleInView = eleTop > viewportTop && eleTop < maxVisibleEleTop;
+						if (!eleInView) {
+							var destPos = eleTop - settings.scrollbarMargin;
+							if (eleTop > viewportTop) { // element is below viewport - scroll so it is at bottom.
+								destPos += $(this).height() + 15 + settings.scrollbarMargin - paneHeight;
+							}
+							scrollTo(destPos);
+						}
+					}
+				)
+				
+
+				
+				// use event delegation to listen for all clicks on links and hijack them if they are links to
+				// anchors within our content...
+				$(document).bind(
+					'click',
+					function(e)
+					{
+						$target = $(e.target);
+						if ($target.is('a')) {
+							var h = $target.attr('href');
+							if (h && h.substr(0, 1) == '#' && h.length > 1) {
+								//setTimeout(function() {scrollTo(h, !settings.animateToInternalLinks);}, $.browser.safari ? 100 : 0);
+							}
+						}
+					}
+				); 
+				
+				// Deal with dragging and selecting text to make the scrollpane scroll...
+				function onSelectScrollMouseDown(e)
+				{
+				   $(document).bind('mousemove.jScrollPaneDragging', onTextSelectionScrollMouseMove);
+				   $(document).bind('mouseup.jScrollPaneDragging',   onSelectScrollMouseUp);
+				  
+				}
+				
+				var textDragDistanceAway;
+				var textSelectionInterval;
+				
+				function onTextSelectionInterval()
+				{
+					direction = textDragDistanceAway < 0 ? -1 : 1;
+					$this[0].scrollBy(textDragDistanceAway / 2);
+				}
+
+				function clearTextSelectionInterval()
+				{
+					if (textSelectionInterval) {
+						clearInterval(textSelectionInterval);
+						textSelectionInterval = undefined;
+					}
+				}
+				
+				function onTextSelectionScrollMouseMove(e)
+				{
+					var offset = $this.parent().offset().top;
+					var maxOffset = offset + paneHeight;
+					var mouseOffset = getPos(e, 'Y');
+					textDragDistanceAway = mouseOffset < offset ? mouseOffset - offset : (mouseOffset > maxOffset ? mouseOffset - maxOffset : 0);
+					if (textDragDistanceAway == 0) {
+						clearTextSelectionInterval();
+					} else {
+						if (!textSelectionInterval) {
+							textSelectionInterval  = setInterval(onTextSelectionInterval, 100);
+						}
+					}
+				}
+
+				function onSelectScrollMouseUp(e)
+				{
+				   $(document)
+					  .unbind('mousemove.jScrollPaneDragging')
+					  .unbind('mouseup.jScrollPaneDragging');
+				   clearTextSelectionInterval();
+				}
+
+				$container.bind('mousedown.jScrollPane', onSelectScrollMouseDown);
+
+				
+				$.jScrollPane.active.push($this[0]);
+				
+			} else {
+				$this.css(
+					{
+						'height':paneHeight+'px',
+						'width':paneWidth-this.originalSidePaddingTotal+'px',
+						'padding':this.originalPadding
+					}
+				);
+				$this[0].scrollTo = $this[0].scrollBy = function() {};
+				// clean up listeners
+				$this.parent().unbind('mousewheel').unbind('mousedown.jScrollPane').unbind('keydown.jscrollpane').unbind('keyup.jscrollpane');
+			}
+			
+		}
+	)
+};
+
+$.fn.jScrollPaneRemove = function()
+{
+	$(this).each(function()
+	{
+		$this = $(this);
+		var $c = $this.parent();
+		if ($c.is('.jScrollPaneContainer')) {
+			$this.css(
+				{
+					'top':'',
+					'height':'',
+					'width':'',
+					'padding':'',
+					'overflow':'',
+					'position':''
+				}
+			);
+			$this.attr('style', $this.data('originalStyleTag'));
+			$c.after($this).remove();
+		}
+	});
+}
+
+$.fn.jScrollPane.defaults = {
+	scrollbarWidth : 10,
+	scrollbarMargin : 5,
+	wheelSpeed : 18,
+	showArrows : false,
+	arrowSize : 0,
+	animateTo : false,
+	dragMinHeight : 1,
+	dragMaxHeight : 99999,
+	animateInterval : 100,
+	animateStep: 3,
+	maintainPosition: true,
+	scrollbarOnLeft: false,
+	reinitialiseOnImageLoad: false,
+	tabIndex : 0,
+	enableKeyboardNavigation: true,
+	animateToInternalLinks: false
+};
+
+// clean up the scrollTo expandos
+$(window)
+	.bind('unload', function() {
+		var els = $.jScrollPane.active; 
+		for (var i=0; i<els.length; i++) {
+			els[i].scrollTo = els[i].scrollBy = null;
+		}
+	}
+);
+
+})(jQuery);

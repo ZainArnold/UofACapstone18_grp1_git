@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="ADC Sample" version="2.0.0.324">
+<project name="ADCandDigital" version="2.0.0.324">
     <desc><![CDATA[Demonstrates ADC sampling of the SFH5711 light sensor on the SmartRF06 Evaluation Board.
 
 If the ADC value varies more than the configured change mask, then it wakes up the MCU.]]></desc>
@@ -16,7 +16,7 @@ If the ADC value varies more than the configured change mask, then it wakes up t
     <pattr name="RTC tick interval (16.16 format)">2000</pattr>
     <pattr name="Run-time logging UART RX pin"></pattr>
     <pattr name="Run-time logging UART TX pin"></pattr>
-    <task name="ADC Sample">
+    <task name="ADCandDigital">
         <desc><![CDATA[Samples the SFH5711 light sensor on the SmartRF06 Evaluation Board.
 
 The ADC value range (0-4095) is divided into a configurable number of bins, with run-time configurable hysteresis and bin thresholds. The application must set the first threshold to 0, and the last threshold to 4095.

@@ -245,16 +245,26 @@ static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
         }
         else if (tmpRxPacket->header.packetType == RADIO_PACKET_TYPE_DM_SENSOR_PACKET)
         {
+//Old version
+//            latestRxPacket.header.sourceAddress = rxPacket->payload[0];
+//            latestRxPacket.header.packetType = rxPacket->payload[1];
+//            latestRxPacket.dmSensorPacket.adcValue = (rxPacket->payload[2] << 8) | rxPacket->payload[3];
+//            latestRxPacket.dmSensorPacket.batt = (rxPacket->payload[4] << 8) | rxPacket->payload[5];
+//            latestRxPacket.dmSensorPacket.time100MiliSec = (rxPacket->payload[6] << 24) |
+//                                                                       (rxPacket->payload[7] << 16) |
+//                                                                       (rxPacket->payload[8] << 8) |
+//                                                                        rxPacket->payload[9];
+//            latestRxPacket.dmSensorPacket.button = rxPacket->payload[10];
             /* Save packet */
-            latestRxPacket.header.sourceAddress = rxPacket->payload[0];
-            latestRxPacket.header.packetType = rxPacket->payload[1];
-            latestRxPacket.dmSensorPacket.adcValue = (rxPacket->payload[2] << 8) | rxPacket->payload[3];
-            latestRxPacket.dmSensorPacket.batt = (rxPacket->payload[4] << 8) | rxPacket->payload[5];
-            latestRxPacket.dmSensorPacket.time100MiliSec = (rxPacket->payload[6] << 24) |
-                                                           (rxPacket->payload[7] << 16) |
-                                                           (rxPacket->payload[8] << 8) |
-                                                            rxPacket->payload[9];
-            latestRxPacket.dmSensorPacket.button = rxPacket->payload[10];
+            latestRxPacket.header.sourceAddress             = rxPacket->payload[0];
+            latestRxPacket.header.packetType                = rxPacket->payload[1];
+            latestRxPacket.dmSensorPacket.adcValue          = (rxPacket->payload[2] << 8) | rxPacket->payload[3];
+            latestRxPacket.dmSensorPacket.digitalValue      = (rxPacket->payload[4] << 8) | rxPacket->payload[5];
+            latestRxPacket.dmSensorPacket.batt              = (rxPacket->payload[6] << 8) | rxPacket->payload[7];
+            latestRxPacket.dmSensorPacket.time100MiliSec    = (rxPacket->payload[8] << 24) |
+                                                              (rxPacket->payload[9] << 16) |
+                                                              (rxPacket->payload[10] << 8)  | rxPacket->payload[11];
+            latestRxPacket.dmSensorPacket.button            = rxPacket->payload[12];
 
             /* Signal packet received */
             Event_post(radioOperationEventHandle, RADIO_EVENT_VALID_PACKET_RECEIVED);

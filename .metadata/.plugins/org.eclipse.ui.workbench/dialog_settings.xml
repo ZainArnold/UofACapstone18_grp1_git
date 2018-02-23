@@ -22,4 +22,11 @@
 		<item value="TIXDS110" key="com.ti.ccstudio.system.setup.ui.editors.connectionType"/>
 		<item value="Texas Instruments XDS110 USB Debug Probe" key="com.ti.ccstudio.system.setup.ui.editors.connectionName"/>
 	</section>
+	<section name="InstallationDialogSettings">
+		<item value="706" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="744" key="DIALOG_HEIGHT"/>
+		<item value="-11" key="DIALOG_X_ORIGIN"/>
+		<item value="-158" key="DIALOG_Y_ORIGIN"/>
+	</section>
 </section>

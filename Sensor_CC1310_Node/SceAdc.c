@@ -45,7 +45,7 @@
 
 /***** Variable declarations *****/
 static SceAdc_adcCallback adcCallback;
-static SceDigital_digitalCallback digitalCallback;
+//static SceDigital_digitalCallback digitalCallback;
 
 
 /***** Prototypes *****/
@@ -86,9 +86,9 @@ void SceAdc_registerAdcCallback(SceAdc_adcCallback callback) {
     adcCallback = callback;
 }
 
-void SceDigital_registerDigitalCallback(SceDigital_digitalCallback callback) {
-    digitalCallback = callback;
-}
+//void SceDigital_registerDigitalCallback(SceDigital_digitalCallback callback) {
+//    digitalCallback = callback;
+//}
 
 
 static void ctrlReadyCallback(void) {
@@ -112,10 +112,10 @@ static void taskAlertCallback(void) {
         {
             adcCallback(pOutput->adcValue);
         }
-        if (digitalCallback)
-        {
-            digitalCallback(pOutput->digitalValue);
-        }
+//        if (digitalCallback)
+//        {
+//            digitalCallback(pOutput->digitalValue);
+//        }
     }
 
 

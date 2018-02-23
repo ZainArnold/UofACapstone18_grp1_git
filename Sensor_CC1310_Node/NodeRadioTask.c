@@ -275,29 +275,27 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
 
         // If we should send Digital Data
         if (events & RADIO_EVENT_SEND_DIGITAL_DATA)
-                {
-                    uint32_t currentTicks;
+        {
+            uint32_t currentTicks;
 
-                    currentTicks = Clock_getTicks();
-                    //check for wrap around
-                    if (currentTicks > prevTicks)
-                    {
-                        //calculate time since last reading in 0.1s units
-                        dmSensorPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;
-                    }
-                    else
-                    {
-                        //calculate time since last reading in 0.1s units
-                        dmSensorPacket.time100MiliSec += ((prevTicks - currentTicks) * Clock_tickPeriod) / 100000;
-                    }
-                    prevTicks = currentTicks;
-
-                    dmSensorPacket.batt = AONBatMonBatteryVoltageGet();
-                    dmSensorPacket.digitalValue = digitalData;
-                    dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
-
-                    sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
-                }
+            currentTicks = Clock_getTicks();
+            //check for wrap around
+            if (currentTicks > prevTicks)
+            {
+                //calculate time since last reading in 0.1s units
+                dmSensorPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;
+            }
+            else
+            {
+                //calculate time since last reading in 0.1s units
+                dmSensorPacket.time100MiliSec += ((prevTicks - currentTicks) * Clock_tickPeriod) / 100000;
+            }
+            prevTicks = currentTicks;
+            dmSensorPacket.batt = AONBatMonBatteryVoltageGet();
+            dmSensorPacket.digitalValue = digitalData;
+            dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
+            sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
+        }
 
         /* If we get an ACK from the concentrator */
         if (events & RADIO_EVENT_DATA_ACK_RECEIVED)
@@ -399,19 +397,32 @@ static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNu
     /* Set destination address in EasyLink API */
     currentRadioOperation.easyLinkTxPacket.dstAddr[0] = RADIO_CONCENTRATOR_ADDRESS;
 
+//    #define RADIO_EVENT_ALL                 0xFFFFFFFF
+//    #define RADIO_EVENT_SEND_ADC_DATA       (uint32_t)(1 << 0)
+//    #define RADIO_EVENT_SEND_DIGITAL_DATA   (uint32_t)(1 << 5)
+//    #define RADIO_EVENT_DATA_ACK_RECEIVED   (uint32_t)(1 << 1)
+//    #define RADIO_EVENT_ACK_TIMEOUT         (uint32_t)(1 << 2)
+//    #define RADIO_EVENT_SEND_FAIL           (uint32_t)(1 << 3)
+//    #ifdef FEATURE_BLE_ADV
+//    #define NODE_EVENT_UBLE                 (uint32_t)(1 << 4)
+//    #endif
+
+
     /* Copy ADC packet to payload
      * Note that the EasyLink API will implcitily both add the length byte and the destination address byte. */
     currentRadioOperation.easyLinkTxPacket.payload[0] = dmSensorPacket.header.sourceAddress;
     currentRadioOperation.easyLinkTxPacket.payload[1] = dmSensorPacket.header.packetType;
     currentRadioOperation.easyLinkTxPacket.payload[2] = (dmSensorPacket.adcValue & 0xFF00) >> 8;
     currentRadioOperation.easyLinkTxPacket.payload[3] = (dmSensorPacket.adcValue & 0xFF);
-    currentRadioOperation.easyLinkTxPacket.payload[4] = (dmSensorPacket.batt & 0xFF00) >> 8;
-    currentRadioOperation.easyLinkTxPacket.payload[5] = (dmSensorPacket.batt & 0xFF);
-    currentRadioOperation.easyLinkTxPacket.payload[6] = (dmSensorPacket.time100MiliSec & 0xFF000000) >> 24;
-    currentRadioOperation.easyLinkTxPacket.payload[7] = (dmSensorPacket.time100MiliSec & 0x00FF0000) >> 16;
-    currentRadioOperation.easyLinkTxPacket.payload[8] = (dmSensorPacket.time100MiliSec & 0xFF00) >> 8;
-    currentRadioOperation.easyLinkTxPacket.payload[9] = (dmSensorPacket.time100MiliSec & 0xFF);
-    currentRadioOperation.easyLinkTxPacket.payload[10] = dmSensorPacket.button;
+    currentRadioOperation.easyLinkTxPacket.payload[4] = (dmSensorPacket.digitalValue & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[5] = (dmSensorPacket.digitalValue & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[6] = (dmSensorPacket.batt & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[7] = (dmSensorPacket.batt & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[8] = (dmSensorPacket.time100MiliSec & 0xFF000000) >> 24;
+    currentRadioOperation.easyLinkTxPacket.payload[9] = (dmSensorPacket.time100MiliSec & 0x00FF0000) >> 16;
+    currentRadioOperation.easyLinkTxPacket.payload[10] = (dmSensorPacket.time100MiliSec & 0xFF00) >> 8;
+    currentRadioOperation.easyLinkTxPacket.payload[11] = (dmSensorPacket.time100MiliSec & 0xFF);
+    currentRadioOperation.easyLinkTxPacket.payload[12] = dmSensorPacket.button;
 
     currentRadioOperation.easyLinkTxPacket.len = sizeof(struct DualModeSensorPacket);
 

@@ -18,15 +18,74 @@ gmake[2]: Nothing to be done for 'all'.
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
 'Finished building: ../NodeRadioTask.c'
 ' '
-'Building file: ../rfWsnNode.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
-'Finished building: ../rfWsnNode.c'
+'Building target: Sensor_CC1310_Node.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: Sensor_CC1310_Node.out'
 ' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: 'Sensor_CC1310_Node.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
 'Building file: ../NodeTask.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
 "../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 735: warning #179-D: function "digitalCallback" was declared but never referenced
 'Finished building: ../NodeTask.c'
 ' '
 'Building target: Sensor_CC1310_Node.out'
@@ -92,10 +151,12 @@ gmake[2]: Nothing to be done for 'all'.
 **** Build of configuration Debug for project Sensor_CC1310_Node ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-'Building file: ../NodeRadioTask.c'
+'Building file: ../NodeTask.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
-'Finished building: ../NodeRadioTask.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 736: warning #179-D: function "digitalCallback" was declared but never referenced
+'Finished building: ../NodeTask.c'
 ' '
 'Building target: Sensor_CC1310_Node.out'
 'Invoking: ARM Linker'
@@ -131,147 +192,320 @@ gmake[2]: Nothing to be done for 'all'.
 **** Build of configuration Debug for project Sensor_CC1310_Node ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-'Building file: ../sce/scif.c'
+gmake[1]: 'Sensor_CC1310_Node.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../NodeTask.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif.c"
-'Finished building: ../sce/scif.c'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"../NodeTask.c", line 743: error #20: identifier "NODE_EVENT_MOTIONSENSE" is undefined
+"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 736: warning #179-D: function "digitalCallback" was declared but never referenced
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../NodeTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 230: warning #179-D: function "digitalCallback" was declared but never referenced
+'Finished building: ../NodeTask.c'
 ' '
+'Building target: Sensor_CC1310_Node.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: Sensor_CC1310_Node.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../NodeTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"../NodeTask.c", line 171: warning #179-D: variable "latestMotionData" was declared but never referenced
+"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 230: warning #179-D: function "digitalCallback" was declared but never referenced
+'Finished building: ../NodeTask.c'
+' '
+'Building target: Sensor_CC1310_Node.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: Sensor_CC1310_Node.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+gmake[1]: 'Sensor_CC1310_Node.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../SceAdc.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
+
+>> Compilation failure
+subdir_rules.mk:30: recipe for target 'SceAdc.obj' failed
+"../SceAdc.c", line 48: error #20: identifier "SceDigital_digitalCallback" is undefined
+"../SceAdc.c", line 89: error #20: identifier "SceDigital_digitalCallback" is undefined
+2 errors detected in the compilation of "../SceAdc.c".
+gmake: *** [SceAdc.obj] Error 1
+'Building file: ../NodeTask.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"../NodeTask.c", line 171: warning #179-D: variable "latestMotionData" was declared but never referenced
+"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
+"../NodeTask.c", line 230: warning #179-D: function "digitalCallback" was declared but never referenced
+'Finished building: ../NodeTask.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../SceAdc.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
+
+>> Compilation failure
+subdir_rules.mk:30: recipe for target 'SceAdc.obj' failed
+"../SceAdc.c", line 48: error #20: identifier "SceDigital_digitalCallback" is undefined
+1 error detected in the compilation of "../SceAdc.c".
+gmake: *** [SceAdc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+'Building file: ../SceAdc.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
+
+>> Compilation failure
+subdir_rules.mk:30: recipe for target 'SceAdc.obj' failed
+"../SceAdc.c", line 115: error #20: identifier "digitalCallback" is undefined
+1 error detected in the compilation of "../SceAdc.c".
+gmake: *** [SceAdc.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
 'Building file: ../SceAdc.c'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
 'Finished building: ../SceAdc.c'
 ' '
-'Building file: ../sce/scif_osal_tirtos.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
-'Finished building: ../sce/scif_osal_tirtos.c'
-' '
-'Building file: ../NodeTask.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
-"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
-'Finished building: ../NodeTask.c'
-' '
-'Building file: ../sce/scif_framework.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_framework.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_framework.c"
-'Finished building: ../sce/scif_framework.c'
-' '
 'Building target: Sensor_CC1310_Node.out'
 'Invoking: ARM Linker'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
 <Linking>
 'Finished building target: Sensor_CC1310_Node.out'
 ' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Sensor_CC1310_Node ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-'Building file: ../NodeTask.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
-"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
-'Finished building: ../NodeTask.c'
-' '
-'Building target: Sensor_CC1310_Node.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: Sensor_CC1310_Node.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Sensor_CC1310_Node ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-'Building file: ../NodeTask.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
-"../NodeTask.c", line 180: warning #179-D: variable "ledPinState" was declared but never referenced
-"../NodeTask.c", line 740: warning #179-D: function "digitalCallback" was declared but never referenced
-'Finished building: ../NodeTask.c'
-' '
-'Building target: Sensor_CC1310_Node.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: Sensor_CC1310_Node.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
-making ../src/sysbios/rom_sysbios.aem3 ...
-gmake[2]: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Sensor_CC1310_Node ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
-gmake[1]: 'Sensor_CC1310_Node.out' is up to date.
 
 **** Build Finished ****
