@@ -1,0 +1,657 @@
+[
+  {
+    "id": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "name": "SimpleLink CC13x0 SDK",
+    "version": "1.50.00.08",
+    "type": "software",
+    "image": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/cc1310fancy.jpg",
+    "description": "<p>The SimpleLink CC13x0 SDK is part of TI’s SimpleLink MCU platform, offering a single development environment that delivers flexible hardware, software and tool options for customers developing wired and wireless applications. SimpleLink™ CC13x0 Software Development Kit (SDK) is a set of software development tools that enables engineers to develop software applications on the SimpleLink™ CC13x0 ULP devices. This powerful software toolkit provides a cohesive and consistent software experience for all SimpleLink™ CC13x0 users by packaging essential software components such as TI RTOS, peripheral drivers, TI 15.4-Stack, Bluetooth Low Energy, and RF-Proprietary examples in one easy-to-use software package along with exhaustive documentation. For more information, visit <a href=\"http://www.ti.com/simplelink\">http://www.ti.com/simplelink</a>.</p>",
+    "allowPartialDownload": false,
+    "devices": [
+      "CC13X0",
+      "CC1310F128",
+      "CC1350F128"
+    ],
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "dependencies": [
+      {
+        "version": "3.50.03.33",
+        "require": "optional",
+        "refId": "xdctools",
+        "semver": "3.50.3",
+        "versionRange": "3.50.03.33"
+      },
+      {
+        "refId": "com.ti.SIMPLELINK_ACADEMY_CC13X0SDK",
+        "versionRange": "1.14.02.04",
+        "require": "optional",
+        "semver": "1.14.2",
+        "version": "1.14.02.04"
+      }
+    ],
+    "metadataVersion": "2.1.0",
+    "_id": "BV3KdjoWhmcrTA",
+    "package": "SimpleLink CC13x0 SDK",
+    "semver": "1.50.0",
+    "advanced": {},
+    "rootCategory": [
+      "Software",
+      "SimpleLink CC13x0 SDK"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "packageOrder": 22,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "includedFilesForDownload": [
+      "simplelink_cc13x0_sdk_1_50_00_08"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [
+      "CC1310F128",
+      "CC1350F128"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad",
+      "CC1350 LaunchPad",
+      "CC1350 SensorTag",
+      "CC1310 Development Kit",
+      "SEGGER J-Link",
+      "IAR I-JET",
+      "IAR Embedded Workbench for ARM",
+      "ELPROTRONIC",
+      "SEGGER",
+      "ELNEC",
+      "BPM Microsystems",
+      "DATA IO",
+      "Sensor Controller Studio",
+      "SmartRF Studio",
+      "Code Composer Studio (CCS)",
+      "UniFlash",
+      "PinMux",
+      "GUI Composer",
+      "XDS100v2 JTAG Debug Probe (14-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (20-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (ARM version)",
+      "XDS110 Debug Probe",
+      "XDS200 USB Debug Probe",
+      "XDS560v2 System Trace USB Debug Probe"
+    ],
+    "localPackagePath": "c:\\ti\\simplelink_cc13x0_sdk_1_50_00_08",
+    "local": "full"
+  },
+  {
+    "id": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "name": "SimpleLink CC13x0 SDK",
+    "version": "1.60.00.21",
+    "type": "software",
+    "image": "simplelink_cc13x0_sdk_1_60_00_21/.metadata/.tirex/cc1310fancy.jpg",
+    "description": "<p>The SimpleLink CC13x0 SDK is part of TI’s SimpleLink MCU platform, offering a single development environment that delivers flexible hardware, software and tool options for customers developing wired and wireless applications. SimpleLink™ CC13x0 Software Development Kit (SDK) is a set of software development tools that enables engineers to develop software applications on the SimpleLink™ CC13x0 ULP devices. This powerful software toolkit provides a cohesive and consistent software experience for all SimpleLink™ CC13x0 users by packaging essential software components such as TI RTOS, peripheral drivers, TI 15.4-Stack, Bluetooth Low Energy, and RF-Proprietary examples in one easy-to-use software package along with exhaustive documentation. For more information, visit <a href=\"http://www.ti.com/simplelink\">http://www.ti.com/simplelink</a>.</p>",
+    "allowPartialDownload": false,
+    "devices": [
+      "CC13X0",
+      "CC1310F128",
+      "CC1350F128"
+    ],
+    "license": "simplelink_cc13x0_sdk_1_60_00_21/license_simplelink_cc13x0_sdk_1_60_00_21.txt",
+    "dependencies": [
+      {
+        "version": "3.50.04.43",
+        "require": "optional",
+        "refId": "xdctools",
+        "semver": "3.50.4",
+        "versionRange": "3.50.04.43"
+      },
+      {
+        "refId": "com.ti.SIMPLELINK_ACADEMY_CC13X0SDK",
+        "versionRange": "1.15.03.10",
+        "require": "optional",
+        "semver": "1.15.3",
+        "version": "1.15.03.10"
+      }
+    ],
+    "metadataVersion": "2.1.0",
+    "_id": "BV3KkONU_T1n70",
+    "package": "SimpleLink CC13x0 SDK",
+    "semver": "1.60.0",
+    "advanced": {},
+    "rootCategory": [
+      "Software",
+      "SimpleLink CC13x0 SDK"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "simplelink_cc13x0_sdk_1_60_00_21",
+    "packageOrder": 23,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "com.ti.SIMPLELINK_CC13X0_SDK__1.60.00.21"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.60.00.21",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.60.00.21",
+    "includedFilesForDownload": [
+      "simplelink_cc13x0_sdk_1_60_00_21"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [
+      "CC1310F128",
+      "CC1350F128"
+    ],
+    "devtools": [
+      "CC1310 LaunchPad",
+      "CC1350 LaunchPad",
+      "CC1350 SensorTag",
+      "CC1310 Development Kit",
+      "SEGGER J-Link",
+      "IAR I-JET",
+      "IAR Embedded Workbench for ARM",
+      "ELPROTRONIC",
+      "SEGGER",
+      "ELNEC",
+      "BPM Microsystems",
+      "DATA IO",
+      "Sensor Controller Studio",
+      "SmartRF Studio",
+      "Code Composer Studio (CCS)",
+      "UniFlash",
+      "PinMux",
+      "GUI Composer",
+      "XDS100v2 JTAG Debug Probe (14-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (20-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (ARM version)",
+      "XDS110 Debug Probe",
+      "XDS200 USB Debug Probe",
+      "XDS560v2 System Trace USB Debug Probe"
+    ],
+    "localPackagePath": "c:\\ti\\simplelink_cc13x0_sdk_1_60_00_21",
+    "local": "full"
+  },
+  {
+    "metadataVersion": "3.0.0",
+    "id": "com.ti.SIMPLELINK_CC2640R2_SDK",
+    "name": "SimpleLink CC2640R2 SDK",
+    "version": "1.40.00.45",
+    "type": "software",
+    "devices": [
+      "CC26X0",
+      "CC2640R2F"
+    ],
+    "allowPartialDownload": false,
+    "image": "simplelink_cc2640r2_sdk_1_40_00_45/.metadata/.tirex/cc2640r2-tirex.png",
+    "license": "simplelink_cc2640r2_sdk_1_40_00_45/license_simplelink_cc2640r2_sdk_1_40_00_45.txt",
+    "dependencies": [
+      {
+        "version": "3.50.02.20",
+        "require": "optional",
+        "refId": "xdctools",
+        "semver": "3.50.2",
+        "versionRange": "3.50.02.20"
+      },
+      {
+        "refId": "com.ti.SIMPLELINK_ACADEMY_CC2640R2SDK",
+        "versionRange": "1.13.03.11",
+        "require": "optional",
+        "semver": "1.13.3",
+        "version": "1.13.03.11"
+      }
+    ],
+    "description": "Welcome to the SimpleLink CC2640R2 SDK",
+    "_id": "BV3jVQOOUrqI6Q",
+    "package": "SimpleLink CC2640R2 SDK",
+    "semver": "1.40.0",
+    "advanced": {},
+    "rootCategory": [
+      "Software",
+      "SimpleLink CC2640R2 SDK"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "simplelink_cc2640r2_sdk_1_40_00_45",
+    "packageOrder": 36,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "com.ti.SIMPLELINK_CC2640R2_SDK",
+    "packageVersion": "1.40.00.45",
+    "packageUId": "com.ti.SIMPLELINK_CC2640R2_SDK__1.40.00.45",
+    "includedFilesForDownload": [
+      "simplelink_cc2640r2_sdk_1_40_00_45"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [
+      "CC2640R2F"
+    ],
+    "devtools": [
+      "Code Composer Studio (CCS)",
+      "UniFlash",
+      "PinMux",
+      "GUI Composer",
+      "XDS100v2 JTAG Debug Probe (14-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (20-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (ARM version)",
+      "XDS110 Debug Probe",
+      "XDS200 USB Debug Probe",
+      "XDS560v2 System Trace USB Debug Probe",
+      "CC2640R2 LaunchPad",
+      "CC2640R2 Remote Control",
+      "SEGGER J-Link",
+      "IAR I-JET",
+      "IAR Embedded Workbench for ARM",
+      "ELPROTRONIC",
+      "SEGGER",
+      "ELNEC",
+      "BPM Microsystems",
+      "DATA IO"
+    ],
+    "localPackagePath": "c:\\ti\\simplelink_cc2640r2_sdk_1_40_00_45",
+    "local": "full"
+  },
+  {
+    "version": "1.40.01.00",
+    "allowPartialDownload": false,
+    "id": "com.ti.SIMPLELINK_CC32XX_SDK",
+    "type": "software",
+    "description": "The SimpleLink™ Wi-Fi® CC3220 device is a single-chip microcontroller (MCU) with built-in Wi-Fi connectivity, created for the Internet of Things (IoT).</br><p>The CC3220 device is a wireless MCU that integrates a high-performance ARM® Cortex®-M4 MCU, allowing customers to develop an entire application with a single IC. The Texas Instruments royalty-free CC3220 Embedded Wi-Fi foundation software development kit (SDK) is a complete software platform for developing Wi-Fi applications. It is based on the CC3220, a complete Wi-Fi SoC (System-on-Chip) solution.</p><p>The CC3220 family of devices comes in following three variants:</br>CC3220-Base variant</br>CC3220S-CC3220 and MCU security</br>CC3220SF-CC3220S and internal flash</br><p></p><p>The CC3220 solution combines a 2.4-GHz Wi-Fi PHY/MAC and TCP/IP networking engine with a microcontroller, up to 256-kB on-chip RAM, 1-MB internal flash (for CC3220 SF), and a comprehensive range of peripherals.</p><p>For more information, visit <a href=\"http://www.ti.com/simplelink\">http://www.ti.com/simplelink</a>.</p>",
+    "image": "simplelink_cc32xx_sdk_1_40_01_00/docs/images/simplelink_cc3220_sdk_logo.png",
+    "devices": [
+      "CC3220",
+      "CC3220S",
+      "CC3220SF"
+    ],
+    "metadataVersion": "2.1.0",
+    "name": "SimpleLink CC3220 SDK",
+    "dependencies": [
+      {
+        "version": "3.50.02.20",
+        "require": "optional",
+        "refId": "xdctools",
+        "semver": "3.50.2",
+        "versionRange": "3.50.02.20"
+      },
+      {
+        "refId": "com.ti.SIMPLELINK_ACADEMY_CC32XXSDK",
+        "versionRange": "1.13.00.29",
+        "require": "optional",
+        "semver": "1.13.0",
+        "version": "1.13.00.29"
+      }
+    ],
+    "_id": "BV3Oo9-utPIOEg",
+    "package": "SimpleLink CC3220 SDK",
+    "semver": "1.40.1",
+    "advanced": {},
+    "rootCategory": [
+      "Software",
+      "SimpleLink CC3220 SDK"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "simplelink_cc32xx_sdk_1_40_01_00",
+    "packageOrder": 40,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "com.ti.SIMPLELINK_CC32XX_SDK",
+    "packageVersion": "1.40.01.00",
+    "packageUId": "com.ti.SIMPLELINK_CC32XX_SDK__1.40.01.00",
+    "includedFilesForDownload": [
+      "simplelink_cc32xx_sdk_1_40_01_00"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [
+      "CC3220S",
+      "CC3220SF"
+    ],
+    "devtools": [
+      "Code Composer Studio (CCS)",
+      "UniFlash",
+      "PinMux",
+      "GUI Composer",
+      "XDS100v2 JTAG Debug Probe (14-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (20-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (ARM version)",
+      "XDS110 Debug Probe",
+      "XDS200 USB Debug Probe",
+      "XDS560v2 System Trace USB Debug Probe",
+      "CC3220S-LAUNCHXL",
+      "CC3220SF-LAUNCHXL"
+    ],
+    "localPackagePath": "c:\\ti\\simplelink_cc32xx_sdk_1_40_01_00",
+    "local": "full"
+  },
+  {
+    "id": "com.ti.SAIL",
+    "name": "SimpleLink Sensor and Actuator Plugin",
+    "version": "1.10.00.06",
+    "type": "software",
+    "image": "sail_1_10_00_06/.metadata/.tirex/sailplugin.png",
+    "description": "Quicken your development time in interfacing sensors and actuators, The sensor and actuator plugin for SimpleLink SDK eases your efforts to interface sensors and actuator. Using this GUI or clicking through the folder tree to the left, we offer code examples, documentation and other resources - all at the tip of your fingers.",
+    "dependencies": [
+      {
+        "version": "1.40.01.0",
+        "refId": "com.ti.SIMPLELINK_MSP432_SDK",
+        "semver": "1.40.1",
+        "versionRange": "1.40.01.0"
+      },
+      {
+        "version": "1.40.00.45",
+        "require": "optional",
+        "refId": "com.ti.SIMPLELINK_CC2640R2_SDK",
+        "semver": "1.40.0",
+        "versionRange": "1.40.00.45"
+      },
+      {
+        "version": "1.40.01.00",
+        " require": "optional",
+        "refId": "com.ti.SIMPLELINK_CC32XX_SDK",
+        "semver": "1.40.1",
+        "versionRange": "1.40.01.00"
+      },
+      {
+        "version": "1.40.01.00",
+        " require": "optional",
+        "refId": "com.ti.SIMPLELINK_CC13X0_SDK",
+        "semver": "1.40.1",
+        "versionRange": "1.40.01.00"
+      }
+    ],
+    "allowPartialDownload": false,
+    "devices": [
+      "CC32XX",
+      "MSP432P4XX",
+      "CC3200",
+      "MSP432P401M",
+      "MSP432P401R",
+      "MSP432P4111"
+    ],
+    "metadataVersion": "2.1.0",
+    "rootCategory": [
+      "Software",
+      "SimpleLink SDK Plugins",
+      "SimpleLink Sensor and Actuator Plugin"
+    ],
+    "_id": "BV3ctJnR6Wz1-I",
+    "package": "SimpleLink Sensor and Actuator Plugin",
+    "semver": "1.10.0",
+    "advanced": {},
+    "categories": [
+      [
+        "Software",
+        "SimpleLink SDK Plugins"
+      ]
+    ],
+    "packagePath": "sail_1_10_00_06",
+    "packageOrder": 51,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "com.ti.SAIL__1.10.00.06"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "com.ti.SAIL",
+    "packageVersion": "1.10.00.06",
+    "packageUId": "com.ti.SAIL__1.10.00.06",
+    "includedFilesForDownload": [
+      "sail_1_10_00_06"
+    ],
+    "fullPaths": [
+      [
+        "Software",
+        "SimpleLink SDK Plugins"
+      ]
+    ],
+    "devicesVariants": [
+      "CC3200",
+      "MSP432P401M",
+      "MSP432P401R",
+      "MSP432P4111"
+    ],
+    "devtools": [
+      "Code Composer Studio (CCS)",
+      "UniFlash",
+      "PinMux",
+      "GUI Composer",
+      "XDS100v2 JTAG Debug Probe (14-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (20-pin TI version)",
+      "XDS100v2 JTAG Debug Probe (ARM version)",
+      "XDS110 Debug Probe",
+      "XDS200 USB Debug Probe",
+      "XDS560v2 System Trace USB Debug Probe",
+      "CC3200-LAUNCHXL",
+      "MSP-FET",
+      "KEIL ULink",
+      "SEGGER J-Link",
+      "IAR I-JET",
+      "MSP GDB",
+      "MSP432 Adapter for MSP-FET",
+      "IAR Embedded Workbench for ARM",
+      "KEIL MDK-ARM",
+      "ROWLEY CrossWorks for ARM",
+      "MSP432 GCC",
+      "EMPROG ThunderBench for ARM",
+      "MSP-GANG",
+      "MSP432 Adapter for MSP-GANG",
+      "ELPROTRONIC",
+      "SEGGER",
+      "ELNEC",
+      "MSP Flasher",
+      "Bootloader (BSL) for MSP",
+      "MSP432 Security and Update Tool",
+      "MSP432P401R LaunchPad - Red 2.x (Red)",
+      "MSP432P4111 LaunchPad"
+    ],
+    "localPackagePath": "c:\\ti\\sail_1_10_00_06",
+    "local": "full"
+  },
+  {
+    "metadataVersion": "3.0.0",
+    "type": "software",
+    "id": "c2000ware_software_package",
+    "name": "C2000Ware",
+    "version": "1.00.02.00",
+    "license": "C2000Ware_1_00_02_00_Software/.metadata/.tirex/license/license.txt",
+    "image": "C2000Ware_1_00_02_00_Software/.metadata/.tirex/package/c2000ware.png",
+    "allowPartialDownload": false,
+    "devices": [],
+    "description": "Welcome to C2000Ware! C2000Ware for C2000 microcontrollers is a cohesive set of development software and documentation designed to minimize software development time. From device-specific drivers and libraries to device peripheral examples, C2000Ware provides a solid foundation to begin development and evaluation of your product.",
+    "_id": "BV3y3qNnmbpq9A",
+    "package": "C2000Ware",
+    "semver": "1.0.2",
+    "advanced": {},
+    "dependencies": [],
+    "rootCategory": [
+      "Software",
+      "C2000Ware"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "C2000Ware_1_00_02_00_Software",
+    "packageOrder": 78,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "c2000ware_software_package__1.00.02.00"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "c2000ware_software_package",
+    "packageVersion": "1.00.02.00",
+    "packageUId": "c2000ware_software_package__1.00.02.00",
+    "includedFilesForDownload": [
+      "C2000Ware_1_00_02_00_Software"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [],
+    "localPackagePath": "c:\\ti\\C2000Ware_1_00_02_00_Software",
+    "local": "full"
+  },
+  {
+    "metadataVersion": "3.0.0",
+    "id": "xdctools",
+    "name": "XDCTools",
+    "version": "3.50.03.33",
+    "image": "xdctools_3_50_03_33_core/.metadata/.tirex/logo.png",
+    "type": "software",
+    "description": "Tools for developing and using embedded target content that extends or depends on <a href:\"http://www.eclipse.org/rtsc\">RTSC</a>",
+    "allowPartialDownload": false,
+    "_id": "BV3FW3UnPABIBo",
+    "package": "XDCTools",
+    "semver": "3.50.3",
+    "advanced": {},
+    "dependencies": [],
+    "rootCategory": [
+      "Software",
+      "XDCTools"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "xdctools_3_50_03_33_core",
+    "packageOrder": 103,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "xdctools__3.50.03.33"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "xdctools",
+    "packageVersion": "3.50.03.33",
+    "packageUId": "xdctools__3.50.03.33",
+    "includedFilesForDownload": [
+      "xdctools_3_50_03_33_core"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [],
+    "devices": [],
+    "local": "full",
+    "localPackagePath": "c:\\ti\\xdctools_3_50_03_33_core"
+  },
+  {
+    "metadataVersion": "3.0.0",
+    "id": "xdctools",
+    "name": "XDCTools",
+    "version": "3.50.04.43",
+    "image": "xdctools_3_50_04_43_core/.metadata/.tirex/logo.png",
+    "type": "software",
+    "description": "Tools for developing and using embedded target content that extends or depends on <a href:\"http://www.eclipse.org/rtsc\">RTSC</a>",
+    "allowPartialDownload": false,
+    "_id": "BV3N1A3M0y578Y",
+    "package": "XDCTools",
+    "semver": "3.50.4",
+    "advanced": {},
+    "dependencies": [],
+    "rootCategory": [
+      "Software",
+      "XDCTools"
+    ],
+    "categories": [
+      [
+        "Software"
+      ]
+    ],
+    "packagePath": "xdctools_3_50_04_43_core",
+    "packageOrder": 138,
+    "resourceType": "packageOverview",
+    "includedResources": [
+      {
+        "package": "xdctools__3.50.04.43"
+      }
+    ],
+    "includedFiles": [
+      "."
+    ],
+    "packageId": "xdctools",
+    "packageVersion": "3.50.04.43",
+    "packageUId": "xdctools__3.50.04.43",
+    "includedFilesForDownload": [
+      "xdctools_3_50_04_43_core"
+    ],
+    "fullPaths": [
+      [
+        "Software"
+      ]
+    ],
+    "devicesVariants": [],
+    "devices": [],
+    "localPackagePath": "c:\\ti\\xdctools_3_50_04_43_core",
+    "local": "full"
+  }
+]

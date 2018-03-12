@@ -203,9 +203,8 @@ gpioEnableInputBuf(AUXIO_I_D_INPUT);
 gpioCfgMode(AUXIO_I_D_INPUT, GPIO_MODE_INPUT);
 
 // Sample the ADC
-S16 adcValue;
-S16 digitalValue = 0;
-U16 signal;
+
+
 adcGenManualTrigger();
 adcReadFifo(adcValue);
 
@@ -270,7 +269,9 @@ state.oldAdcMaskedBits = adcValue & cfg.changeMask;
 fwScheduleTask(1);]]></sccode>
         <sccode name="initialize" init_power_mode="0"><![CDATA[// Select ADC input (A2 / DIO25)
 adcSelectGpioInput(2);
-
+S16 adcValue;
+S16 digitalValue = 0;
+U16 signal;
 // Schedule the first execution
 fwScheduleTask(1);]]></sccode>
         <sccode name="terminate" init_power_mode="0"><![CDATA[]]></sccode>

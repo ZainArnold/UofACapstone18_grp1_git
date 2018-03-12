@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SceAdc_adcCallback" key="selection"/>
+		<item value="sendAck" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="SceAdc_adcCallback"/>
-			<item value="latestTempValue"/>
-			<item value="NODE_EVENT_NEW_TEMP_VALUE"/>
-			<item value="ti_sysbios_knl_Event_Struct"/>
-			<item value="ti_sysbios_knl_Event_Object"/>
-			<item value="NODE_EVENT_ALL"/>
-			<item value="adcData"/>
-			<item value="tempValue"/>
+			<item value="sendack"/>
+			<item value="rxDoneCallback"/>
+			<item value="ConcentratorRadioTask_registerPacketReceivedCallback"/>
+			<item value="ConcentratorRadio_PacketReceivedCallback"/>
+			<item value="packetReceivedCallback"/>
+			<item value="CONCENTRATOR_EVENT_NEW_ADC_SENSOR_VALUE"/>
+			<item value="sendAck"/>
+			<item value="ConcentratorRadioTask_init"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -24,7 +24,7 @@
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="387" key="DIALOG_HEIGHT"/>
-		<item value="590" key="DIALOG_X_ORIGIN"/>
-		<item value="308" key="DIALOG_Y_ORIGIN"/>
+		<item value="1619" key="DIALOG_X_ORIGIN"/>
+		<item value="278" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\git\UofACapstone18_grp1_git\Sensor_CC1310_Node_3"/>
 		<item value="C:\ti\simplelink_cc13x0_sdk_1_60_00_21"/>
 	</list>
 	<section name="WORKBENCH_SETTINGS">
