@@ -43,18 +43,29 @@ enum ConcentratorRadioOperationStatus {
     ConcentratorRadioStatus_FailedNotConnected,
 };
 
+enum NodeRadioOperationStatus {
+    NodeRadioStatus_Success,
+    NodeRadioStatus_Failed,
+    NodeRadioStatus_FailedNotConnected,
+};
+
 union ConcentratorPacket {
     struct PacketHeader header;
     struct AdcSensorPacket adcSensorPacket;
-    struct DualModeSensorPacket dmSensorPacket;
+    struct DualModeVentPacket dmSensorPacket;
 };
 
 typedef void (*ConcentratorRadio_PacketReceivedCallback)(union ConcentratorPacket* packet, int8_t rssi);
+
+
 
 /* Create the ConcentratorRadioTask and creates all TI-RTOS objects */
 void ConcentratorRadioTask_init(void);
 
 /* Register the packet received callback */
 void ConcentratorRadioTask_registerPacketReceivedCallback(ConcentratorRadio_PacketReceivedCallback callback);
+
+/* Sends an ADC value to the concentrator */
+enum NodeRadioOperationStatus NodeRadioTask_sendVentData(uint16_t data, uint8_t address);
 
 #endif /* TASKS_CONCENTRATORRADIOTASKTASK_H_ */

@@ -110,6 +110,8 @@ uint8_t DeviceFilter = 0x0F;
 uint8_t SpecificRoomFilter = 0x00;
 uint8_t SensorFilter = (0x08);
 uint8_t VentFilter = (0x07);
+uint8_t VentAddress = (0x00);
+uint16_t AdcValue = (0x0000);
 
 /***** Prototypes *****/
 static void concentratorTaskFunction(UArg arg0, UArg arg1);
@@ -532,6 +534,7 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
                 }
                 else if(  ((RoomActiveAddress & DeviceFilter) <= VentFilter) & ((RoomActiveAddress & RoomFilter) == SpecificRoomFilter) ){
                     Room[n].VentActive = 1;
+
                 }
                 else {
                     Room[n].SensorActive = 0;
@@ -542,7 +545,10 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
 //                    Room[n].MotionDetected = MotionFilter(latestActiveAdcSensorNode.latestAdcValue);
 //                }
             }
+            VentAddress = SpecificRoomFilter+1;
+            AdcValue = latestActiveAdcSensorNode.latestAdcValue;
 
+            NodeRadioTask_sendVentData(AdcValue, VentAddress);
             /* Update the values on the LCD */
             updateLcd(n);
 
@@ -571,7 +577,6 @@ static void packetReceivedCallback(union ConcentratorPacket* packet, int8_t rssi
         /* Save the values */
         latestActiveAdcSensorNode.address = packet->header.sourceAddress;
         latestActiveAdcSensorNode.latestAdcValue = packet->dmSensorPacket.adcValue;
-        latestActiveAdcSensorNode.button = packet->dmSensorPacket.button;
         latestActiveAdcSensorNode.latestRssi = rssi;
 
         Event_post(concentratorEventHandle, CONCENTRATOR_EVENT_NEW_ADC_SENSOR_VALUE);

@@ -53,12 +53,10 @@ struct AdcSensorPacket {
     uint16_t adcValue;
 };
 
-struct DualModeSensorPacket {
+struct DualModeVentPacket {
     struct PacketHeader header;
     uint16_t adcValue;
-    uint16_t batt;
     uint32_t time100MiliSec;
-    uint8_t button;
 };
 
 struct AckPacket {

@@ -73,7 +73,8 @@
 #define NODE_ADCTASK_CHANGE_MASK                    0xFFF0
 
 /* Minimum slow Report interval is 50s (in units of samplingTime)*/
-#define NODE_ADCTASK_REPORTINTERVAL_SLOW                50
+#define NODE_ADCTASK_REPORTINTERVAL_SLOW                500
+#define NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS   30000
 /* Minimum fast Report interval is 1s (in units of samplingTime) for 30s*/
 #define NODE_ADCTASK_REPORTINTERVAL_FAST                5
 #define NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS   30000
@@ -217,7 +218,7 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
     }
 
     /* Start the SCE ADC task with 1s sample period and reacting to change in ADC value. */
-    SceAdc_init(0x00010000, NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
+    SceAdc_init(0x00010000, NODE_ADCTASK_REPORTINTERVAL_SLOW, NODE_ADCTASK_CHANGE_MASK);
     SceAdc_registerAdcCallback(adcCallback);
     SceAdc_start();
 
@@ -340,7 +341,7 @@ static void buttonCallback(PIN_Handle handle, PIN_Id pinId)
     if (PIN_getInputValue(Board_PIN_BUTTON0) == 0)
     {
         //start fast report and timeout
-        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
+        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_SLOW, NODE_ADCTASK_CHANGE_MASK);
         Clock_start(fastReportTimeoutClockHandle);
     }
 #ifdef FEATURE_BLE_ADV
@@ -379,7 +380,7 @@ static void buttonCallback(PIN_Handle handle, PIN_Id pinId)
         Event_post(nodeEventHandle, NODE_EVENT_UPDATE_LCD);
 
         //start fast report and timeout
-        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
+        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_SLOW, NODE_ADCTASK_CHANGE_MASK);
         Clock_start(fastReportTimeoutClockHandle);
     }
 #endif

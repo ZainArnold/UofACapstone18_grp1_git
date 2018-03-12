@@ -197,6 +197,8 @@ ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/
 ConcentratorRadioTask.obj: C:/ti/xdctools_3_50_03_33_core/packages/xdc/runtime/IModule.h
 ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Event__epilogue.h
 ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Event.h
+ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Clock.h
+ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
 ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PIN.h
 ConcentratorRadioTask.obj: ../Board.h
 ConcentratorRadioTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h
@@ -420,6 +422,8 @@ C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Tas
 C:/ti/xdctools_3_50_03_33_core/packages/xdc/runtime/IModule.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Event__epilogue.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Event.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Clock.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PIN.h: 
 ../Board.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h: 

@@ -6,15 +6,31 @@
 'Building file: "../ConcentratorRadioTask.c"'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
-"../ConcentratorRadioTask.c", line 113: warning #179-D: function "sendDmPacket" was declared but never referenced
-"../ConcentratorRadioTask.c", line 114: warning #179-D: function "resendPacket" was declared but never referenced
+"../ConcentratorRadioTask.c", line 442: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 112: warning #179-D: variable "adcData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 114: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 136: warning #2120-D: static function "rxDoneCallbackSensor" treated as extern because it was referenced but not defined
+"../ConcentratorRadioTask.c", line 515: warning #179-D: function "rxDoneCallback" was declared but never referenced
 'Finished building: "../ConcentratorRadioTask.c"'
  
 'Building target: "Thermostat_CC1350_Concentrator_2.out"'
 'Invoking: ARM Linker'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
 <Linking>
-'Finished building target: "Thermostat_CC1350_Concentrator_2.out"'
- 
+
+ undefined                  first referenced           
+  symbol                        in file                
+ ---------                  ----------------           
+ returnRadioOperationStatus ./ConcentratorRadioTask.obj
+ rxDoneCallbackSensor       ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
 
 **** Build Finished ****

@@ -42,6 +42,7 @@
 #include <ti/sysbios/knl/Task.h>
 #include <ti/sysbios/knl/Semaphore.h>
 #include <ti/sysbios/knl/Event.h>
+#include <ti/sysbios/knl/Clock.h>
 
 /* Drivers */
 #include <ti/drivers/rf/RF.h>
@@ -62,12 +63,19 @@
 #define CONCENTRATORRADIO_TASK_PRIORITY   3
 
 #define RADIO_EVENT_ALL                  0xFFFFFFFF
-#define RADIO_EVENT_VALID_PACKET_RECEIVED      (uint32_t)(1 << 0)
-#define RADIO_EVENT_INVALID_PACKET_RECEIVED (uint32_t)(1 << 1)
-#define RADIO_EVENT_SEND_VENT_DATA          (uint32_t)(1 << 2)
+#define RADIO_EVENT_VALID_PACKET_RECEIVED       (uint32_t)(1 << 0)
+#define RADIO_EVENT_INVALID_PACKET_RECEIVED     (uint32_t)(1 << 1)
+#define RADIO_EVENT_SEND_VENT_DATA              (uint32_t)(1 << 2)
+#define RADIO_EVENT_DATA_ACK_RECEIVED           (uint32_t)(1 << 3)
+#define RADIO_EVENT_ACK_TIMEOUT                 (uint32_t)(1 << 4)
+#define RADIO_EVENT_SEND_FAIL                   (uint32_t)(1 << 5)
+#ifdef FEATURE_BLE_ADV
+#define NODE_EVENT_UBLE                         (uint32_t)(1 << 6)
+#endif
 
 #define CONCENTRATORRADIO_MAX_RETRIES 2
-#define NORERADIO_ACK_TIMEOUT_TIME_MS (160)
+#define NODERADIO_ACK_TIMEOUT_TIME_MS (160)
+#define NODERADIO_MAX_RETRIES 2
 
 
 #define CONCENTRATOR_ACTIVITY_LED Board_PIN_LED0
@@ -85,7 +93,14 @@
 //};
 
 //--------------------
-
+/***** Type declarations *****/
+struct RadioOperation {
+    EasyLink_TxPacket easyLinkTxPacket;
+    uint8_t retriesDone;
+    uint8_t maxNumberOfRetries;
+    uint32_t ackTimeoutMs;
+    enum NodeRadioOperationStatus result;
+};
 
 /***** Variable declarations *****/
 static Task_Params concentratorRadioTaskParams;
@@ -93,6 +108,18 @@ Task_Struct concentratorRadioTask; /* not static so you can see in ROV */
 static uint8_t concentratorRadioTaskStack[CONCENTRATORRADIO_TASK_STACK_SIZE];
 Event_Struct radioOperationEvent;  /* not static so you can see in ROV */
 static Event_Handle radioOperationEventHandle;
+
+static uint16_t adcData;
+static uint16_t ventData;
+static uint8_t nodeAddress = 0;
+
+static Semaphore_Handle radioAccessSemHandle;
+static Semaphore_Handle radioResultSemHandle;
+static struct RadioOperation currentRadioOperation;
+static struct DualModeVentPacket dmVentPacket;
+
+/* previous Tick count used to calculate uptime */
+static uint32_t prevTicks;
 
 
 
@@ -106,11 +133,12 @@ static int8_t latestRssi;
 
 /***** Prototypes *****/
 static void concentratorRadioTaskFunction(UArg arg0, UArg arg1);
-static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status);
+static void rxDoneCallbackSensor(EasyLink_RxPacket * rxPacket, EasyLink_Status status);
+static void rxDoneCallbackVent(EasyLink_RxPacket * rxPacket, EasyLink_Status status);
 static void notifyPacketReceived(union ConcentratorPacket* latestRxPacket);
 static void sendAck(uint8_t latestSourceAddress);
 
-static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs);
+static void sendDmPacket(struct DualModeVentPacket ventPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs);
 static void resendPacket(void);
 
 /* Pin driver handle */
@@ -340,9 +368,9 @@ static void concentratorRadioTaskFunction(UArg arg0, UArg arg1)
 
 
     /* If you wish to use a frequency other than the default use
-     * the below API
-     * EasyLink_setFrequency(868000000);
-     */
+    * the below API
+    * EasyLink_setFrequency(868000000);
+    */
 
     /* Set concentrator address */;
     concentratorAddress = RADIO_CONCENTRATOR_ADDRESS;
@@ -353,7 +381,7 @@ static void concentratorRadioTaskFunction(UArg arg0, UArg arg1)
     ackPacket.header.packetType = RADIO_PACKET_TYPE_ACK_PACKET;
 
     /* Enter receive */
-    if(EasyLink_receiveAsync(rxDoneCallback, 0) != EasyLink_Status_Success) {
+    if(EasyLink_receiveAsync(rxDoneCallbackSensor, 0) != EasyLink_Status_Success) {
         System_abort("EasyLink_receiveAsync failed");
     }
 
@@ -369,7 +397,7 @@ static void concentratorRadioTaskFunction(UArg arg0, UArg arg1)
             /* Call packet received callback */
             notifyPacketReceived(&latestRxPacket);
             /* Go back to RX */
-            if(EasyLink_receiveAsync(rxDoneCallback, 0) != EasyLink_Status_Success) {
+            if(EasyLink_receiveAsync(rxDoneCallbackSensor, 0) != EasyLink_Status_Success) {
                 System_abort("EasyLink_receiveAsync failed");
             }
 
@@ -377,12 +405,56 @@ static void concentratorRadioTaskFunction(UArg arg0, UArg arg1)
             PIN_setOutputValue(ledPinHandle, CONCENTRATOR_ACTIVITY_LED,
                     !PIN_getOutputValue(CONCENTRATOR_ACTIVITY_LED));
         }
-
         /* If invalid packet received */
         if(events & RADIO_EVENT_INVALID_PACKET_RECEIVED) {
             /* Go back to RX */
-            if(EasyLink_receiveAsync(rxDoneCallback, 0) != EasyLink_Status_Success) {
+            if(EasyLink_receiveAsync(rxDoneCallbackSensor, 0) != EasyLink_Status_Success) {
                 System_abort("EasyLink_receiveAsync failed");
+            }
+        }
+
+        if (events & RADIO_EVENT_SEND_VENT_DATA)
+        {
+            uint32_t currentTicks;
+
+            currentTicks = Clock_getTicks();
+            //check for wrap around
+            if (currentTicks > prevTicks)
+            {
+                //calculate time since last reading in 0.1s units
+                dmVentPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;
+            }
+            else
+            {
+                //calculate time since last reading in 0.1s units
+                dmVentPacket.time100MiliSec += ((prevTicks - currentTicks) * Clock_tickPeriod) / 100000;
+            }
+            prevTicks = currentTicks;
+
+            dmVentPacket.adcValue = ventData;
+
+
+            sendDmPacket(dmVentPacket, NODERADIO_MAX_RETRIES, NODERADIO_ACK_TIMEOUT_TIME_MS);
+        }
+        /* If we get an ACK from the concentrator */
+        if (events & RADIO_EVENT_DATA_ACK_RECEIVED)
+        {
+            returnRadioOperationStatus(NodeRadioStatus_Success);
+        }
+
+        /* If we get an ACK timeout */
+        if (events & RADIO_EVENT_ACK_TIMEOUT)
+        {
+
+            /* If we haven't resent it the maximum number of times yet, then resend packet */
+            if (currentRadioOperation.retriesDone < currentRadioOperation.maxNumberOfRetries)
+            {
+                resendPacket();
+            }
+            else
+            {
+                /* Else return send fail */
+                Event_post(radioOperationEventHandle, RADIO_EVENT_SEND_FAIL);
             }
         }
     }
@@ -407,6 +479,30 @@ static void sendAck(uint8_t latestSourceAddress) {
 
 }
 
+enum NodeRadioOperationStatus NodeRadioTask_sendVentData(uint16_t data, uint8_t address)
+{
+    enum NodeRadioOperationStatus status;
+
+    /* Get radio access semaphore */
+    Semaphore_pend(radioAccessSemHandle, BIOS_WAIT_FOREVER);
+
+    /* Save data to send */
+    ventData = data;
+
+    /* Raise RADIO_EVENT_SEND_ADC_DATA event */
+    Event_post(radioOperationEventHandle, RADIO_EVENT_SEND_VENT_DATA);
+
+    /* Wait for result */
+    Semaphore_pend(radioResultSemHandle, BIOS_WAIT_FOREVER);
+
+    /* Get result */
+    status = currentRadioOperation.result;
+
+    /* Return radio access semaphore */
+    Semaphore_post(radioAccessSemHandle);
+
+    return status;
+}
 
 static void notifyPacketReceived(union ConcentratorPacket* latestRxPacket)
 {
@@ -458,11 +554,7 @@ static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
             latestRxPacket.header.sourceAddress             = rxPacket->payload[0];
             latestRxPacket.header.packetType                = rxPacket->payload[1];
             latestRxPacket.dmSensorPacket.adcValue          = (rxPacket->payload[2] << 8) | rxPacket->payload[3];
-            latestRxPacket.dmSensorPacket.batt              = (rxPacket->payload[4] << 8) | rxPacket->payload[5];
-            latestRxPacket.dmSensorPacket.time100MiliSec    = (rxPacket->payload[6] << 24) |
-                                                              (rxPacket->payload[7] << 16) |
-                                                              (rxPacket->payload[8] << 8)  | rxPacket->payload[9];
-            latestRxPacket.dmSensorPacket.button            = rxPacket->payload[10];
+
 
             /* Signal packet received */
             Event_post(radioOperationEventHandle, RADIO_EVENT_VALID_PACKET_RECEIVED);
@@ -481,68 +573,91 @@ static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
 }
 
 
-//static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs)
-//{
-//    /* Set destination address in EasyLink API */
-//    currentRadioOperation.easyLinkTxPacket.dstAddr[0] = RADIO_CONCENTRATOR_ADDRESS;
-//
-//    /* Copy ADC packet to payload
-//     * Note that the EasyLink API will implcitily both add the length byte and the destination address byte. */
-//    currentRadioOperation.easyLinkTxPacket.payload[0] = dmSensorPacket.header.sourceAddress;
-//    currentRadioOperation.easyLinkTxPacket.payload[1] = dmSensorPacket.header.packetType;
-//    currentRadioOperation.easyLinkTxPacket.payload[2] = (dmSensorPacket.adcValue & 0xFF00) >> 8;
-//    currentRadioOperation.easyLinkTxPacket.payload[3] = (dmSensorPacket.adcValue & 0xFF);
-//    currentRadioOperation.easyLinkTxPacket.payload[4] = (dmSensorPacket.batt & 0xFF00) >> 8;
-//    currentRadioOperation.easyLinkTxPacket.payload[5] = (dmSensorPacket.batt & 0xFF);
-//    currentRadioOperation.easyLinkTxPacket.payload[6] = (dmSensorPacket.time100MiliSec & 0xFF000000) >> 24;
-//    currentRadioOperation.easyLinkTxPacket.payload[7] = (dmSensorPacket.time100MiliSec & 0x00FF0000) >> 16;
-//    currentRadioOperation.easyLinkTxPacket.payload[8] = (dmSensorPacket.time100MiliSec & 0xFF00) >> 8;
-//    currentRadioOperation.easyLinkTxPacket.payload[9] = (dmSensorPacket.time100MiliSec & 0xFF);
-//    currentRadioOperation.easyLinkTxPacket.payload[10] = dmSensorPacket.button;
-//
-//    currentRadioOperation.easyLinkTxPacket.len = sizeof(struct DualModeSensorPacket);
-//
-//    /* Setup retries */
-//    currentRadioOperation.maxNumberOfRetries = maxNumberOfRetries;
-//    currentRadioOperation.ackTimeoutMs = ackTimeoutMs;
-//    currentRadioOperation.retriesDone = 0;
-//    EasyLink_setCtrl(EasyLink_Ctrl_AsyncRx_TimeOut, EasyLink_ms_To_RadioTime(ackTimeoutMs));
-//
-//    /* Send packet  */
-//    if (EasyLink_transmit(&currentRadioOperation.easyLinkTxPacket) != EasyLink_Status_Success)
-//    {
-//        System_abort("EasyLink_transmit failed");
-//    }
-//#if defined(Board_DIO30_SWPWR)
-//    /* this was a blocking call, so Tx is now complete. Turn off the RF switch power */
-//    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 0);
-//#endif
-//
-//    /* Enter RX */
-//    if (EasyLink_receiveAsync(rxDoneCallback, 0) != EasyLink_Status_Success)
-//    {
-//        System_abort("EasyLink_receiveAsync failed");
-//    }
-//}
-//
-//static void resendPacket(void)
-//{
-//    /* Send packet  */
-//    if (EasyLink_transmit(&currentRadioOperation.easyLinkTxPacket) != EasyLink_Status_Success)
-//    {
-//        System_abort("EasyLink_transmit failed");
-//    }
-//#if defined(Board_DIO30_SWPWR)
-//    /* this was a blocking call, so Tx is now complete. Turn off the RF switch power */
-//    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 0);
-//#endif
-//
-//    /* Enter RX and wait for ACK with timeout */
-//    if (EasyLink_receiveAsync(rxDoneCallback, 0) != EasyLink_Status_Success)
-//    {
-//        System_abort("EasyLink_receiveAsync failed");
-//    }
-//
-//    /* Increase retries by one */
-//    currentRadioOperation.retriesDone++;
-//}
+static void sendDmPacket(struct DualModeVentPacket ventPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs){
+    currentRadioOperation.easyLinkTxPacket.dstAddr[0] = RADIO_CONCENTRATOR_ADDRESS;
+    /* Set destination address in EasyLink API */
+    currentRadioOperation.easyLinkTxPacket.dstAddr[0] = RADIO_CONCENTRATOR_ADDRESS;
+
+    /* Copy ADC packet to payload
+    * Note that the EasyLink API will implcitily both add the length byte and the destination address byte. */
+    currentRadioOperation.easyLinkTxPacket.payload[0] = dmVentPacket.header.sourceAddress;
+
+    currentRadioOperation.easyLinkTxPacket.len = sizeof(struct DualModeVentPacket);
+
+    /* Setup retries */
+    currentRadioOperation.maxNumberOfRetries = NODERADIO_MAX_RETRIES;
+    currentRadioOperation.ackTimeoutMs = NODERADIO_ACK_TIMEOUT_TIME_MS;
+    currentRadioOperation.retriesDone = 0;
+    EasyLink_setCtrl(EasyLink_Ctrl_AsyncRx_TimeOut, EasyLink_ms_To_RadioTime(ackTimeoutMs));
+
+    /* Send packet  */
+    if (EasyLink_transmit(&currentRadioOperation.easyLinkTxPacket) != EasyLink_Status_Success)
+    {
+      System_abort("EasyLink_transmit failed");
+    }
+
+
+    /* Enter RX */
+    if (EasyLink_receiveAsync(rxDoneCallbackVent, 0) != EasyLink_Status_Success)
+    {
+      System_abort("EasyLink_receiveAsync failed");
+    }
+}
+
+static void resendPacket(void){
+    /* Send packet  */
+    if (EasyLink_transmit(&currentRadioOperation.easyLinkTxPacket) != EasyLink_Status_Success)
+    {
+        System_abort("EasyLink_transmit failed");
+    }
+
+
+    /* Enter RX and wait for ACK with timeout */
+    if (EasyLink_receiveAsync(rxDoneCallbackVent, 0) != EasyLink_Status_Success)
+    {
+        System_abort("EasyLink_receiveAsync failed");
+    }
+
+    /* Increase retries by one */
+    currentRadioOperation.retriesDone++;
+}
+
+static void rxDoneCallbackVent(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
+{
+    struct PacketHeader* packetHeader;
+
+    /* If this callback is called because of a packet received */
+    if (status == EasyLink_Status_Success)
+    {
+        /* Check the payload header */
+        packetHeader = (struct PacketHeader*)rxPacket->payload;
+
+        /* Check if this is an ACK packet */
+        if (packetHeader->packetType == RADIO_PACKET_TYPE_ACK_PACKET)
+        {
+            /* Signal ACK packet received */
+            Event_post(radioOperationEventHandle, RADIO_EVENT_DATA_ACK_RECEIVED);
+        }
+        else
+        {
+            /* Packet Error, treat as a Timeout and Post a RADIO_EVENT_ACK_TIMEOUT
+               event */
+            Event_post(radioOperationEventHandle, RADIO_EVENT_ACK_TIMEOUT);
+        }
+    }
+    /* did the Rx timeout */
+    else if(status == EasyLink_Status_Rx_Timeout)
+    {
+        /* Post a RADIO_EVENT_ACK_TIMEOUT event */
+        Event_post(radioOperationEventHandle, RADIO_EVENT_ACK_TIMEOUT);
+    }
+    else
+    {
+        /* The Ack receiption may have been corrupted causing an error.
+         * Treat this as a timeout
+         */
+        Event_post(radioOperationEventHandle, RADIO_EVENT_ACK_TIMEOUT);
+    }
+}
+
+
