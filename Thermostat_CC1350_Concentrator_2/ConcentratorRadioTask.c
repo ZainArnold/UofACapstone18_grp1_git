@@ -572,7 +572,6 @@ static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
     }
 }
 
-
 static void sendDmPacket(struct DualModeVentPacket ventPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs){
     currentRadioOperation.easyLinkTxPacket.dstAddr[0] = RADIO_CONCENTRATOR_ADDRESS;
     /* Set destination address in EasyLink API */
