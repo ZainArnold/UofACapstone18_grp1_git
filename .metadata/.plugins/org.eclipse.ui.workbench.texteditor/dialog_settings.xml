@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="rxDoneCallback" key="selection"/>
+		<item value="ADC_Config" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ADC_config"/>
+			<item value="ADC_count"/>
+			<item value="ADC_Params_init"/>
 			<item value="rxDoneCallback"/>
 			<item value="RADIO_EVENT_DATA_ACK_RECEIVED"/>
 			<item value="adcData"/>
 			<item value="blePinHandle"/>
 			<item value="sensorPacket"/>
-			<item value="dmSensorPacket"/>
-			<item value="Clock_tickPeriod"/>
-			<item value="sendDmPacket"/>
 		</list>
 		<list key="replacehistory">
 			<item value="dmVentPacket"/>
