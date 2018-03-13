@@ -1,0 +1,32 @@
+// Enable the ADC
+adcEnableSync(ADC_REF_FIXED, ADC_SAMPLE_TIME_2P7_US, ADC_TRIGGER_MANUAL);
+
+// Sample the sensor
+U16 adcValue;
+adcGenManualTrigger();
+adcReadFifo(adcValue);
+output.adcValue = adcValue;
+
+// Disable the ADC
+adcDisable();
+
+// Determine if the ADC value is below the low threshold or above the high threshold
+U16 bvWindowState = 0x0000;
+if (adcValue < cfg.adcWindowLow) {
+    bvWindowState |= BV_ADC_WINDOW_LOW;
+}
+if (adcValue > cfg.adcWindowHigh) {
+    bvWindowState |= BV_ADC_WINDOW_HIGH;
+}
+
+// Alert the driver when the window state changes
+if (bvWindowState != output.bvWindowState) {
+    output.bvWindowState = bvWindowState;
+    fwGenAlertInterrupt();
+}
+
+// Schedule the next execution
+fwScheduleTask(1);
+
+// Run-time logging: Log the output data structure
+rtlLogStructs(BV_RTL_LOG_OUTPUT);
