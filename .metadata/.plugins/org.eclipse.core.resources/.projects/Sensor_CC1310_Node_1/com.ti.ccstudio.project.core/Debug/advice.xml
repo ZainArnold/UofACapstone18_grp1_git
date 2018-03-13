@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <body>
 	<version>1</version>
+<<<<<<< HEAD
 	<timestamp>0x5aa70c47</timestamp>
+=======
+	<timestamp>0x5a95e624</timestamp>
+>>>>>>> parent of 8a827d4... March 5th commit
 	<link_advice_flag>true</link_advice_flag>
 	<current_settings>
 		<option name="--opt_for_speed" value="  --opt_for_speed=1"/>

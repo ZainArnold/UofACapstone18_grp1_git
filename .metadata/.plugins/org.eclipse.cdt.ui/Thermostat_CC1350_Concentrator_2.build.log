@@ -3,8 +3,9 @@
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
  
-'Building file: "../ConcentratorRadioTask.c"'
+'Building file: "../ConcentratorTask.c"'
 'Invoking: ARM Compiler'
+<<<<<<< HEAD
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
 "../ConcentratorRadioTask.c", line 442: warning #225-D: function "returnRadioOperationStatus" declared implicitly
 "../ConcentratorRadioTask.c", line 112: warning #179-D: variable "adcData" was declared but never referenced
@@ -12,6 +13,14 @@
 "../ConcentratorRadioTask.c", line 136: warning #2120-D: static function "rxDoneCallbackSensor" treated as extern because it was referenced but not defined
 "../ConcentratorRadioTask.c", line 515: warning #179-D: function "rxDoneCallback" was declared but never referenced
 'Finished building: "../ConcentratorRadioTask.c"'
+=======
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+"../ConcentratorTask.c", line 164: warning #994-D: missing return statement at end of non-void function "TempFilter"
+"../ConcentratorTask.c", line 155: warning #552-D: variable "Temp" was set but never used
+"../ConcentratorTask.c", line 182: warning #994-D: missing return statement at end of non-void function "MotionFilter"
+"../ConcentratorTask.c", line 175: warning #552-D: variable "Motion" was set but never used
+'Finished building: "../ConcentratorTask.c"'
+>>>>>>> parent of 8a827d4... March 5th commit
  
 'Building target: "Thermostat_CC1350_Concentrator_2.out"'
 'Invoking: ARM Linker'

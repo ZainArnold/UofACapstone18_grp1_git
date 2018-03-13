@@ -1,6 +1,11 @@
 #define __unsigned_chars__ 1	/* Predefined */
+<<<<<<< HEAD
 #define __DATE__ "Mar 13 2018"	/* Predefined */
 #define __TIME__ "12:32:59"	/* Predefined */
+=======
+#define __DATE__ "Mar  2 2018"	/* Predefined */
+#define __TIME__ "14:21:05"	/* Predefined */
+>>>>>>> parent of 8a827d4... March 5th commit
 #define __STDC__ 1	/* Predefined */
 #define __STDC_VERSION__ 199409L	/* Predefined */
 #define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */

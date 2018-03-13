@@ -206,7 +206,10 @@ gpioCfgMode(AUXIO_I_D_INPUT, GPIO_MODE_INPUT);
 S16 adcValue;
 S16 digitalValue = 0;
 U16 signal;
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 8a827d4... March 5th commit
 adcGenManualTrigger();
 adcReadFifo(adcValue);
 
@@ -270,7 +273,11 @@ state.oldAdcMaskedBits = adcValue & cfg.changeMask;
 // Schedule the next execution
 fwScheduleTask(1);]]></sccode>
         <sccode name="initialize" init_power_mode="0"><![CDATA[// Select ADC input (A2 / DIO25)
+<<<<<<< HEAD
 adcSelectGpioInput(AUXIO_A_AD_INPUT);
+=======
+adcSelectGpioInput(2);
+>>>>>>> parent of 8a827d4... March 5th commit
 
 // Schedule the first execution
 fwScheduleTask(1);]]></sccode>

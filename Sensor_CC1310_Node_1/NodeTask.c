@@ -30,8 +30,6 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//Sensor Node Task
-
 /***** Includes *****/
 /* XDCtools Header files */ 
 #include <xdc/std.h>

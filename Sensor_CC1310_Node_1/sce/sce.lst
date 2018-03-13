@@ -345,6 +345,7 @@
 0093 ---- fb4c                         out         R7, [#IOP_ADISET_ADC]
 0094 ---- 1465                         jsr         AdiDdiRelease
                ;? 
+<<<<<<< HEAD
                ;? // Sample Motion
                ;? // If the signal is high
                ;? gpioEnableInputBuf(AUXIO_I_D_INPUT);
@@ -354,22 +355,32 @@
 0097 86cf 80ff                         and         R0, #((~(0x0003 << (2 * (6 & 0x7)))) & 0xFFFF)
 0099 8610 8200                         or          R0, #(1 << (2 * (6 & 0x7)))
 009b ---- 8b10                         out         R0, [#(IOP_AIODIO0_IOMODE + (6 >> 3))]
+=======
+               ;? 
+>>>>>>> parent of 8a827d4... March 5th commit
                ;? 
                ;? // Sample the ADC
                ;? S16 adcValue;
-               ;? S16 digitalValue = 0;
-009c ---- 1000                         ld          R1, #0
+               ;? 
                ;? U16 signal;
                ;? 
                ;? adcGenManualTrigger();
-009d ---- 6403                         iobset      #0, [#IOP_ANAIF_ADCTRIG]
+0095 ---- 6403                         iobset      #0, [#IOP_ANAIF_ADCTRIG]
                ;? adcReadFifo(adcValue);
-009e ---- 001f                         ld          R0, #EVCTL_SCEEVSEL_ADC_FIFO_NOT_EMPTY
-009f ---- 8b2c                         out         R0, [#IOP_EVCTL_SCEWEVSEL]
-00a0 ---- fdb1                         wev1        #WEVSEL_PROG
-00a1 ---- 8902                         in          R0, [#IOP_ANAIF_ADCFIFO]
+0096 ---- 001f                         ld          R0, #EVCTL_SCEEVSEL_ADC_FIFO_NOT_EMPTY
+0097 ---- 8b2c                         out         R0, [#IOP_EVCTL_SCEWEVSEL]
+0098 ---- fdb1                         wev1        #WEVSEL_PROG
+0099 ---- 8902                         in          R0, [#IOP_ANAIF_ADCFIFO]
                ;? 
                ;? 
+               ;? 
+               ;? 
+               ;? 
+               ;? 
+<<<<<<< HEAD
+               ;? 
+=======
+>>>>>>> parent of 8a827d4... March 5th commit
                ;? //---------------------------------------------------------// Sample Motion
                ;? 
                ;? 
@@ -379,8 +390,25 @@
                ;? 
                ;? //gpioGetInputValue(AUXIO_A_MOTION_INPUT; signal);
                ;? 
+               ;? // Sample Motion
+               ;? // If the signal is high
+               ;? gpioEnableInputBuf(AUXIO_I_D_INPUT);
+009a ---- 7529                         iobset      #(5 & 0x7), [#(IOP_AIODIO0_GPIODIE + (5 >> 3))]
+               ;? gpioCfgMode(AUXIO_I_D_INPUT, GPIO_MODE_INPUT);
+009b ---- 9910                         in          R1, [#(IOP_AIODIO0_IOMODE + (5 >> 3))]
+009c 86f3 90ff                         and         R1, #((~(0x0003 << (2 * (5 & 0x7)))) & 0xFFFF)
+009e 8604 9200                         or          R1, #(1 << (2 * (5 & 0x7)))
+00a0 ---- 9b10                         out         R1, [#(IOP_AIODIO0_IOMODE + (5 >> 3))]
+               ;? 
+               ;? U16 digitalValue = 0;
+00a1 ---- 1000                         ld          R1, #0
+               ;? 
                ;? gpioGetInputValue(AUXIO_I_D_INPUT; signal);
+<<<<<<< HEAD
 00a2 ---- 5006                         ld          R5, #6
+=======
+00a2 ---- 5005                         ld          R5, #5
+>>>>>>> parent of 8a827d4... March 5th commit
 00a3 ---- 14e0                         jsr         gpioGetInputValue
                ;? if (signal == 1) {
 00a4 ---- fa01                         cmp         R7, #1
@@ -390,14 +418,24 @@
                ;?     //              0x   0    7    F    F
                ;?     digitalValue &= 0x07FF;
 00a6 8607 90ff                             and         R1, #2047
+<<<<<<< HEAD
+=======
+               ;?     //digitalValue &= 2047;
+>>>>>>> parent of 8a827d4... March 5th commit
                ;?     
                ;?     //Input Motion Value
                ;?     //              0b0000 1000 0000 0000
                ;?     //              0x   0    8    0    0
+<<<<<<< HEAD
                ;?     digitalValue |= 0x0800;
 00a8 8608 9200                             or          R1, #2048
                ;?     
                ;?     
+=======
+               ;?     digitalValue |= 0x0800;    
+00a8 8608 9200                             or          R1, #2048
+               ;?     //digitalValue |= 2048;
+>>>>>>> parent of 8a827d4... March 5th commit
                ;? } else {
 00aa ---- 04ad                         jmp         /id0125
                /id0123:
@@ -406,15 +444,24 @@
                ;?     //              0x   0    7    F    F
                ;?     digitalValue &= 0x07FF;
 00ab 8607 90ff                             and         R1, #2047
+<<<<<<< HEAD
                ;?     
                ;? }
                /id0125:
+=======
+               ;? }
+               /id0125:
+               ;? //adcValue = adcValue + digitalValue;
+>>>>>>> parent of 8a827d4... March 5th commit
                ;? output.adcValue = adcValue + digitalValue;
 00ad ---- dd40                         ld          R5, R0
 00ae ---- dd21                         add         R5, R1
 00af ---- 5c77                         st          R5, [#adcSample/output/adcValue]
+<<<<<<< HEAD
                ;? 
                ;? 
+=======
+>>>>>>> parent of 8a827d4... March 5th commit
                ;? 
                ;? // Disable the ADC
                ;? adcDisable();
@@ -568,4 +615,8 @@
                .segment end "Procedure Libary"
                
 
+<<<<<<< HEAD
 ; Generated by ZAINZENBOOK at 2018-03-12 15:12:19.002
+=======
+; Generated by ZAINZENBOOK at 2018-02-23 17:36:38.648
+>>>>>>> parent of 8a827d4... March 5th commit

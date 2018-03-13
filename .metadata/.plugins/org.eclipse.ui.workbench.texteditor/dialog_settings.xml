@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="ADC_Config" key="selection"/>
+=======
+		<item value="SceAdc_adcCallback" key="selection"/>
+>>>>>>> parent of 8a827d4... March 5th commit
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="ADC_config"/>
 			<item value="ADC_count"/>
 			<item value="ADC_Params_init"/>
@@ -16,6 +21,16 @@
 			<item value="adcData"/>
 			<item value="blePinHandle"/>
 			<item value="sensorPacket"/>
+=======
+			<item value="SceAdc_adcCallback"/>
+			<item value="latestTempValue"/>
+			<item value="NODE_EVENT_NEW_TEMP_VALUE"/>
+			<item value="ti_sysbios_knl_Event_Struct"/>
+			<item value="ti_sysbios_knl_Event_Object"/>
+			<item value="NODE_EVENT_ALL"/>
+			<item value="adcData"/>
+			<item value="tempValue"/>
+>>>>>>> parent of 8a827d4... March 5th commit
 		</list>
 		<list key="replacehistory">
 			<item value="dmVentPacket"/>
@@ -24,8 +39,14 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+<<<<<<< HEAD
 		<item value="361" key="DIALOG_HEIGHT"/>
 		<item value="1445" key="DIALOG_X_ORIGIN"/>
 		<item value="304" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="387" key="DIALOG_HEIGHT"/>
+		<item value="590" key="DIALOG_X_ORIGIN"/>
+		<item value="308" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> parent of 8a827d4... March 5th commit
 	</section>
 </section>

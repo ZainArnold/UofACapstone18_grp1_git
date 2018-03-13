@@ -7171,6 +7171,7 @@ gmake[2]: Nothing to be done for 'all'.
  
 
 **** Build Finished ****
+<<<<<<< HEAD
 
 **** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
 
@@ -10416,3 +10417,5 @@ gmake[2]: Nothing to be done for 'all'.
  
 
 **** Build Finished ****
+=======
+>>>>>>> parent of 8a827d4... March 5th commit
