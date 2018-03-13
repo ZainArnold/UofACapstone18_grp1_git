@@ -30,9 +30,17 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/*
- *  ======== rfEasyLinkTx.c ========
- */
+//-----------------------------------------------------------------------------------------------------
+//  Sensor Program
+//
+//  - Two sensor HWI's
+//  - Communication HWI
+//
+
+
+//--------------------------------------------------------
+// Includes
+
  /* Standard C Libraries */
 #include <stdlib.h>
 
@@ -56,7 +64,13 @@
 /* EasyLink API Header files */
 #include "easylink/EasyLink.h"
 
-/* Undefine to not use async mode */
+
+
+//--------------------------------------------------------
+// Defines
+
+
+// Undefine to not use async mode */
 #define RFEASYLINKTX_ASYNC
 
 #define RFEASYLINKTX_TASK_STACK_SIZE    1024
@@ -65,6 +79,9 @@
 
 #define RFEASYLINKTX_BURST_SIZE         10
 #define RFEASYLINKTXPAYLOAD_LENGTH      30
+
+
+
 
 Task_Struct txTask;    /* not static so you can see in ROV */
 static Task_Params txTaskParams;
@@ -87,158 +104,179 @@ PIN_Config pinTable[] = {
 	PIN_TERMINATE
 };
 
-static uint16_t seqNumber;
 
-#ifdef RFEASYLINKTX_ASYNC
-static Semaphore_Handle txDoneSem;
-#endif //RFEASYLINKTX_ASYNC
+//--------------------------------------------------------
+//  Variable Declaration
 
-#ifdef RFEASYLINKTX_ASYNC
-void txDoneCb(EasyLink_Status status)
-{
-    if (status == EasyLink_Status_Success)
-    {
-        /* Toggle LED1 to indicate TX */
-        PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
-    }
-    else if(status == EasyLink_Status_Aborted)
-    {
-        /* Toggle LED2 to indicate command aborted */
-        PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
-    }
-    else
-    {
-        /* Toggle LED1 and LED2 to indicate error */
-        PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
-        PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
-    }
 
-    Semaphore_post(txDoneSem);
-}
-#endif //RFEASYLINKTX_ASYNC
 
-static void rfEasyLinkTxFnx(UArg arg0, UArg arg1)
-{
-    uint8_t txBurstSize = 0;
 
-#ifdef RFEASYLINKTX_ASYNC
-    /* Create a semaphore for Async */
-    Semaphore_Params params;
-    Error_Block eb;
 
-    /* Init params */
-    Semaphore_Params_init(&params);
-    Error_init(&eb);
 
-    /* Create semaphore instance */
-    txDoneSem = Semaphore_create(0, &params, &eb);
-#endif //TX_ASYNC
 
-    EasyLink_init(EasyLink_Phy_Custom);
 
-    /*
-     * If you wish to use a frequency other than the default, use
-     * the following API:
-     * EasyLink_setFrequency(868000000);
-     */
 
-    /* Set output power to 12dBm */
-    EasyLink_setRfPwr(12);
 
-    while(1) {
-        EasyLink_TxPacket txPacket =  { {0}, 0, 0, {0} };
 
-        /* Create packet with incrementing sequence number and random payload */
-        txPacket.payload[0] = (uint8_t)(seqNumber >> 8);
-        txPacket.payload[1] = (uint8_t)(seqNumber++);
-        uint8_t i;
-        for (i = 2; i < RFEASYLINKTXPAYLOAD_LENGTH; i++)
-        {
-          txPacket.payload[i] = rand();
-        }
 
-        txPacket.len = RFEASYLINKTXPAYLOAD_LENGTH;
-        txPacket.dstAddr[0] = 0xaa;
 
-        /* Add a Tx delay for > 500ms, so that the abort kicks in and brakes the burst */
-        if(txBurstSize++ >= RFEASYLINKTX_BURST_SIZE)
-        {
-          /* Set Tx absolute time to current time + 1s */
-          txPacket.absTime = EasyLink_getAbsTime() + EasyLink_ms_To_RadioTime(1000);
-          txBurstSize = 0;
-        }
-        /* Else set the next packet in burst to Tx in 100ms */
-        else
-        {
-          /* Set Tx absolute time to current time + 100ms */
-          txPacket.absTime = EasyLink_getAbsTime() + EasyLink_ms_To_RadioTime(100);
-        }
 
-#ifdef RFEASYLINKTX_ASYNC
-        EasyLink_transmitAsync(&txPacket, txDoneCb);
-        /* Wait 300ms for Tx to complete */
-        if(Semaphore_pend(txDoneSem, (300000 / Clock_tickPeriod)) == FALSE)
-        {
-            /* TX timed out, abort */
-            if(EasyLink_abort() == EasyLink_Status_Success)
-            {
-                /*
-                 * Abort will cause the txDoneCb to be called and the txDoneSem
-                 * to be released, so we must consume the txDoneSem
-                 */
-               Semaphore_pend(txDoneSem, BIOS_WAIT_FOREVER);
-            }
-        }
-#else
-        EasyLink_Status result = EasyLink_transmit(&txPacket);
 
-        if (result == EasyLink_Status_Success)
-        {
-            /* Toggle LED1 to indicate TX */
-            PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
-        }
-        else
-        {
-            /* Toggle LED1 and LED2 to indicate error */
-            PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
-            PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
-        }
-#endif //RFEASYLINKTX_ASYNC
-    }
-}
 
-void txTask_init(PIN_Handle inPinHandle) {
-    pinHandle = inPinHandle;
 
-    Task_Params_init(&txTaskParams);
-    txTaskParams.stackSize = RFEASYLINKTX_TASK_STACK_SIZE;
-    txTaskParams.priority = RFEASYLINKTX_TASK_PRIORITY;
-    txTaskParams.stack = &txTaskStack;
-    txTaskParams.arg0 = (UInt)1000000;
 
-    Task_construct(&txTask, rfEasyLinkTxFnx, &txTaskParams, NULL);
-}
-
-/*
- *  ======== main ========
- */
-int main(void)
-{
-    /* Call driver init functions. */
-    Board_initGeneral();
-
-    /* Open LED pins */
-    pinHandle = PIN_open(&pinState, pinTable);
-	Assert_isTrue(pinHandle != NULL, NULL); 
-
-    /* Clear LED pins */
-    PIN_setOutputValue(pinHandle, Board_PIN_LED1, 0);
-    PIN_setOutputValue(pinHandle, Board_PIN_LED2, 0);
-
-    txTask_init(pinHandle);
-
-    /* Start BIOS */
-    BIOS_start();
-
-    return (0);
-}
+//static uint16_t seqNumber;
+//
+//#ifdef RFEASYLINKTX_ASYNC
+//static Semaphore_Handle txDoneSem;
+//#endif //RFEASYLINKTX_ASYNC
+//
+//#ifdef RFEASYLINKTX_ASYNC
+//void txDoneCb(EasyLink_Status status)
+//{
+//    if (status == EasyLink_Status_Success)
+//    {
+//        /* Toggle LED1 to indicate TX */
+//        PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
+//    }
+//    else if(status == EasyLink_Status_Aborted)
+//    {
+//        /* Toggle LED2 to indicate command aborted */
+//        PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
+//    }
+//    else
+//    {
+//        /* Toggle LED1 and LED2 to indicate error */
+//        PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
+//        PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
+//    }
+//
+//    Semaphore_post(txDoneSem);
+//}
+//#endif //RFEASYLINKTX_ASYNC
+//
+//static void rfEasyLinkTxFnx(UArg arg0, UArg arg1)
+//{
+//    uint8_t txBurstSize = 0;
+//
+//#ifdef RFEASYLINKTX_ASYNC
+//    /* Create a semaphore for Async */
+//    Semaphore_Params params;
+//    Error_Block eb;
+//
+//    /* Init params */
+//    Semaphore_Params_init(&params);
+//    Error_init(&eb);
+//
+//    /* Create semaphore instance */
+//    txDoneSem = Semaphore_create(0, &params, &eb);
+//#endif //TX_ASYNC
+//
+//    EasyLink_init(EasyLink_Phy_Custom);
+//
+//    /*
+//     * If you wish to use a frequency other than the default, use
+//     * the following API:
+//     * EasyLink_setFrequency(868000000);
+//     */
+//
+//    /* Set output power to 12dBm */
+//    EasyLink_setRfPwr(12);
+//
+//    while(1) {
+//        EasyLink_TxPacket txPacket =  { {0}, 0, 0, {0} };
+//
+//        /* Create packet with incrementing sequence number and random payload */
+//        txPacket.payload[0] = (uint8_t)(seqNumber >> 8);
+//        txPacket.payload[1] = (uint8_t)(seqNumber++);
+//        uint8_t i;
+//        for (i = 2; i < RFEASYLINKTXPAYLOAD_LENGTH; i++)
+//        {
+//          txPacket.payload[i] = rand();
+//        }
+//
+//        txPacket.len = RFEASYLINKTXPAYLOAD_LENGTH;
+//        txPacket.dstAddr[0] = 0xaa;
+//
+//        /* Add a Tx delay for > 500ms, so that the abort kicks in and brakes the burst */
+//        if(txBurstSize++ >= RFEASYLINKTX_BURST_SIZE)
+//        {
+//          /* Set Tx absolute time to current time + 1s */
+//          txPacket.absTime = EasyLink_getAbsTime() + EasyLink_ms_To_RadioTime(1000);
+//          txBurstSize = 0;
+//        }
+//        /* Else set the next packet in burst to Tx in 100ms */
+//        else
+//        {
+//          /* Set Tx absolute time to current time + 100ms */
+//          txPacket.absTime = EasyLink_getAbsTime() + EasyLink_ms_To_RadioTime(100);
+//        }
+//
+//#ifdef RFEASYLINKTX_ASYNC
+//        EasyLink_transmitAsync(&txPacket, txDoneCb);
+//        /* Wait 300ms for Tx to complete */
+//        if(Semaphore_pend(txDoneSem, (300000 / Clock_tickPeriod)) == FALSE)
+//        {
+//            /* TX timed out, abort */
+//            if(EasyLink_abort() == EasyLink_Status_Success)
+//            {
+//                /*
+//                 * Abort will cause the txDoneCb to be called and the txDoneSem
+//                 * to be released, so we must consume the txDoneSem
+//                 */
+//               Semaphore_pend(txDoneSem, BIOS_WAIT_FOREVER);
+//            }
+//        }
+//#else
+//        EasyLink_Status result = EasyLink_transmit(&txPacket);
+//
+//        if (result == EasyLink_Status_Success)
+//        {
+//            /* Toggle LED1 to indicate TX */
+//            PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
+//        }
+//        else
+//        {
+//            /* Toggle LED1 and LED2 to indicate error */
+//            PIN_setOutputValue(pinHandle, Board_PIN_LED1,!PIN_getOutputValue(Board_PIN_LED1));
+//            PIN_setOutputValue(pinHandle, Board_PIN_LED2,!PIN_getOutputValue(Board_PIN_LED2));
+//        }
+//#endif //RFEASYLINKTX_ASYNC
+//    }
+//}
+//
+//void txTask_init(PIN_Handle inPinHandle) {
+//    pinHandle = inPinHandle;
+//
+//    Task_Params_init(&txTaskParams);
+//    txTaskParams.stackSize = RFEASYLINKTX_TASK_STACK_SIZE;
+//    txTaskParams.priority = RFEASYLINKTX_TASK_PRIORITY;
+//    txTaskParams.stack = &txTaskStack;
+//    txTaskParams.arg0 = (UInt)1000000;
+//
+//    Task_construct(&txTask, rfEasyLinkTxFnx, &txTaskParams, NULL);
+//}
+//
+///*
+// *  ======== main ========
+// */
+//int main(void)
+//{
+//    /* Call driver init functions. */
+//    Board_initGeneral();
+//
+//    /* Open LED pins */
+//    pinHandle = PIN_open(&pinState, pinTable);
+//	Assert_isTrue(pinHandle != NULL, NULL);
+//
+//    /* Clear LED pins */
+//    PIN_setOutputValue(pinHandle, Board_PIN_LED1, 0);
+//    PIN_setOutputValue(pinHandle, Board_PIN_LED2, 0);
+//
+//    txTask_init(pinHandle);
+//
+//    /* Start BIOS */
+//    BIOS_start();
+//
+//    return (0);
+//}

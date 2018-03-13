@@ -1,0 +1,518 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ARcSNJZVlDaQ&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.h",
+    "_id": "u3ARcSNJZVlDaQ",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ARcSNJZVlDaQ?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AmsQyvdURK9k&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1350STK.c",
+    "_id": "u3AmsQyvdURK9k",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AmsQyvdURK9k?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350STK.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3A8p1DDQEPBZ4&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1350STK.h",
+    "_id": "u3A8p1DDQEPBZ4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3A8p1DDQEPBZ4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350STK.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ACKgq0BNxl4g&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1350STK_TIRTOS.cmd",
+    "_id": "u3ACKgq0BNxl4g",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ACKgq0BNxl4g?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.cmd",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1350STK_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3Aa2etN-jXGQ4&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.html",
+    "_id": "u3Aa2etN-jXGQ4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3Aa2etN-jXGQ4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AS57CeZL5Yc0&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.md",
+    "_id": "u3AS57CeZL5Yc0",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AS57CeZL5Yc0?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AyxKhT-wgF5o&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "ccfg.c",
+    "_id": "u3AyxKhT-wgF5o",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AyxKhT-wgF5o?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "ccfg.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AwjwD-usHR4Q&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "makefile.defs",
+    "_id": "u3AwjwD-usHR4Q",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AwjwD-usHR4Q?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.defs",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "makefile.defs",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AQYNDdGHBfto&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "memory.c",
+    "_id": "u3AQYNDdGHBfto",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AQYNDdGHBfto?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "memory.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3A3R9F9Gm9UZs&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "memory.cfg",
+    "_id": "u3A3R9F9Gm9UZs",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3A3R9F9Gm9UZs?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.cfg",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "memory.cfg",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AqNHRYlL2StM&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "overview.rov.json",
+    "_id": "u3AqNHRYlL2StM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AqNHRYlL2StM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.json",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3A-rLth0MiJ8Y&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1350 SensorTag/TI-RTOS Kernel (SYS_BIOS)/memory/TI-RTOS/CCS Compiler/memory&removeoffline=true",
+    "devtools": [
+      "CC1350 SensorTag"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1350F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.html",
+    "_id": "u3A-rLth0MiJ8Y",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3A-rLth0MiJ8Y?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1350%20SensorTag%2FTI-RTOS%20Kernel%20(SYS_BIOS)%2Fmemory%2FTI-RTOS%2FCCS%20Compiler%2Fmemory&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_128.dependency.tirex.json",
+    "parentID": "u3AUfQd5IXe9K0",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1350%20SensorTag/TI-RTOS%20Kernel%20(SYS_BIOS)/memory/TI-RTOS/CCS%20Compiler/memory&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  }
+]

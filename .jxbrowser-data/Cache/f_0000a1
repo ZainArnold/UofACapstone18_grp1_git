@@ -1,0 +1,475 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3Awp_E-onxy-g&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.h",
+    "_id": "u3Awp_E-onxy-g",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3Awp_E-onxy-g?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3A1ufrEv_7fWY&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL.c",
+    "_id": "u3A1ufrEv_7fWY",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3A1ufrEv_7fWY?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AGYlBeUL1beA&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL.h",
+    "_id": "u3AGYlBeUL1beA",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AGYlBeUL1beA?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.h",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL.h",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AN4sNz8Am3D0&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "_id": "u3AN4sNz8Am3D0",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AN4sNz8Am3D0?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.cmd",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "CC1310_LAUNCHXL_TIRTOS.cmd",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AI76CvbSMxeY&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.html",
+    "_id": "u3AI76CvbSMxeY",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AI76CvbSMxeY?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AxdswMaz8USY&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "README.md",
+    "_id": "u3AxdswMaz8USY",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AxdswMaz8USY?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.md",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "README.md",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AgPcub19_g4c&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "ccfg.c",
+    "_id": "u3AgPcub19_g4c",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AgPcub19_g4c?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "ccfg.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3ANlHwAhTmQNg&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "main_tirtos.c",
+    "_id": "u3ANlHwAhTmQNg",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3ANlHwAhTmQNg?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "main_tirtos.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3AzzJu7Sq3b7E&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "overview.rov.json",
+    "_id": "u3AzzJu7Sq3b7E",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3AzzJu7Sq3b7E?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.json",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "overview.rov.json",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3Av7bHtbctYNc&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "pinInterrupt.c",
+    "_id": "u3Av7bHtbctYNc",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3Av7bHtbctYNc?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.c",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "pinInterrupt.c",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt",
+    "makeofflineLink": "api/bundles?vids=com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "removeofflineLink": "api/resources?id=u3A2QeJPgfZOv4&path=Software/SimpleLink CC13x0 SDK/Examples/Development Tools/CC1310 LaunchPad/TI Drivers/pinInterrupt/TI-RTOS/CCS Compiler/pinInterrupt&removeoffline=true",
+    "devtools": [
+      "CC1310 LaunchPad"
+    ],
+    "coreTypes": [
+      "Cortex M.CC1310F128"
+    ],
+    "kernel": [
+      "tirtos"
+    ],
+    "compiler": [
+      "ccs"
+    ],
+    "resourceType": "file",
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "name": "Board.html",
+    "_id": "u3A2QeJPgfZOv4",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "link": "api/linkTo/u3A2QeJPgfZOv4?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FSimpleLink%20CC13x0%20SDK%2FExamples%2FDevelopment%20Tools%2FCC1310%20LaunchPad%2FTI%20Drivers%2FpinInterrupt%2FTI-RTOS%2FCCS%20Compiler%2FpinInterrupt&extname=.html",
+    "package": "SimpleLink CC13x0 SDK",
+    "packageId": "com.ti.SIMPLELINK_CC13X0_SDK",
+    "packageVersion": "1.50.00.08",
+    "packageUId": "com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08",
+    "packagePath": "simplelink_cc13x0_sdk_1_50_00_08",
+    "allowPartialDownload": false,
+    "license": "simplelink_cc13x0_sdk_1_50_00_08/license_simplelink_cc13x0_sdk_1_50_00_08.txt",
+    "linkType": "local",
+    "implictDependencyFile": "simplelink_cc13x0_sdk_1_50_00_08/.metadata/.tirex/.dependencies/spec_176.dependency.tirex.json",
+    "parentID": "u3Ary4vhs0a7CE",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.html",
+    "url": "/api/resources?path=Software/SimpleLink%20CC13x0%20SDK/Examples/Development%20Tools/CC1310%20LaunchPad/TI%20Drivers/pinInterrupt/TI-RTOS/CCS%20Compiler/pinInterrupt&package=c2000ware_software_package__1.00.03.00::com.ti.SAIL__1.20.00.02::com.ti.SIMPLELINK_CC2640R2_SDK__1.50.00.58::com.ti.SIMPLELINK_CC32XX_SDK__1.60.00.04::com.ti.SIMPLELINK_CC13X0_SDK__1.50.00.08::xdctools__3.50.04.43",
+    "packageOrder": 22,
+    "offline": "true"
+  }
+]

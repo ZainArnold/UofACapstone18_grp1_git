@@ -3,3 +3,5 @@
 1520906322422	Rename resource 'rfEasylink_Thermostat'
 1520906331023	Delete 4 resources
 1520906371112	Rename resource 'rfEasyLinkRx_CC1350_LAUNCHXL_tirtos_ccs'
+1520967682928	Delete resource 'memory_CC1310_LAUNCHXL_tirtos_ccs'
+1520971799299	Delete resource 'adcbufcontinuous_CC1310_LAUNCHXL_tirtos_ccs'
