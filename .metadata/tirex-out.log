@@ -1,5 +1,4 @@
------TI-REX started at Thu Mar 15 2018 13:47:24 GMT-0600 (Mountain Daylight Time)
+-----TI-REX started at Thu Mar 15 2018 17:44:29 GMT-0600 (Mountain Daylight Time)
 TIREX server listening on port 55432
-setting to  false
 About to exit with code:  0
-e npm module instead at app.js:540:21
+use method-override npm module instead at app.js:540:21

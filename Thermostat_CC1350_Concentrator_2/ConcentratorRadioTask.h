@@ -70,7 +70,7 @@ void ConcentratorRadioTask_registerPacketReceivedCallback(ConcentratorRadio_Pack
 void ConcentratorRadioTask_init_TX(void);
 
 
-enum ConcentratorRadioOperationStatus_TX ConcentratorRadioTask_sendVentData(uint16_t data);
+enum ConcentratorRadioOperationStatus_TX ConcentratorRadioTask_sendVentData(uint8_t currentTemp, uint8_t desiredTemp, uint8_t roomNum);
 
 
 #endif /* TASKS_CONCENTRATORRADIOTASKTASK_H_ */

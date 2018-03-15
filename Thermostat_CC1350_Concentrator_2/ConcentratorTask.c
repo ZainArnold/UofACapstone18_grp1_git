@@ -58,7 +58,7 @@
 
 
 /***** Defines *****/
-#define CONCENTRATOR_TASK_STACK_SIZE 1024
+#define CONCENTRATOR_TASK_STACK_SIZE 1536
 #define CONCENTRATOR_TASK_PRIORITY   3
 
 #define CONCENTRATOR_EVENT_ALL                      0xFFFFFFFF
@@ -280,6 +280,13 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
 
             /* Update the values on the LCD */
             updateLcd(n);
+
+            //  If the temperature recorded in the room is higher or lower than the desired value
+            //  Begin data transfer to Vent
+            if(Room[n].CurrentTemp < (Room[n].DesiredTemp -1) |
+                   Room[n].CurrentTemp > (Room[n].DesiredTemp + 1) ){
+                ConcentratorRadioTask_sendVentData(Room[n].CurrentTemp , Room[n].DesiredTemp, n);
+            }
 
         }
         /* Wait for event */
