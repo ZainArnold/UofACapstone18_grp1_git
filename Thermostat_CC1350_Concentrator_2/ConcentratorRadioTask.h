@@ -37,10 +37,16 @@
 #include "RadioProtocol.h"
 
 
-enum ConcentratorRadioOperationStatus {
-    ConcentratorRadioStatus_Success,
-    ConcentratorRadioStatus_Failed,
-    ConcentratorRadioStatus_FailedNotConnected,
+enum ConcentratorRadioOperationStatus_RX {
+    ConcentratorRadioStatus_RX_Success,
+    ConcentratorRadioStatus_RX_Failed,
+    ConcentratorRadioStatus_RX_FailedNotConnected,
+};
+
+enum ConcentratorRadioOperationStatus_TX {
+    ConcentratorRadioStatus_TX_Success,
+    ConcentratorRadioStatus_TX_Failed,
+    ConcentratorRadioStatus_TX_FailedNotConnected,
 };
 
 union ConcentratorPacket {
@@ -51,10 +57,22 @@ union ConcentratorPacket {
 
 typedef void (*ConcentratorRadio_PacketReceivedCallback)(union ConcentratorPacket* packet, int8_t rssi);
 
-/* Create the ConcentratorRadioTask and creates all TI-RTOS objects */
-void ConcentratorRadioTask_init(void);
+/* Create the Concentrator Receive Radio Task and creates all TI-RTOS objects */
+void ConcentratorRadioTask_init_RX(void);
+
+
 
 /* Register the packet received callback */
 void ConcentratorRadioTask_registerPacketReceivedCallback(ConcentratorRadio_PacketReceivedCallback callback);
 
+
+/* Create the Concentrator Transmit Radio Task and creates all TI-RTOS objects */
+void ConcentratorRadioTask_init_TX(void);
+
+
+enum ConcentratorRadioOperationStatus_TX ConcentratorRadioTask_sendVentData(uint16_t data);
+
+
 #endif /* TASKS_CONCENTRATORRADIOTASKTASK_H_ */
+
+

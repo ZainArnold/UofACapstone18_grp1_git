@@ -61,6 +61,12 @@ struct DualModeSensorPacket {
     uint8_t button;
 };
 
+struct DualModeVentPacket {
+    struct PacketHeader header;
+    uint16_t ventData;
+    uint32_t time100MiliSec;
+};
+
 struct AckPacket {
     struct PacketHeader header;
 };

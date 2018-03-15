@@ -3,28 +3,34 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
 		<item value="" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Task_Params_init"/>
-			<item value="Task_Param_init"/>
-			<item value="Task_Param"/>
-			<item value="CONCENTRATORRADIO_TASK_PRIORITY"/>
-			<item value="sendack"/>
+			<item value="concentratorEvent"/>
+			<item value="concentratorTaskFunction"/>
+			<item value="packetReceivedCallback"/>
+			<item value="ventData"/>
 			<item value="rxDoneCallback"/>
-			<item value="ConcentratorRadioTask_registerPacketReceivedCallback"/>
-			<item value="ConcentratorRadio_PacketReceivedCallback"/>
+			<item value="radioOperationEventHandle"/>
+			<item value="radioOperationEventHandle_TX"/>
+			<item value="Sensor"/>
 		</list>
 		<list key="replacehistory">
+			<item value="rxDoneCallback_TX"/>
+			<item value="rxDoneCallback_RX"/>
+			<item value="radioOperationEventHandle_TX"/>
+			<item value="Vent"/>
+			<item value="dmVentPacket"/>
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="387" key="DIALOG_HEIGHT"/>
-		<item value="1409" key="DIALOG_X_ORIGIN"/>
-		<item value="259" key="DIALOG_Y_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1220" key="DIALOG_X_ORIGIN"/>
+		<item value="348" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

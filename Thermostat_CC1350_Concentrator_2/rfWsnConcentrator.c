@@ -71,7 +71,8 @@ int main(void)
     SPI_init();
 
     /* Initialize concentrator tasks */
-    ConcentratorRadioTask_init();
+    ConcentratorRadioTask_init_RX();
+    ConcentratorRadioTask_init_TX();
     ConcentratorTask_init();
 
     /* Start BIOS */

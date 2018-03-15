@@ -6,8 +6,7 @@
 'Building file: "../ConcentratorRadioTask.c"'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
-"../ConcentratorRadioTask.c", line 113: warning #179-D: function "sendDmPacket" was declared but never referenced
-"../ConcentratorRadioTask.c", line 114: warning #179-D: function "resendPacket" was declared but never referenced
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
 'Finished building: "../ConcentratorRadioTask.c"'
  
 'Building target: "Thermostat_CC1350_Concentrator_2.out"'

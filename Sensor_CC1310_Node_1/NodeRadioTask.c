@@ -86,7 +86,7 @@
 #endif
 
 #define NODERADIO_MAX_RETRIES 2
-#define NORERADIO_ACK_TIMEOUT_TIME_MS (160)
+#define NODERADIO_ACK_TIMEOUT_TIME_MS (160)
 
 
 /***** Type declarations *****/
@@ -271,7 +271,7 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
             dmSensorPacket.adcValue = adcData;
             dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
 
-            sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NORERADIO_ACK_TIMEOUT_TIME_MS);
+            sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NODERADIO_ACK_TIMEOUT_TIME_MS);
         }
 
         /* If we get an ACK from the concentrator */

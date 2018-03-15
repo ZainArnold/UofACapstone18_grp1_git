@@ -7806,3 +7806,1780 @@ gmake[2]: Nothing to be done for 'all'.
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 476: error #20: identifier "radioAccessSem" is undefined
+"../ConcentratorRadioTask.c", line 477: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 480: error #20: identifier "radioResultSem" is undefined
+"../ConcentratorRadioTask.c", line 481: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 490: error #20: identifier "nodeRadioTaskParams" is undefined
+"../ConcentratorRadioTask.c", line 491: error #20: identifier "NODERADIO_TASK_STACK_SIZE" is undefined
+"../ConcentratorRadioTask.c", line 492: error #20: identifier "NODERADIO_TASK_PRIORITY" is undefined
+"../ConcentratorRadioTask.c", line 493: error #20: identifier "nodeRadioTaskStack" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "nodeRadioTask" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "nodeRadioTaskFunction" is undefined
+10 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../ccfg.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: "../ccfg.c"'
+ 
+'Building file: "../CC1350_LAUNCHXL.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
+'Finished building: "../CC1350_LAUNCHXL.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+"../ConcentratorTask.c", line 430: warning #994-D: missing return statement at end of non-void function "TempFilter"
+"../ConcentratorTask.c", line 421: warning #552-D: variable "Temp" was set but never used
+"../ConcentratorTask.c", line 448: warning #994-D: missing return statement at end of non-void function "MotionFilter"
+"../ConcentratorTask.c", line 441: warning #552-D: variable "Motion" was set but never used
+'Finished building: "../ConcentratorTask.c"'
+ 
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: "../smartrf_settings/smartrf_settings.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings_predefined.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: "../smartrf_settings/smartrf_settings_predefined.c"'
+ 
+'Building file: "../easylink/EasyLink.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: "../easylink/EasyLink.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 480: error #20: identifier "radioAccessSem" is undefined
+"../ConcentratorRadioTask.c", line 481: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 484: error #20: identifier "radioResultSem" is undefined
+"../ConcentratorRadioTask.c", line 485: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "nodeRadioTaskParams" is undefined
+"../ConcentratorRadioTask.c", line 495: error #20: identifier "NODERADIO_TASK_STACK_SIZE" is undefined
+"../ConcentratorRadioTask.c", line 496: error #20: identifier "NODERADIO_TASK_PRIORITY" is undefined
+"../ConcentratorRadioTask.c", line 497: error #20: identifier "nodeRadioTaskStack" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTask" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTaskFunction" is undefined
+10 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 354: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 433: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 450: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 455: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 461: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 480: error #20: identifier "radioAccessSem" is undefined
+"../ConcentratorRadioTask.c", line 481: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 484: error #20: identifier "radioResultSem" is undefined
+"../ConcentratorRadioTask.c", line 485: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 490: error #20: identifier "radioOperationEvent" is undefined
+"../ConcentratorRadioTask.c", line 491: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "nodeRadioTaskParams" is undefined
+"../ConcentratorRadioTask.c", line 495: error #20: identifier "NODERADIO_TASK_STACK_SIZE" is undefined
+"../ConcentratorRadioTask.c", line 496: error #20: identifier "NODERADIO_TASK_PRIORITY" is undefined
+"../ConcentratorRadioTask.c", line 497: error #20: identifier "nodeRadioTaskStack" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTask" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTaskFunction" is undefined
+"../ConcentratorRadioTask.c", line 87: warning #552-D: variable "radioOperationEventHandle_RX" was set but never used
+17 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+"../ConcentratorTask.c", line 430: warning #994-D: missing return statement at end of non-void function "TempFilter"
+"../ConcentratorTask.c", line 421: warning #552-D: variable "Temp" was set but never used
+"../ConcentratorTask.c", line 448: warning #994-D: missing return statement at end of non-void function "MotionFilter"
+"../ConcentratorTask.c", line 441: warning #552-D: variable "Motion" was set but never used
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 480: error #20: identifier "radioAccessSem" is undefined
+"../ConcentratorRadioTask.c", line 481: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 484: error #20: identifier "radioResultSem" is undefined
+"../ConcentratorRadioTask.c", line 485: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 490: error #20: identifier "radioOperationEvent" is undefined
+"../ConcentratorRadioTask.c", line 491: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "nodeRadioTaskParams" is undefined
+"../ConcentratorRadioTask.c", line 495: error #20: identifier "NODERADIO_TASK_STACK_SIZE" is undefined
+"../ConcentratorRadioTask.c", line 496: error #20: identifier "NODERADIO_TASK_PRIORITY" is undefined
+"../ConcentratorRadioTask.c", line 497: error #20: identifier "nodeRadioTaskStack" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTask" is undefined
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "nodeRadioTaskFunction" is undefined
+12 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined                     first referenced       
+  symbol                           in file            
+ ---------                     ----------------       
+ ConcentratorRadioTask_init_TX ./rfWsnConcentrator.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: "Thermostat_CC1350_Concentrator_2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 89: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 320: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 324: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 330: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 334: error #20: identifier "nodeRadioTaskParams" is undefined
+"../ConcentratorRadioTask.c", line 337: error #20: identifier "concentratorRadioTaskFunction_TX" is undefined
+"../ConcentratorRadioTask.c", line 116: warning #179-D: variable "radioAccessSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 118: warning #179-D: variable "radioOperationEventHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: warning #179-D: variable "dmSensorPacket" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: error #237: variable "dmSensorPacket" was declared with a never-completed type
+7 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 89: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 337: error #20: identifier "concentratorRadioTaskFunction_TX" is undefined
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: warning #179-D: variable "dmSensorPacket" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: error #237: variable "dmSensorPacket" was declared with a never-completed type
+3 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 89: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 337: error #20: identifier "concentratorRadioTaskFunction_TX" is undefined
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+2 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 89: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 139: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 138: warning #2120-D: static function "concentratorRadioTaskFunction_TX" treated as extern because it was referenced but not defined
+"../ConcentratorRadioTask.c", line 139: warning #179-D: function "returnRadioOperationStatus_TX" was declared but never referenced
+1 error detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 139: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 138: warning #2120-D: static function "concentratorRadioTaskFunction_TX" treated as extern because it was referenced but not defined
+"../ConcentratorRadioTask.c", line 139: warning #179-D: function "returnRadioOperationStatus_TX" was declared but never referenced
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+"../ConcentratorTask.c", line 430: warning #994-D: missing return statement at end of non-void function "TempFilter"
+"../ConcentratorTask.c", line 421: warning #552-D: variable "Temp" was set but never used
+"../ConcentratorTask.c", line 448: warning #994-D: missing return statement at end of non-void function "MotionFilter"
+"../ConcentratorTask.c", line 441: warning #552-D: variable "Motion" was set but never used
+'Finished building: "../ConcentratorTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined                        first referenced           
+  symbol                              in file                
+ ---------                        ----------------           
+ concentratorRadioTaskFunction_TX ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined                        first referenced           
+  symbol                              in file                
+ ---------                        ----------------           
+ concentratorRadioTaskFunction_TX ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "currentRadioOperation" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "nodeAddress" was declared but never referenced
+"../ConcentratorRadioTask.c", line 138: warning #2120-D: static function "concentratorRadioTaskFunction_TX" treated as extern because it was referenced but not defined
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined                        first referenced           
+  symbol                              in file                
+ ---------                        ----------------           
+ concentratorRadioTaskFunction_TX ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 388: warning #225-D: function "Power_setDependency" declared implicitly
+"../ConcentratorRadioTask.c", line 388: error #20: identifier "PowerCC26XX_PERIPH_TRNG" is undefined
+"../ConcentratorRadioTask.c", line 389: warning #225-D: function "TRNGEnable" declared implicitly
+"../ConcentratorRadioTask.c", line 408: warning #225-D: function "TRNGDisable" declared implicitly
+"../ConcentratorRadioTask.c", line 409: warning #225-D: function "Power_releaseDependency" declared implicitly
+"../ConcentratorRadioTask.c", line 422: error #20: identifier "prevTicks" is undefined
+"../ConcentratorRadioTask.c", line 422: warning #225-D: function "Clock_getTicks" declared implicitly
+"../ConcentratorRadioTask.c", line 441: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 444: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 453: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 453: error #20: identifier "Clock_tickPeriod" is undefined
+"../ConcentratorRadioTask.c", line 458: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 458: error #20: identifier "Clock_tickPeriod" is undefined
+"../ConcentratorRadioTask.c", line 462: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 462: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 463: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 466: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 466: error #20: identifier "NODERADIO_MAX_RETRIES" is undefined
+"../ConcentratorRadioTask.c", line 470: error #20: identifier "RADIO_EVENT_DATA_ACK_RECEIVED" is undefined
+"../ConcentratorRadioTask.c", line 472: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 476: error #20: identifier "RADIO_EVENT_ACK_TIMEOUT" is undefined
+"../ConcentratorRadioTask.c", line 482: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 487: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 492: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 494: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: warning #552-D: variable "dmVentPacket" was set but never used
+15 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 422: error #20: identifier "prevTicks" is undefined
+"../ConcentratorRadioTask.c", line 422: warning #225-D: function "Clock_getTicks" declared implicitly
+"../ConcentratorRadioTask.c", line 441: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 444: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 453: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 453: error #20: identifier "Clock_tickPeriod" is undefined
+"../ConcentratorRadioTask.c", line 458: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 458: error #20: identifier "Clock_tickPeriod" is undefined
+"../ConcentratorRadioTask.c", line 462: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 462: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 463: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 466: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 466: error #20: identifier "NODERADIO_MAX_RETRIES" is undefined
+"../ConcentratorRadioTask.c", line 470: error #20: identifier "RADIO_EVENT_DATA_ACK_RECEIVED" is undefined
+"../ConcentratorRadioTask.c", line 472: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 476: error #20: identifier "RADIO_EVENT_ACK_TIMEOUT" is undefined
+"../ConcentratorRadioTask.c", line 482: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 487: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 492: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 494: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 116: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 118: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 120: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 122: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 124: warning #552-D: variable "dmVentPacket" was set but never used
+14 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 455: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 460: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 464: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 464: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 465: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 468: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 468: error #20: identifier "NODERADIO_MAX_RETRIES" is undefined
+"../ConcentratorRadioTask.c", line 472: error #20: identifier "RADIO_EVENT_DATA_ACK_RECEIVED" is undefined
+"../ConcentratorRadioTask.c", line 474: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 478: error #20: identifier "RADIO_EVENT_ACK_TIMEOUT" is undefined
+"../ConcentratorRadioTask.c", line 484: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 489: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 489: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 496: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 117: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 123: warning #179-D: variable "ventData" was declared but never referenced
+"../ConcentratorRadioTask.c", line 125: warning #552-D: variable "dmVentPacket" was set but never used
+10 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 141: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 460: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 464: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 468: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 472: error #20: identifier "RADIO_EVENT_DATA_ACK_RECEIVED" is undefined
+"../ConcentratorRadioTask.c", line 474: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 478: error #20: identifier "RADIO_EVENT_ACK_TIMEOUT" is undefined
+"../ConcentratorRadioTask.c", line 484: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 489: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 489: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 494: error #20: identifier "RADIO_EVENT_SEND_FAIL" is undefined
+"../ConcentratorRadioTask.c", line 496: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 117: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 121: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 141: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+7 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 130: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+2 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"..\ConcentratorRadioTask.h", line 47: error #102: "ConcentratorRadioStatus_Success" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 48: error #102: "ConcentratorRadioStatus_Failed" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 49: error #102: "ConcentratorRadioStatus_FailedNotConnected" has already been declared in the current scope
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #20: identifier "NodeRadioStatus_Success" is undefined
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #20: identifier "NodeRadioStatus_Failed" is undefined
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 130: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+6 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'ConcentratorTask.obj' failed
+"..\ConcentratorRadioTask.h", line 47: error #102: "ConcentratorRadioStatus_Success" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 48: error #102: "ConcentratorRadioStatus_Failed" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 49: error #102: "ConcentratorRadioStatus_FailedNotConnected" has already been declared in the current scope
+3 errors detected in the compilation of "../ConcentratorTask.c".
+gmake: *** [ConcentratorTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+
+>> Compilation failure
+subdir_rules.mk:37: recipe for target 'rfWsnConcentrator.obj' failed
+"..\ConcentratorRadioTask.h", line 47: error #102: "ConcentratorRadioStatus_Success" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 48: error #102: "ConcentratorRadioStatus_Failed" has already been declared in the current scope
+"..\ConcentratorRadioTask.h", line 49: error #102: "ConcentratorRadioStatus_FailedNotConnected" has already been declared in the current scope
+3 errors detected in the compilation of "../rfWsnConcentrator.c".
+gmake: *** [rfWsnConcentrator.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #20: identifier "NodeRadioStatus_Success" is undefined
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #20: identifier "NodeRadioStatus_Failed" is undefined
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 130: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+3 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #20: identifier "NodeRadioStatus_Success" is undefined
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #20: identifier "NodeRadioStatus_Failed" is undefined
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 130: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+3 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 130: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+2 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 517: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 517: warning #161-D: declaration is incompatible with previous "returnRadioOperationStatus" (declared at line 505)
+"../ConcentratorRadioTask.c", line 517: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../ConcentratorRadioTask.c", line 150: warning #2120-D: static function "returnRadioOperationStatus_TX" treated as extern because it was referenced but not defined
+"../ConcentratorRadioTask.c", line 517: warning #179-D: function "returnRadioOperationStatus" was declared but never referenced
+3 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 517: error #98: a function may not return a value of this type
+"../ConcentratorRadioTask.c", line 519: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 522: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 525: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 531: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 542: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus)" (declared at line 150)
+"../ConcentratorRadioTask.c", line 542: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+11 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 498: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 505: warning #225-D: function "returnRadioOperationStatus" declared implicitly
+"../ConcentratorRadioTask.c", line 517: error #98: a function may not return a value of this type
+"../ConcentratorRadioTask.c", line 519: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 522: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 525: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 531: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 542: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 542: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus)" (declared at line 150)
+"../ConcentratorRadioTask.c", line 542: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+11 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 517: error #98: a function may not return a value of this type
+"../ConcentratorRadioTask.c", line 519: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 522: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 525: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 531: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 542: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 542: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus)" (declared at line 150)
+"../ConcentratorRadioTask.c", line 542: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+11 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 522: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 525: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 531: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 542: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 542: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus)" (declared at line 150)
+"../ConcentratorRadioTask.c", line 542: error #71: incomplete type is not allowed
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+9 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 150: warning #233-D: declaration is not visible outside of function
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 483: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 505: error #169: argument of type "char" is incompatible with parameter of type "enum NodeRadioOperationStatus"
+"../ConcentratorRadioTask.c", line 522: error #20: identifier "radioAccessSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 525: error #20: identifier "adcData" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../ConcentratorRadioTask.c", line 531: error #20: identifier "radioResultSemHandle" is undefined
+"../ConcentratorRadioTask.c", line 542: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus)" (declared at line 150)
+"../ConcentratorRadioTask.c", line 126: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+8 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 528: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 537: error #20: identifier "radioAccessSemHandle" is undefined
+2 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 537: error #20: identifier "radioAccessSemHandle" is undefined
+1 error detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 473: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 493: warning #225-D: function "resendPacket" declared implicitly
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+"../CC1350_LAUNCHXL_TIRTOS.cmd", line 95: error #10099-D: program will not fit into available memory.  run placement with alignment fails for section ".stack" size 0x400 .  Available memory ranges:
+   SRAM         size: 0x5000       unused: 0x694        max hole: 0x379     
+
+ undefined                  first referenced           
+  symbol                        in file                
+ ---------                  ----------------           
+ AONBatMonBatteryVoltageGet ./ConcentratorRadioTask.obj
+ resendPacket               ./ConcentratorRadioTask.obj
+ sendDmPacket               ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 481: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 497: warning #225-D: function "resendPacket" declared implicitly
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+"../CC1350_LAUNCHXL_TIRTOS.cmd", line 95: error #10099-D: program will not fit into available memory.  run placement with alignment fails for section ".stack" size 0x400 .  Available memory ranges:
+   SRAM         size: 0x5000       unused: 0x694        max hole: 0x379     
+
+ undefined                  first referenced           
+  symbol                        in file                
+ ---------                  ----------------           
+ AONBatMonBatteryVoltageGet ./ConcentratorRadioTask.obj
+ resendPacket               ./ConcentratorRadioTask.obj
+ sendDmPacket               ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 477: warning #225-D: function "AONBatMonBatteryVoltageGet" declared implicitly
+"../ConcentratorRadioTask.c", line 481: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 497: warning #225-D: function "resendPacket" declared implicitly
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined                  first referenced           
+  symbol                        in file                
+ ---------                  ----------------           
+ AONBatMonBatteryVoltageGet ./ConcentratorRadioTask.obj
+ resendPacket               ./ConcentratorRadioTask.obj
+ sendDmPacket               ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 478: warning #225-D: function "sendDmPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 494: warning #225-D: function "resendPacket" declared implicitly
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+
+ undefined    first referenced           
+  symbol          in file                
+ ---------    ----------------           
+ resendPacket ./ConcentratorRadioTask.obj
+ sendDmPacket ./ConcentratorRadioTask.obj
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "Thermostat_CC1350_Concentrator_2.out" not built
+
+>> Compilation failure
+makefile:165: recipe for target 'Thermostat_CC1350_Concentrator_2.out' failed
+gmake[1]: *** [Thermostat_CC1350_Concentrator_2.out] Error 1
+makefile:158: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 552: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeVentPacket, uint8_t, uint32_t)" (declared at line 155)
+"../ConcentratorRadioTask.c", line 559: error #20: identifier "dmSensorPacket" is undefined
+"../ConcentratorRadioTask.c", line 586: error #20: identifier "blePinHandle" is undefined
+"../ConcentratorRadioTask.c", line 605: error #20: identifier "blePinHandle" is undefined
+"../ConcentratorRadioTask.c", line 618: error #249: function "resendPacket" has already been defined
+"../ConcentratorRadioTask.c", line 627: error #20: identifier "blePinHandle" is undefined
+"../ConcentratorRadioTask.c", line 640: error #249: function "rxDoneCallback" has already been defined
+"../ConcentratorRadioTask.c", line 646: error #20: identifier "blePinHandle" is undefined
+"../ConcentratorRadioTask.c", line 659: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 665: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 672: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 679: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+12 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 552: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeVentPacket, uint8_t, uint32_t)" (declared at line 155)
+"../ConcentratorRadioTask.c", line 609: error #249: function "resendPacket" has already been defined
+"../ConcentratorRadioTask.c", line 627: error #249: function "rxDoneCallback" has already been defined
+"../ConcentratorRadioTask.c", line 643: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 649: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 656: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 663: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+7 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 609: error #249: function "resendPacket" has already been defined
+"../ConcentratorRadioTask.c", line 627: error #249: function "rxDoneCallback" has already been defined
+"../ConcentratorRadioTask.c", line 643: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 649: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 656: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 663: error #20: identifier "radioOperationEventHandle" is undefined
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+6 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 609: error #249: function "resendPacket" has already been defined
+"../ConcentratorRadioTask.c", line 627: error #249: function "rxDoneCallback" has already been defined
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+2 errors detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: "Thermostat_CC1350_Concentrator_2.out"'
+ 
+
+**** Build Finished ****
