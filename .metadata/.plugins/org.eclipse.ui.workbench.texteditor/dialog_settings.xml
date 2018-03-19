@@ -2,30 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="RADIO_EVENT_DATA_ACK_RECEIVED" key="selection"/>
+		<item value="NodeRadioStatus" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="RADIO_EVENT_DATA_ACK_RECEIVED"/>
-			<item value="rxPacket"/>
-			<item value="sensorPacket"/>
-			<item value="RADIO_PACKET_TYPE_DM_SENSOR_PACKET"/>
-			<item value="RADIO_PACKET_TYPE_DM_VENT_PACKET"/>
-			<item value="sendAck"/>
-			<item value="latestSourceAddress"/>
-			<item value="txPacket"/>
+			<item value="NodeRadioStatus"/>
+			<item value="returnRadioOperationStatus"/>
+			<item value="DualModeSensorPacket"/>
+			<item value="DualModeVentPacket"/>
+			<item value="dmSensorPacket"/>
+			<item value="dmVentPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;"/>
+			<item value="dmVentPacket"/>
+			<item value="nodeRadioTaskFunction"/>
 		</list>
 		<list key="replacehistory">
+			<item value="returnRadioOperationStatus_TX"/>
+			<item value="dmVentPacket"/>
+			<item value="NodeRadioTaskFunction"/>
+			<item value="nodeRadioTaskFunction_TX"/>
+			<item value="NODERADIO_TASK_PRIORITY_TX"/>
 			<item value="rxPacket_TX"/>
 			<item value="rxPacket_RX"/>
 			<item value="RADIO_PACKET_TYPE_DM_VENT_PACKET"/>
-			<item value="txPacket_RX"/>
-			<item value="rxDoneCallback_TX"/>
-			<item value="rxDoneCallback_RX"/>
-			<item value="radioOperationEventHandle_TX"/>
-			<item value="Vent"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

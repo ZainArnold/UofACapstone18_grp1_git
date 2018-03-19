@@ -62,7 +62,9 @@
 #include "ConcentratorRadioTask.h"
 
 
-/***** Defines *****/
+//---------------------------------------
+// Defines
+
 #define CONCENTRATORRADIO_TASK_STACK_SIZE 512
 #define CONCENTRATORRADIO_TASK_PRIORITY_RX   3
 #define CONCENTRATORRADIO_TASK_PRIORITY_TX   4
@@ -300,7 +302,7 @@ static void rxDoneCallback_RX(EasyLink_RxPacket * rxPacket_RX, EasyLink_Status s
             /* Save packet */
             latestRxPacket.header.sourceAddress             = rxPacket_RX->payload[0];
             latestRxPacket.header.packetType                = rxPacket_RX->payload[1];
-            latestRxPacket.adcSensorPacket.adcValue         = (rxPacket->payload[2] << 8) | rxPacket_RX->payload[3];
+            latestRxPacket.adcSensorPacket.adcValue         = (rxPacket_RX->payload[2] << 8) | rxPacket_RX->payload[3];
 
             /* Signal packet received */
             Event_post(radioOperationEventHandle_RX, RADIO_EVENT_VALID_PACKET_RECEIVED);

@@ -3,71 +3,40 @@
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
  
-'Building file: "../CC1310_LAUNCHXL.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1310_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1310_LAUNCHXL.c"
-'Finished building: "../CC1310_LAUNCHXL.c"'
- 
-'Building file: "../SceAdc.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
-'Finished building: "../SceAdc.c"'
- 
-'Building file: "../ccfg.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
-'Finished building: "../ccfg.c"'
- 
 'Building file: "../NodeRadioTask.c"'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
-'Finished building: "../NodeRadioTask.c"'
- 
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+1 error detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
 'Building file: "../NodeTask.c"'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
-'Finished building: "../NodeTask.c"'
- 
-'Building file: "../sce/scif.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif.c"
-'Finished building: "../sce/scif.c"'
- 
-'Building file: "../rfWsnNode.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
-'Finished building: "../rfWsnNode.c"'
- 
-'Building file: "../sce/scif_osal_tirtos.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
-'Finished building: "../sce/scif_osal_tirtos.c"'
- 
-'Building file: "../smartrf_settings/smartrf_settings.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
-'Finished building: "../smartrf_settings/smartrf_settings.c"'
- 
-'Building file: "../sce/scif_framework.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_framework.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_framework.c"
-'Finished building: "../sce/scif_framework.c"'
- 
-'Building file: "../easylink/EasyLink.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
-'Finished building: "../easylink/EasyLink.c"'
- 
-'Building file: "../smartrf_settings/smartrf_settings_predefined.c"'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
-'Finished building: "../smartrf_settings/smartrf_settings_predefined.c"'
- 
-'Building target: "Vent_CC1310_Node_3.out"'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Vent_CC1310_Node_3.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Vent_CC1310_Node_3_linkInfo.xml" --rom_model -o "Vent_CC1310_Node_3.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
-<Linking>
-'Finished building target: "Vent_CC1310_Node_3.out"'
- 
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

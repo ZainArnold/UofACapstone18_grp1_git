@@ -37,14 +37,23 @@
 
 #define NODE_ACTIVITY_LED Board_PIN_LED0
 
-enum NodeRadioOperationStatus {
-    NodeRadioStatus_Success,
-    NodeRadioStatus_Failed,
-    NodeRadioStatus_FailedNotConnected,
+enum NodeRadioOperationStatus_RX {
+    NodeRadioStatus_RX_Success,
+    NodeRadioStatus_RX_Failed,
+    NodeRadioStatus_RX_FailedNotConnected,
 };
 
+enum NodeRadioOperationStatus_TX {
+    NodeRadioStatus_TX_Success,
+    NodeRadioStatus_TX_Failed,
+    NodeRadioStatus_TX_FailedNotConnected,
+};
+
+
+typedef void (*NodeRadio_PacketReceivedCallback)(union NodePacket* packet, int8_t rssi);
+
 /* Initializes the NodeRadioTask and creates all TI-RTOS objects */
-void NodeRadioTask_init(void);
+void NodeRadioTask_init_TX(void);
 
 /* Sends an ADC value to the concentrator */
 enum NodeRadioOperationStatus NodeRadioTask_sendAdcData(uint16_t data);

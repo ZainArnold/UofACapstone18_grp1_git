@@ -40,8 +40,8 @@
 #define RADIO_EASYLINK_MODULATION     EasyLink_Phy_Custom
 
 #define RADIO_PACKET_TYPE_ACK_PACKET             0
-#define RADIO_PACKET_TYPE_ADC_SENSOR_PACKET      1
-#define RADIO_PACKET_TYPE_DM_SENSOR_PACKET       2
+#define RADIO_PACKET_TYPE_ADC_VENT_PACKET      1
+#define RADIO_PACKET_TYPE_DM_VENT_PACKET       2
 
 struct PacketHeader {
     uint8_t sourceAddress;
@@ -53,12 +53,12 @@ struct AdcSensorPacket {
     uint16_t adcValue;
 };
 
-struct DualModeSensorPacket {
+struct DualModeVentPacket {
     struct PacketHeader header;
-    uint16_t adcValue;
+    uint16_t ventData;
     uint16_t batt;
     uint32_t time100MiliSec;
-    uint8_t button;
+
 };
 
 struct AckPacket {

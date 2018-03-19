@@ -10178,3 +10178,1426 @@ gmake[2]: Nothing to be done for 'all'.
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'ConcentratorRadioTask.obj' failed
+"../ConcentratorRadioTask.c", line 303: error #20: identifier "rxPacket" is undefined
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+1 error detected in the compilation of "../ConcentratorRadioTask.c".
+gmake: *** [ConcentratorRadioTask.obj] Error 1
+'Building file: "../ccfg.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: "../ccfg.c"'
+ 
+'Building file: "../CC1350_LAUNCHXL.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1350_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1350_LAUNCHXL.c"
+'Finished building: "../CC1350_LAUNCHXL.c"'
+ 
+'Building file: "../ConcentratorTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
+'Finished building: "../ConcentratorTask.c"'
+ 
+'Building file: "../rfWsnConcentrator.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnConcentrator.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnConcentrator.c"
+'Finished building: "../rfWsnConcentrator.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: "../smartrf_settings/smartrf_settings.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings_predefined.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: "../smartrf_settings/smartrf_settings_predefined.c"'
+ 
+'Building file: "../easylink/EasyLink.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: "../easylink/EasyLink.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1350_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Thermostat_CC1350_Concentrator_2 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../ConcentratorRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Thermostat_CC1350_Concentrator_2" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorRadioTask.c"
+"../ConcentratorRadioTask.c", line 136: warning #552-D: variable "ventData" was set but never used
+'Finished building: "../ConcentratorRadioTask.c"'
+ 
+'Building target: "Thermostat_CC1350_Concentrator_2.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Thermostat_CC1350_Concentrator_2.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Thermostat_CC1350_Concentrator_2_linkInfo.xml" --rom_model -o "Thermostat_CC1350_Concentrator_2.out" "./CC1350_LAUNCHXL.obj" "./ConcentratorRadioTask.obj" "./ConcentratorTask.obj" "./ccfg.obj" "./rfWsnConcentrator.obj" "./easylink/EasyLink.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1350_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1350_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: "Thermostat_CC1350_Concentrator_2.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"../NodeRadioTask.c", line 120: error #20: identifier "CONCENTRATORRADIO_TASK_STACK_SIZE" is undefined
+"../NodeRadioTask.c", line 123: error #20: identifier "ConcentratorRadio_PacketReceivedCallback" is undefined
+"../NodeRadioTask.c", line 185: error #20: identifier "radioAccessSem" is undefined
+"../NodeRadioTask.c", line 186: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 189: error #20: identifier "radioResultSem" is undefined
+"../NodeRadioTask.c", line 190: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 195: error #20: identifier "radioOperationEvent" is undefined
+"../NodeRadioTask.c", line 196: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 199: error #20: identifier "nodeRadioTaskParams" is undefined
+"../NodeRadioTask.c", line 202: error #20: identifier "nodeRadioTaskStack" is undefined
+"../NodeRadioTask.c", line 203: error #20: identifier "nodeRadioTask" is undefined
+"../NodeRadioTask.c", line 268: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 291: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 361: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 367: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 370: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 387: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 397: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 543: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 549: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 556: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 563: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 131: warning #179-D: variable "nodeRadioTaskParams_TX" was declared but never referenced
+"../NodeRadioTask.c", line 133: warning #179-D: variable "nodeRadioTaskStack_TX" was declared but never referenced
+"../NodeRadioTask.c", line 135: warning #179-D: variable "radioAccessSemHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 137: warning #179-D: variable "radioOperationEventHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 143: warning #179-D: variable "dmVentPacket" was declared but never referenced
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+24 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../CC1310_LAUNCHXL.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1310_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1310_LAUNCHXL.c"
+'Finished building: "../CC1310_LAUNCHXL.c"'
+ 
+'Building file: "../SceAdc.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
+'Finished building: "../SceAdc.c"'
+ 
+'Building file: "../ccfg.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: "../ccfg.c"'
+ 
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+'Finished building: "../NodeTask.c"'
+ 
+'Building file: "../sce/scif.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif.c"
+'Finished building: "../sce/scif.c"'
+ 
+'Building file: "../rfWsnNode.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
+'Finished building: "../rfWsnNode.c"'
+ 
+'Building file: "../sce/scif_osal_tirtos.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
+'Finished building: "../sce/scif_osal_tirtos.c"'
+ 
+'Building file: "../sce/scif_framework.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_framework.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_framework.c"
+'Finished building: "../sce/scif_framework.c"'
+ 
+'Building file: "../easylink/EasyLink.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: "../easylink/EasyLink.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: "../smartrf_settings/smartrf_settings.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings_predefined.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: "../smartrf_settings/smartrf_settings_predefined.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"../NodeRadioTask.c", line 123: error #20: identifier "NodeRadio_PacketReceivedCallback" is undefined
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 185: error #20: identifier "radioAccessSem" is undefined
+"../NodeRadioTask.c", line 186: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 189: error #20: identifier "radioResultSem" is undefined
+"../NodeRadioTask.c", line 190: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 195: error #20: identifier "radioOperationEvent" is undefined
+"../NodeRadioTask.c", line 196: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 199: error #20: identifier "nodeRadioTaskParams" is undefined
+"../NodeRadioTask.c", line 202: error #20: identifier "nodeRadioTaskStack" is undefined
+"../NodeRadioTask.c", line 203: error #20: identifier "nodeRadioTask" is undefined
+"../NodeRadioTask.c", line 268: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 291: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 361: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 367: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 370: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 387: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 397: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 543: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 549: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 556: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 563: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 131: warning #179-D: variable "nodeRadioTaskParams_TX" was declared but never referenced
+"../NodeRadioTask.c", line 133: warning #179-D: variable "nodeRadioTaskStack_TX" was declared but never referenced
+"../NodeRadioTask.c", line 135: warning #179-D: variable "radioAccessSemHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 137: warning #179-D: variable "radioOperationEventHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #179-D: variable "radioResultSemHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 143: warning #179-D: variable "dmVentPacket" was declared but never referenced
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+23 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 185: error #20: identifier "semParam_TX" is undefined
+"../NodeRadioTask.c", line 195: error #20: identifier "eventParam_TX" is undefined
+"../NodeRadioTask.c", line 196: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 202: error #20: identifier "nodeRadioTaskStack" is undefined
+"../NodeRadioTask.c", line 268: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 291: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 361: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 367: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 370: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 387: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 397: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 543: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 549: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 556: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 563: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 133: warning #179-D: variable "nodeRadioTaskStack_TX" was declared but never referenced
+"../NodeRadioTask.c", line 135: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 137: warning #179-D: variable "radioOperationEventHandle_TX" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 143: warning #179-D: variable "dmVentPacket" was declared but never referenced
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+17 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../rfWsnNode.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../rfWsnNode.c", line 61: warning #225-D: function "NodeRadioTask_init" declared implicitly
+'Finished building: "../rfWsnNode.c"'
+ 
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+'Finished building: "../NodeTask.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 269: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 270: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 270: error #20: identifier "RADIO_PACKET_TYPE_DM_SENSOR_PACKET" is undefined
+"../NodeRadioTask.c", line 292: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 304: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 309: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 313: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 362: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 368: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 388: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 398: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 135: warning #552-D: variable "radioAccessSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 137: warning #552-D: variable "radioOperationEventHandle_TX" was set but never used
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+18 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 269: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 270: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 292: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 295: error #20: identifier "RADIO_EVENT_SEND_ADC_DATA" is undefined
+"../NodeRadioTask.c", line 304: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 309: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 313: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 377: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 388: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 398: error #20: identifier "dmSensorPacket" is undefined
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+17 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node_1 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"../NodeRadioTask.c", line 157: error #20: identifier "nodeRadioTaskParams" is undefined
+"../NodeRadioTask.c", line 226: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 227: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 261: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 266: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 270: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 271: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 272: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 274: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 348: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 355: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 356: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 357: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 358: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 359: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 360: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 361: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 362: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 363: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 364: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 365: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 367: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 103: warning #179-D: variable "_TX" was declared but never referenced
+"../NodeRadioTask.c", line 115: error #237: variable "dmSensorPacket" was declared with a never-completed type
+23 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../CC1310_LAUNCHXL.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="CC1310_LAUNCHXL.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../CC1310_LAUNCHXL.c"
+'Finished building: "../CC1310_LAUNCHXL.c"'
+ 
+'Building file: "../SceAdc.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="SceAdc.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../SceAdc.c"
+'Finished building: "../SceAdc.c"'
+ 
+'Building file: "../ccfg.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ccfg.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ccfg.c"
+'Finished building: "../ccfg.c"'
+ 
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+'Finished building: "../NodeTask.c"'
+ 
+'Building file: "../rfWsnNode.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
+'Finished building: "../rfWsnNode.c"'
+ 
+'Building file: "../sce/scif.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif.c"
+'Finished building: "../sce/scif.c"'
+ 
+'Building file: "../sce/scif_osal_tirtos.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_osal_tirtos.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_osal_tirtos.c"
+'Finished building: "../sce/scif_osal_tirtos.c"'
+ 
+'Building file: "../sce/scif_framework.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="sce/scif_framework.d_raw" --obj_directory="sce" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../sce/scif_framework.c"
+'Finished building: "../sce/scif_framework.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings.c"
+'Finished building: "../smartrf_settings/smartrf_settings.c"'
+ 
+'Building file: "../easylink/EasyLink.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
+'Finished building: "../easylink/EasyLink.c"'
+ 
+'Building file: "../smartrf_settings/smartrf_settings_predefined.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="smartrf_settings/smartrf_settings_predefined.d_raw" --obj_directory="smartrf_settings" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../smartrf_settings/smartrf_settings_predefined.c"
+'Finished building: "../smartrf_settings/smartrf_settings_predefined.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node_1 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"../NodeRadioTask.c", line 157: error #20: identifier "nodeRadioTaskParams" is undefined
+"../NodeRadioTask.c", line 103: warning #179-D: variable "_TX" was declared but never referenced
+1 error detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node_1 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Sensor_CC1310_Node_1" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+'Finished building: "../NodeRadioTask.c"'
+ 
+'Building target: "Sensor_CC1310_Node_1.out"'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Sensor_CC1310_Node_1.map" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Sensor_CC1310_Node_1_linkInfo.xml" --rom_model -o "Sensor_CC1310_Node_1.out" "./CC1310_LAUNCHXL.obj" "./NodeRadioTask.obj" "./NodeTask.obj" "./SceAdc.obj" "./ccfg.obj" "./rfWsnNode.obj" "./easylink/EasyLink.obj" "./sce/scif.obj" "./sce/scif_framework.obj" "./sce/scif_osal_tirtos.obj" "./smartrf_settings/smartrf_settings.obj" "./smartrf_settings/smartrf_settings_predefined.obj" "../CC1310_LAUNCHXL_TIRTOS.cmd" -l"C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/linker.cmd" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/lib/display.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/mw/lcd/lib/lcd.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/lib/grlib.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/lib/rf_multiMode_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/lib/drivers_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/pdm/lib/pdm_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/dpl/lib/dpl_cc13x0.aem3" -l"C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: "Sensor_CC1310_Node_1.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Sensor_CC1310_Node_1 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'Sensor_CC1310_Node_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 269: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 270: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 292: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 304: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 309: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 313: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 314: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 315: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 317: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 377: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 388: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 398: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 399: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 400: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 401: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 402: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 403: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 404: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 405: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 406: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 407: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 408: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 143: error #237: variable "dmVentPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+29 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 164: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 292: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 317: error #169: argument of type "struct DualModeVentPacket" is incompatible with parameter of type "struct DualModeSensorPacket"
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 377: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 388: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 391: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 391: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeSensorPacket, uint8_t, uint32_t)" (declared at line 164)
+"../NodeRadioTask.c", line 391: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 410: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+13 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 164: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 317: error #169: argument of type "struct DualModeVentPacket" is incompatible with parameter of type "struct DualModeSensorPacket"
+"../NodeRadioTask.c", line 338: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 377: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 388: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 391: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeSensorPacket, uint8_t, uint32_t)" (declared at line 164)
+"../NodeRadioTask.c", line 410: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 139: warning #552-D: variable "radioResultSemHandle_TX" was set but never used
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+12 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 164: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 317: error #169: argument of type "struct DualModeVentPacket" is incompatible with parameter of type "struct DualModeSensorPacket"
+"../NodeRadioTask.c", line 338: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 371: error #20: identifier "radioResultSemHandle" is undefined
+"../NodeRadioTask.c", line 377: error #20: identifier "radioAccessSemHandle" is undefined
+"../NodeRadioTask.c", line 391: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeSensorPacket, uint8_t, uint32_t)" (declared at line 164)
+"../NodeRadioTask.c", line 410: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+11 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 164: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 313: error #137: struct "DualModeVentPacket" has no field "batt"
+"../NodeRadioTask.c", line 314: error #137: struct "DualModeVentPacket" has no field "adcValue"
+"../NodeRadioTask.c", line 315: error #137: struct "DualModeVentPacket" has no field "button"
+"../NodeRadioTask.c", line 317: error #169: argument of type "struct DualModeVentPacket" is incompatible with parameter of type "struct DualModeSensorPacket"
+"../NodeRadioTask.c", line 338: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 365: error #20: identifier "adcData" is undefined
+"../NodeRadioTask.c", line 391: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeSensorPacket, uint8_t, uint32_t)" (declared at line 164)
+"../NodeRadioTask.c", line 400: error #137: struct "DualModeVentPacket" has no field "adcValue"
+"../NodeRadioTask.c", line 401: error #137: struct "DualModeVentPacket" has no field "adcValue"
+"../NodeRadioTask.c", line 402: error #137: struct "DualModeVentPacket" has no field "batt"
+"../NodeRadioTask.c", line 403: error #137: struct "DualModeVentPacket" has no field "batt"
+"../NodeRadioTask.c", line 408: error #137: struct "DualModeVentPacket" has no field "button"
+"../NodeRadioTask.c", line 410: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 544: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 550: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 557: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 564: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+18 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 46: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 164: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 316: error #169: argument of type "struct DualModeVentPacket" is incompatible with parameter of type "struct DualModeSensorPacket"
+"../NodeRadioTask.c", line 337: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 364: error #20: identifier "adcData" is undefined
+"../NodeRadioTask.c", line 390: error #148: declaration is incompatible with "void sendDmPacket(struct DualModeSensorPacket, uint8_t, uint32_t)" (declared at line 164)
+"../NodeRadioTask.c", line 542: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 548: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 555: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 562: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+9 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 47: error #102: "NodeRadioStatus_Success" has already been declared in the current scope
+"..\NodeRadioTask.h", line 48: error #102: "NodeRadioStatus_Failed" has already been declared in the current scope
+"..\NodeRadioTask.h", line 49: error #102: "NodeRadioStatus_FailedNotConnected" has already been declared in the current scope
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 111: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 337: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 356: error #98: a function may not return a value of this type
+"../NodeRadioTask.c", line 358: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 364: error #20: identifier "adcData" is undefined
+"../NodeRadioTask.c", line 381: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus_TX)" (declared at line 163)
+"../NodeRadioTask.c", line 381: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 542: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 548: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 555: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 562: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+15 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 47: error #102: "NodeRadioStatus_Success" has already been declared in the current scope
+"..\NodeRadioTask.h", line 48: error #102: "NodeRadioStatus_Failed" has already been declared in the current scope
+"..\NodeRadioTask.h", line 49: error #102: "NodeRadioStatus_FailedNotConnected" has already been declared in the current scope
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+4 errors detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+'Building file: "../rfWsnNode.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
+
+>> Compilation failure
+subdir_rules.mk:44: recipe for target 'rfWsnNode.obj' failed
+"..\NodeRadioTask.h", line 47: error #102: "NodeRadioStatus_Success" has already been declared in the current scope
+"..\NodeRadioTask.h", line 48: error #102: "NodeRadioStatus_Failed" has already been declared in the current scope
+"..\NodeRadioTask.h", line 49: error #102: "NodeRadioStatus_FailedNotConnected" has already been declared in the current scope
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../rfWsnNode.c", line 61: warning #225-D: function "NodeRadioTask_init" declared implicitly
+3 errors detected in the compilation of "../rfWsnNode.c".
+gmake: *** [rfWsnNode.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 111: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 337: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 356: error #98: a function may not return a value of this type
+"../NodeRadioTask.c", line 358: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 364: error #20: identifier "adcData" is undefined
+"../NodeRadioTask.c", line 381: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus_TX)" (declared at line 163)
+"../NodeRadioTask.c", line 381: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 542: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 548: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 555: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 562: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+12 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+'Building file: "../rfWsnNode.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="rfWsnNode.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../rfWsnNode.c"
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../rfWsnNode.c", line 61: warning #225-D: function "NodeRadioTask_init" declared implicitly
+'Finished building: "../rfWsnNode.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 337: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 356: error #98: a function may not return a value of this type
+"../NodeRadioTask.c", line 358: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 364: error #20: identifier "adcData" is undefined
+"../NodeRadioTask.c", line 381: error #148: declaration is incompatible with "void returnRadioOperationStatus_TX(enum NodeRadioOperationStatus_TX)" (declared at line 163)
+"../NodeRadioTask.c", line 381: error #71: incomplete type is not allowed
+"../NodeRadioTask.c", line 542: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 548: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 555: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 562: error #20: identifier "radioOperationEventHandle" is undefined
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+11 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 148: error #171: expected a declaration
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+2 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 148: error #171: expected a declaration
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+2 errors detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tirtos_builds_CC1310_LAUNCHXL_release_ccs ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Nothing to be done for 'configPkg/linker.cmd'.
+making ../src/sysbios/rom_sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Vent_CC1310_Node_3 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../NodeRadioTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeRadioTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeRadioTask.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
+"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
+"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
+"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
+"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
+"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+1 error detected in the compilation of "../NodeRadioTask.c".
+gmake: *** [NodeRadioTask.obj] Error 1
+'Building file: "../NodeTask.c"'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+
+>> Compilation failure
+subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
+"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
+"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
+1 error detected in the compilation of "../NodeTask.c".
+gmake: *** [NodeTask.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
