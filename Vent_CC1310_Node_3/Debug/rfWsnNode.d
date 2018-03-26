@@ -130,7 +130,8 @@ rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/d
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/gpio.h
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h
 rfWsnNode.obj: ../NodeRadioTask.h
-rfWsnNode.obj: ../NodeTask.h
+rfWsnNode.obj: ../RadioProtocol.h
+rfWsnNode.obj: ../easylink/EasyLink.h
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/RF.h
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/dpl/SemaphoreP.h
 rfWsnNode.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
@@ -141,6 +142,8 @@ rfWsnNode.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/string.h
 rfWsnNode.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/linkage.h
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h
 rfWsnNode.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h
+rfWsnNode.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h
+rfWsnNode.obj: ../NodeTask.h
 
 ../rfWsnNode.c: 
 C:/ti/xdctools_3_50_03_33_core/packages/xdc/std.h: 
@@ -272,7 +275,8 @@ C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../dri
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/gpio.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/../inc/hw_gpio.h: 
 ../NodeRadioTask.h: 
-../NodeTask.h: 
+../RadioProtocol.h: 
+../easylink/EasyLink.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/rf/RF.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/dpl/SemaphoreP.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 
@@ -283,3 +287,5 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/string.h:
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/linkage.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h: 
+../NodeTask.h: 

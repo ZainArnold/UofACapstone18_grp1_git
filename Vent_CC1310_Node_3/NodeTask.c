@@ -89,6 +89,8 @@ Event_Struct nodeEvent;  /* not static so you can see in ROV */
 static Event_Handle nodeEventHandle;
 static uint16_t latestAdcValue;
 
+volatile uint16_t ventData= 0x4321;
+
 /* Clock for the fast report timeout */
 Clock_Struct fastReportTimeoutClock;     /* not static so you can see in ROV */
 static Clock_Handle fastReportTimeoutClockHandle;
@@ -140,270 +142,6 @@ static void fastReportTimeoutCallback(UArg arg0);
 static void adcCallback(uint16_t adcValue);
 static void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 
-//Old Version Before Receive Data
-/***** Function definitions *****/
-//void NodeTask_init(void)
-//{
-//
-//    /* Create event used internally for state changes */
-//    Event_Params eventParam;
-//    Event_Params_init(&eventParam);
-//    Event_construct(&nodeEvent, &eventParam);
-//    nodeEventHandle = Event_handle(&nodeEvent);
-//
-//    /* Create clock object which is used for fast report timeout */
-//    Clock_Params clkParams;
-//    Clock_Params_init(&clkParams);
-//
-//    clkParams.period = 0;
-//    clkParams.startFlag = FALSE;
-//    Clock_construct(&fastReportTimeoutClock, fastReportTimeoutCallback, 1, &clkParams);
-//    fastReportTimeoutClockHandle = Clock_handle(&fastReportTimeoutClock);
-//
-//    /* Create the node task */
-//    Task_Params_init(&nodeTaskParams);
-//    nodeTaskParams.stackSize = NODE_TASK_STACK_SIZE;
-//    nodeTaskParams.priority = NODE_TASK_PRIORITY;
-//    nodeTaskParams.stack = &nodeTaskStack;
-//    Task_construct(&nodeTask, nodeTaskFunction, &nodeTaskParams, NULL);
-//}
-//
-//#ifdef FEATURE_BLE_ADV
-//void NodeTask_advStatsCB(BleAdv_Stats stats)
-//{
-//    memcpy(&bleAdvStats, &stats, sizeof(BleAdv_Stats));
-//
-//    /* Post LCD update event */
-//    Event_post(nodeEventHandle, NODE_EVENT_UPDATE_LCD);
-//}
-//#endif
-//
-//static void nodeTaskFunction(UArg arg0, UArg arg1)
-//{
-//    /* Initialize display and try to open both UART and LCD types of display. */
-//    Display_Params params;
-//    Display_Params_init(&params);
-//    params.lineClearMode = DISPLAY_CLEAR_BOTH;
-//
-//    /* Open both an available LCD display and an UART display.
-//     * Whether the open call is successful depends on what is present in the
-//     * Display_config[] array of the board file.
-//     *
-//     * Note that for SensorTag evaluation boards combined with the SHARP96x96
-//     * Watch DevPack, there is a pin conflict with UART such that one must be
-//     * excluded, and UART is preferred by default. To display on the Watch
-//     * DevPack, add the precompiler define BOARD_DISPLAY_EXCLUDE_UART.
-//     */
-//    hDisplayLcd = Display_open(Display_Type_LCD, &params);
-//    hDisplaySerial = Display_open(Display_Type_UART, &params);
-//
-//    /* Check if the selected Display type was found and successfully opened */
-//    if (hDisplaySerial)
-//    {
-//        Display_printf(hDisplaySerial, 0, 0, "Waiting for SCE ADC reading...");
-//    }
-//
-//    /* Check if the selected Display type was found and successfully opened */
-//    if (hDisplayLcd)
-//    {
-//        Display_printf(hDisplayLcd, 0, 0, "Waiting for ADC...");
-//    }
-//
-//    /* Open LED pins */
-//    ledPinHandle = PIN_open(&ledPinState, pinTable);
-//    if (!ledPinHandle)
-//    {
-//        System_abort("Error initializing board 3.3V domain pins\n");
-//    }
-//
-//    /* Start the SCE ADC task with 1s sample period and reacting to change in ADC value. */
-//    SceAdc_init(0x00010000, NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
-//    SceAdc_registerAdcCallback(adcCallback);
-//    SceAdc_start();
-//
-//    /* setup timeout for fast report timeout */
-//    Clock_setTimeout(fastReportTimeoutClockHandle,
-//            NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS * 1000 / Clock_tickPeriod);
-//
-//    /* start fast report and timeout */
-//    Clock_start(fastReportTimeoutClockHandle);
-//
-//
-//    buttonPinHandle = PIN_open(&buttonPinState, buttonPinTable);
-//    if (!buttonPinHandle)
-//    {
-//        System_abort("Error initializing button pins\n");
-//    }
-//
-//    /* Setup callback for button pins */
-//    if (PIN_registerIntCb(buttonPinHandle, &buttonCallback) != 0)
-//    {
-//        System_abort("Error registering button callback function");
-//    }
-//
-//    while (1)
-//    {
-//        /* Wait for event */
-//        uint32_t events = Event_pend(nodeEventHandle, 0, NODE_EVENT_ALL, BIOS_WAIT_FOREVER);
-//
-//        /* If new ADC value, send this data */
-//        if (events & NODE_EVENT_NEW_ADC_VALUE) {
-//            /* Toggle activity LED */
-//            PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED,!PIN_getOutputValue(NODE_ACTIVITY_LED));
-//
-//            /* Send ADC value to concentrator */
-//            NodeRadioTask_sendAdcData(latestAdcValue);
-//
-//            /* Update display */
-//            updateLcd();
-//        }
-//        /* If new ADC value, send this data */
-//        if (events & NODE_EVENT_UPDATE_LCD) {
-//            /* update display */
-//            updateLcd();
-//        }
-//    }
-//}
-//
-//static void updateLcd(void)
-//{
-//#ifdef FEATURE_BLE_ADV
-//    char advMode[16] = {0};
-//#endif
-//
-//    /* get node address if not already done */
-//    if (nodeAddress == 0)
-//    {
-//        nodeAddress = nodeRadioTask_getNodeAddr();
-//    }
-//
-//    /* print to LCD */
-//    Display_clear(hDisplayLcd);
-//    Display_printf(hDisplayLcd, 0, 0, "NodeID: 0x%02x", nodeAddress);
-//    Display_printf(hDisplayLcd, 1, 0, "ADC: %04x", latestAdcValue);
-//
-//    /* print to UART clear screen, put cuser to beggining of terminal and print the header */
-//    Display_printf(hDisplaySerial, 0, 0, "\033[2J \033[0;0HNode ID: 0x%02x", nodeAddress);
-//    Display_printf(hDisplaySerial, 0, 0, "Node ADC Reading: %04x", latestAdcValue);
-//
-//#ifdef FEATURE_BLE_ADV
-//    if (advertisementType == BleAdv_AdertiserMs)
-//    {
-//         strncpy(advMode, "BLE MS", 6);
-//    }
-//    else if (advertisementType == BleAdv_AdertiserUrl)
-//    {
-//         strncpy(advMode, "Eddystone URL", 13);
-//    }
-//    else if (advertisementType == BleAdv_AdertiserUid)
-//    {
-//         strncpy(advMode, "Eddystone UID", 13);
-//    }
-//    else
-//    {
-//         strncpy(advMode, "None", 4);
-//    }
-//
-//    /* print to LCD */
-//    Display_printf(hDisplayLcd, 2, 0, "Adv Mode:");
-//    Display_printf(hDisplayLcd, 3, 0, "%s", advMode);
-//    Display_printf(hDisplayLcd, 4, 0, "Adv successful | failed");
-//    Display_printf(hDisplayLcd, 5, 0, "%04d | %04d",
-//                   bleAdvStats.successCnt + bleAdvStats.failCnt);
-//
-//    /* print to UART */
-//    Display_printf(hDisplaySerial, 0, 0, "Advertiser Mode: %s", advMode);
-//    Display_printf(hDisplaySerial, 0, 0, "Advertisement success: %d out of %d",
-//                   bleAdvStats.successCnt,
-//                   bleAdvStats.successCnt + bleAdvStats.failCnt);
-//#endif
-//}
-//static void adcCallback(uint16_t adcValue)
-//{
-//    /* Save latest value */
-//    latestAdcValue = adcValue;
-//
-//    /* Post event */
-//    Event_post(nodeEventHandle, NODE_EVENT_NEW_ADC_VALUE);
-//}
-//
-///*
-// *  ======== buttonCallback ========
-// *  Pin interrupt Callback function board buttons configured in the pinTable.
-// */
-//static void buttonCallback(PIN_Handle handle, PIN_Id pinId)
-//{
-//    /* Debounce logic, only toggle if the button is still pushed (low) */
-//    CPUdelay(8000*50);
-//
-//
-//    if (PIN_getInputValue(Board_PIN_BUTTON0) == 0)
-//    {
-//        //start fast report and timeout
-//        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
-//        Clock_start(fastReportTimeoutClockHandle);
-//    }
-//#ifdef FEATURE_BLE_ADV
-//    else if (PIN_getInputValue(Board_PIN_BUTTON1) == 0)
-//    {
-//        if (advertisementType != BleAdv_AdertiserUrl)
-//        {
-//            advertisementType++;
-//        }
-//
-//        //If URL then cycle between url[0 - num urls]
-//        if (advertisementType == BleAdv_AdertiserUrl)
-//        {
-//            if (eddystoneUrlIdx < NUM_EDDYSTONE_URLS)
-//            {
-//                //update URL
-//                BleAdv_updateUrl(urls[eddystoneUrlIdx++]);
-//            }
-//            else
-//            {
-//                //last URL, reset index and increase advertiserType
-//                advertisementType++;
-//                eddystoneUrlIdx = 0;
-//            }
-//        }
-//
-//        if (advertisementType == BleAdv_AdertiserTypeEnd)
-//        {
-//            advertisementType = BleAdv_AdertiserNone;
-//        }
-//
-//        //Set advertisement type
-//        BleAdv_setAdvertiserType(advertisementType);
-//
-//        /* update display */
-//        Event_post(nodeEventHandle, NODE_EVENT_UPDATE_LCD);
-//
-//        //start fast report and timeout
-//        SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
-//        Clock_start(fastReportTimeoutClockHandle);
-//    }
-//#endif
-//}
-//
-//static void fastReportTimeoutCallback(UArg arg0)
-//{
-//    //stop fast report
-//    SceAdc_setReportInterval(NODE_ADCTASK_REPORTINTERVAL_SLOW, NODE_ADCTASK_CHANGE_MASK);
-//}
-//
-//#ifdef FEATURE_BLE_ADV
-//void rfSwitchCallback(RF_Handle h, RF_ClientEvent event, void* arg){
-//#if defined(Board_DIO30_SWPWR)
-//    //Turn on switch
-//    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 1);
-//#endif
-//    PIN_setOutputValue(blePinHandle, RF_SWITCH_PIN, 1);
-//}
-//#endif
-
-
-//-----------------------------------
-// After Receive Data
 
 void NodeTask_init(void)
 {
@@ -509,13 +247,14 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
         /* Wait for event */
         uint32_t events = Event_pend(nodeEventHandle, 0, NODE_EVENT_ALL, BIOS_WAIT_FOREVER);
 
+
         /* If new ADC value, send this data */
         if (events & NODE_EVENT_NEW_ADC_VALUE) {
             /* Toggle activity LED */
             PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED,!PIN_getOutputValue(NODE_ACTIVITY_LED));
 
             /* Send ADC value to concentrator */
-            NodeRadioTask_sendAdcData(latestAdcValue);
+            NodeRadioTask_sendVentData(latestAdcValue);
 
             /* Update display */
             updateLcd();
@@ -523,9 +262,14 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
         /* If new ADC value, send this data */
         if (events & NODE_EVENT_UPDATE_LCD) {
             /* update display */
+
             updateLcd();
         }
     }
+}
+
+void receivePacketHeader(uint16_t packetVentData){
+    ventData = packetVentData;
 }
 
 static void updateLcd(void)
@@ -548,7 +292,7 @@ static void updateLcd(void)
     /* print to UART clear screen, put cuser to beggining of terminal and print the header */
     Display_printf(hDisplaySerial, 0, 0, "\033[2J \033[0;0HNode ID: 0x%02x", nodeAddress);
     Display_printf(hDisplaySerial, 0, 0, "Node ADC Reading: %04x", latestAdcValue);
-
+    Display_printf(hDisplaySerial, 0, 0, "Vent Data: %04x", ventData);
 #ifdef FEATURE_BLE_ADV
     if (advertisementType == BleAdv_AdertiserMs)
     {

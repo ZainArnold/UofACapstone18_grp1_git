@@ -87,6 +87,16 @@ static EasyLink_GetRandomNumber getRN;
 static RF_Object rfObject;
 static RF_Handle rfHandle;
 
+
+//ZainEdit
+EasyLink_ReceiveCb CallBackPackage;
+uint32_t CallBackPackageAddress;
+
+uint32_t returnCallBackPackage()
+{
+    return CallBackPackageAddress;
+}
+
 //Rx buffer includes data entry structure, hdr (len=1byte), dst addr (max of 8 bytes) and data
 //which must be aligned to 4B
 #if defined(__TI_COMPILER_VERSION__)
@@ -1207,6 +1217,10 @@ EasyLink_Status EasyLink_receiveAsync(EasyLink_ReceiveCb cb, uint32_t absTime)
     }
 
     rxCb = cb;
+
+
+    //ZainEdit
+    CallBackPackageAddress = cb;
 
     pDataEntry = (rfc_dataEntryGeneral_t*) rxBuffer;
     //data entry rx buffer includes hdr (len-1Byte), addr (max 8Bytes) and data

@@ -53,7 +53,10 @@ union ConcentratorPacket {
     struct PacketHeader header;
     struct AdcSensorPacket adcSensorPacket;
     struct DualModeSensorPacket dmSensorPacket;
+    struct AdcVentPacket adcVentPacket;
+    struct DualModeVentPacket dmVentPacket;
 };
+
 
 typedef void (*ConcentratorRadio_PacketReceivedCallback)(union ConcentratorPacket* packet, int8_t rssi);
 
@@ -71,6 +74,9 @@ void ConcentratorRadioTask_init_TX(void);
 
 
 enum ConcentratorRadioOperationStatus_TX ConcentratorRadioTask_sendVentData(uint8_t currentTemp, uint8_t desiredTemp, uint8_t roomNum);
+
+
+enum ConcentratorRadioOperationStatus_RX ConcentratorRadioTask_receiveData();
 
 
 #endif /* TASKS_CONCENTRATORRADIOTASKTASK_H_ */

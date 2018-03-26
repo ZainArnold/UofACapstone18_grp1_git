@@ -201,21 +201,21 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
      */
 
     /* Use the True Random Number Generator to generate sensor node address randomly */;
-    Power_setDependency(PowerCC26XX_PERIPH_TRNG);
-    TRNGEnable();
-    /* Do not accept the same address as the concentrator, in that case get a new random value */
-    do
-    {
-        while (!(TRNGStatusGet() & TRNG_NUMBER_READY))
-        {
-            //wait for random number generator
-        }
-        //nodeAddress = (uint8_t)TRNGNumberGet(TRNG_LOW_WORD);
-        nodeAddress = (uint8_t) 0x28;
-    } while (nodeAddress == RADIO_CONCENTRATOR_ADDRESS);
-    TRNGDisable();
+//    Power_setDependency(PowerCC26XX_PERIPH_TRNG);
+//    TRNGEnable();
+//    /* Do not accept the same address as the concentrator, in that case get a new random value */
+//    do
+//    {
+//        while (!(TRNGStatusGet() & TRNG_NUMBER_READY))
+//        {
+//            //wait for random number generator
+//        }
+//        //nodeAddress = (uint8_t)TRNGNumberGet(TRNG_LOW_WORD);
+//
+//    } while (nodeAddress == RADIO_CONCENTRATOR_ADDRESS);
+//    TRNGDisable();
     Power_releaseDependency(PowerCC26XX_PERIPH_TRNG);
-
+    nodeAddress = (uint8_t) 0x28;
     /* Set the filter to the generated random address */
     if (EasyLink_enableRxAddrFilter(&nodeAddress, 1, 1) != EasyLink_Status_Success)
     {
@@ -269,7 +269,6 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
 
             dmSensorPacket.batt = AONBatMonBatteryVoltageGet();
             dmSensorPacket.adcValue = adcData;
-            dmSensorPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
 
             sendDmPacket(dmSensorPacket, NODERADIO_MAX_RETRIES, NODERADIO_ACK_TIMEOUT_TIME_MS);
         }
@@ -362,7 +361,6 @@ static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNu
     currentRadioOperation.easyLinkTxPacket.payload[7] = (dmSensorPacket.time100MiliSec & 0x00FF0000) >> 16;
     currentRadioOperation.easyLinkTxPacket.payload[8] = (dmSensorPacket.time100MiliSec & 0xFF00) >> 8;
     currentRadioOperation.easyLinkTxPacket.payload[9] = (dmSensorPacket.time100MiliSec & 0xFF);
-    currentRadioOperation.easyLinkTxPacket.payload[10] = dmSensorPacket.button;
 
     currentRadioOperation.easyLinkTxPacket.len = sizeof(struct DualModeSensorPacket);
 

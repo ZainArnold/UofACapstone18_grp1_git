@@ -232,6 +232,9 @@ NodeTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/string.h
 NodeTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h
 NodeTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h
 NodeTask.obj: ../NodeRadioTask.h
+NodeTask.obj: ../RadioProtocol.h
+NodeTask.obj: ../easylink/EasyLink.h
+NodeTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h
 
 ../NodeTask.c: 
 C:/ti/xdctools_3_50_03_33_core/packages/xdc/std.h: 
@@ -465,3 +468,6 @@ C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/string.h:
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_prop_cmd.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h: 
 ../NodeRadioTask.h: 
+../RadioProtocol.h: 
+../easylink/EasyLink.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h: 

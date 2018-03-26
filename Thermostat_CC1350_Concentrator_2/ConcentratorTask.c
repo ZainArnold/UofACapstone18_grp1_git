@@ -122,6 +122,7 @@ static uint8_t isKnownNodeAddress(uint8_t address);
 uint16_t TempFilter(uint16_t AdcValue);
 uint16_t MotionFilter(uint16_t AdcValue);
 
+uint16_t ventData;
 
 //Function Declaration
 void ConcentratorTask_init(void) {
@@ -264,6 +265,7 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
                     Room[n].SensorActive = 1;
                     Room[n].CurrentTemp = TempFilter(latestActiveAdcSensorNode.latestAdcValue);
                     Room[n].MotionDetected = MotionFilter(latestActiveAdcSensorNode.latestAdcValue);
+                    ventData = Room[n].CurrentTemp + (Room[n].DesiredTemp * 0x0100);
                 }
                 else if(  ((RoomActiveAddress & DeviceFilter) <= VentFilter) & ((RoomActiveAddress & RoomFilter) == SpecificRoomFilter) ){
                     Room[n].VentActive = 1;
@@ -283,14 +285,18 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
 
             //  If the temperature recorded in the room is higher or lower than the desired value
             //  Begin data transfer to Vent
-            if(Room[n].CurrentTemp < (Room[n].DesiredTemp -1) |
-                   Room[n].CurrentTemp > (Room[n].DesiredTemp + 1) ){
-                ConcentratorRadioTask_sendVentData(Room[n].CurrentTemp , Room[n].DesiredTemp, n);
-            }
+//            if(Room[n].CurrentTemp < (Room[n].DesiredTemp -1) |
+//                   Room[n].CurrentTemp > (Room[n].DesiredTemp + 1) ){
+//                ConcentratorRadioTask_sendVentData(Room[n].CurrentTemp , Room[n].DesiredTemp, n);
+//            }
 
         }
         /* Wait for event */
     }
+}
+
+uint16_t returnVentData(){
+    return ventData;
 }
 
 static void packetReceivedCallback(union ConcentratorPacket* packet, int8_t rssi)
@@ -387,9 +393,10 @@ static void updateLcd() {
         Display_printf(hDisplaySerial, 0, 0, "0x%02x    %04x    %d    %04d",
                 nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
                 nodePointer->latestRssi);
-        printf("Address: 0x%02x\n   Latest ADC Value: 0x%02x\n    Button: %d\n    Latest Rssi: %04d\n",
-               nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
-               nodePointer->latestRssi); nodePointer++;
+//        printf("Address: 0x%02x\n   Latest ADC Value: 0x%02x\n    Button: %d\n    Latest Rssi: %04d\n",
+//               nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
+//               nodePointer->latestRssi); nodePointer++;
+
 
 
         Display_printf(hDisplaySerial, 0, 0, "Room  Active  Sensor  Vents   Temp    Motion");
@@ -400,6 +407,7 @@ static void updateLcd() {
             n, Room[n].RoomActive, Room[n].SensorActive, Room[n].VentActive,
             Room[n].CurrentTemp, Room[n].MotionDetected);
 //        }
+            Display_printf(hDisplaySerial, 0, 0, "Vent Data: %04x", ventData);
 
 
 

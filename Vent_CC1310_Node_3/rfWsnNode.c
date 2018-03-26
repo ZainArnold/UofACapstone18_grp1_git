@@ -58,7 +58,8 @@ int main(void)
     Display_init();
 
     /* Initialize sensor node tasks */
-    NodeRadioTask_init();
+//    NodeRadioTask_init_RX();
+    NodeRadioTask_init_TX();
     NodeTask_init();
 
     /* Start BIOS */

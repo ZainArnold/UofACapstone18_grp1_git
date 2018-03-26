@@ -9,34 +9,36 @@
 
 >> Compilation failure
 subdir_rules.mk:16: recipe for target 'NodeRadioTask.obj' failed
-"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
-"../NodeRadioTask.c", line 158: warning #233-D: declaration is not visible outside of function
-"../NodeRadioTask.c", line 118: warning #179-D: variable "concentratorRadioTaskParams_RX" was declared but never referenced
-"../NodeRadioTask.c", line 120: warning #179-D: variable "concentratorRadioTaskStack_RX" was declared but never referenced
-"../NodeRadioTask.c", line 122: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
-"../NodeRadioTask.c", line 123: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
-"../NodeRadioTask.c", line 124: warning #179-D: variable "latestRxPacket" was declared but never referenced
-"../NodeRadioTask.c", line 124: error #237: variable "latestRxPacket" was declared with a never-completed type
-"../NodeRadioTask.c", line 125: warning #179-D: variable "txPacket_RX" was declared but never referenced
-"../NodeRadioTask.c", line 126: warning #179-D: variable "ackPacket_RX" was declared but never referenced
-"../NodeRadioTask.c", line 127: warning #179-D: variable "concentratorAddress" was declared but never referenced
-"../NodeRadioTask.c", line 128: warning #179-D: variable "latestRssi" was declared but never referenced
-"../NodeRadioTask.c", line 156: warning #179-D: function "NodeRadioTaskFunction_RX" was declared but never referenced
-"../NodeRadioTask.c", line 157: warning #179-D: function "rxDoneCallback_RX" was declared but never referenced
-"../NodeRadioTask.c", line 158: warning #179-D: function "notifyPacketReceived" was declared but never referenced
-"../NodeRadioTask.c", line 159: warning #179-D: function "sendAck" was declared but never referenced
+"../NodeRadioTask.c", line 191: warning #174-D: external/internal linkage conflict with previous declaration
+"../NodeRadioTask.c", line 626: warning #145-D: a value of type "EasyLink_ReceiveCb" cannot be used to initialize an entity of type "uint32_t"
+"../NodeRadioTask.c", line 627: warning #145-D: a value of type "uint32_t" cannot be used to initialize an entity of type "EasyLink_RxPacket *"
+"../NodeRadioTask.c", line 629: error #137: struct "<unnamed>" has no field "ventData"
+"../NodeRadioTask.c", line 628: warning #552-D: variable "packetHeader" was set but never used
+"../NodeRadioTask.c", line 752: warning #515-D: a value of type "EasyLink_RxPacket **" cannot be assigned to an entity of type "uint32_t"
+"../NodeRadioTask.c", line 127: warning #179-D: variable "nodeRadioTaskParams_RX" was declared but never referenced
+"../NodeRadioTask.c", line 129: warning #179-D: variable "nodeRadioTaskStack_RX" was declared but never referenced
+"../NodeRadioTask.c", line 131: warning #179-D: variable "radioOperationEventHandle_RX" was declared but never referenced
+"../NodeRadioTask.c", line 132: warning #179-D: variable "packetReceivedCallback" was declared but never referenced
+"../NodeRadioTask.c", line 133: warning #179-D: variable "latestRxPacket" was declared but never referenced
+"../NodeRadioTask.c", line 134: warning #179-D: variable "txPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 135: warning #179-D: variable "ackPacket_RX" was declared but never referenced
+"../NodeRadioTask.c", line 137: warning #179-D: variable "latestRssi" was declared but never referenced
+"../NodeRadioTask.c", line 156: warning #179-D: variable "ventData" was declared but never referenced
+"../NodeRadioTask.c", line 158: warning #179-D: variable "dmVentPacket" was declared but never referenced
+"../NodeRadioTask.c", line 191: warning #179-D: variable "ledPinHandle" was declared but never referenced
+"../NodeRadioTask.c", line 192: warning #179-D: variable "ledPinState" was declared but never referenced
 1 error detected in the compilation of "../NodeRadioTask.c".
 gmake: *** [NodeRadioTask.obj] Error 1
-'Building file: "../NodeTask.c"'
+'Building file: "../easylink/EasyLink.c"'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="NodeTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../NodeTask.c"
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Node_3" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="easylink/EasyLink.d_raw" --obj_directory="easylink" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../easylink/EasyLink.c"
 
 >> Compilation failure
-subdir_rules.mk:23: recipe for target 'NodeTask.obj' failed
-"..\NodeRadioTask.h", line 53: warning #233-D: declaration is not visible outside of function
-"../NodeTask.c", line 518: error #411: function "NodeRadioTask_sendAdcData" returns incomplete type "enum NodeRadioOperationStatus"
-1 error detected in the compilation of "../NodeTask.c".
-gmake: *** [NodeTask.obj] Error 1
+easylink/subdir_rules.mk:9: recipe for target 'easylink/EasyLink.obj' failed
+"../easylink/EasyLink.c", line 95: error #148: declaration is incompatible with "EasyLink_ReceiveCb returnCallBackPackage()" (declared at line 292 of "..\easylink\EasyLink.h")
+"../easylink/EasyLink.c", line 1223: warning #515-D: a value of type "EasyLink_ReceiveCb *" cannot be assigned to an entity of type "uint32_t"
+1 error detected in the compilation of "../easylink/EasyLink.c".
+gmake: *** [easylink/EasyLink.obj] Error 1
 gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****

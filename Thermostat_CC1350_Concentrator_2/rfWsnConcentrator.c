@@ -72,7 +72,7 @@ int main(void)
 
     /* Initialize concentrator tasks */
     ConcentratorRadioTask_init_RX();
-    ConcentratorRadioTask_init_TX();
+//    ConcentratorRadioTask_init_TX();
     ConcentratorTask_init();
 
     /* Start BIOS */
