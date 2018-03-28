@@ -46,13 +46,19 @@
 struct PacketHeader {
     uint8_t sourceAddress;
     uint8_t packetType;
-    uint16_t ventData;
 };
 
 struct AdcSensorPacket {
     struct PacketHeader header;
     uint16_t adcValue;
 };
+
+struct Room {
+    uint16_t    DesiredTemp;
+    uint16_t    CurrentTemp;
+    uint16_t    MotionDetected;
+};
+struct Room Room[9];
 
 struct DualModeSensorPacket {
     struct PacketHeader header;

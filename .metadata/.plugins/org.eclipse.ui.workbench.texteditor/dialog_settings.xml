@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="NodeRadioStatus" key="selection"/>
+		<item value="PWM_Params_init" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="NodeRadioStatus"/>
-			<item value="returnRadioOperationStatus"/>
-			<item value="DualModeSensorPacket"/>
-			<item value="DualModeVentPacket"/>
+			<item value="PWM_Params_init"/>
+			<item value="time"/>
+			<item value="nodePointer1"/>
+			<item value="SENSOR"/>
+			<item value="sensor"/>
+			<item value="packetReceivedCallback"/>
+			<item value="RADIO_PACKET_TYPE_DM_SENSOR_PACKET"/>
 			<item value="dmSensorPacket"/>
-			<item value="dmVentPacket.time100MiliSec += ((currentTicks - prevTicks) * Clock_tickPeriod) / 100000;"/>
-			<item value="dmVentPacket"/>
-			<item value="nodeRadioTaskFunction"/>
 		</list>
 		<list key="replacehistory">
-			<item value="returnRadioOperationStatus_TX"/>
-			<item value="dmVentPacket"/>
-			<item value="NodeRadioTaskFunction"/>
-			<item value="nodeRadioTaskFunction_TX"/>
-			<item value="NODERADIO_TASK_PRIORITY_TX"/>
-			<item value="rxPacket_TX"/>
-			<item value="rxPacket_RX"/>
-			<item value="RADIO_PACKET_TYPE_DM_VENT_PACKET"/>
+			<item value="NODE_EVENT_NEW_THERMOSTAT_VALUE"/>
+			<item value="dmThermostatPacket"/>
+			<item value="roomTemp8"/>
+			<item value="roomTemp7"/>
+			<item value="roomTemp6"/>
+			<item value="roomTemp5"/>
+			<item value="roomTemp4"/>
+			<item value="roomTemp3"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1029" key="DIALOG_X_ORIGIN"/>
-		<item value="659" key="DIALOG_Y_ORIGIN"/>
+		<item value="845" key="DIALOG_X_ORIGIN"/>
+		<item value="150" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
