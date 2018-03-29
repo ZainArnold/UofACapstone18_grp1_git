@@ -188,17 +188,11 @@ ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/D
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/grlib.h
 ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/assert.h
 ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/linkage.h
-ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h
-ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/unistd.h
-ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/sys/types.h
-ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
-ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
-ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h
-ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
 ConcentratorTask.obj: ../Board.h
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADCBuf.h
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/GPIO.h
+ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/SPI.h
 ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/UART.h
@@ -235,6 +229,12 @@ ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/c
 ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h
 ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h
 ConcentratorTask.obj: ../ConcentratorTask.h
+ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/unistd.h
+ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/sys/types.h
+ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
+ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
+ConcentratorTask.obj: C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h
+ConcentratorTask.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h
 
 ../ConcentratorTask.c: 
 C:/ti/xdctools_3_50_03_33_core/packages/xdc/std.h: 
@@ -424,17 +424,11 @@ C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/display/DisplayExt.h:
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/grlib/grlib.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/assert.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/linkage.h: 
-C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h: 
-C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/unistd.h: 
-C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/sys/types.h: 
-C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 
-C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Queue.h: 
-C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h: 
-C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 
 ../Board.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADC.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/ADCBuf.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/GPIO.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/PWM.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/SPI.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/drivers/UART.h: 
@@ -471,3 +465,9 @@ C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_pro
 C:/ti/simplelink_cc13x0_sdk_1_50_00_08/source/ti/devices/cc13x0/driverlib/rf_ble_cmd.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stdlib.h: 
 ../ConcentratorTask.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/unistd.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix/sys/types.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Queue.h: 
+C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include/stddef.h: 

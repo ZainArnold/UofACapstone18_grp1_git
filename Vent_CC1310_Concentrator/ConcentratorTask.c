@@ -30,7 +30,8 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/***** Includes *****/
+//-------------------------------------------------------
+//  Includes
 /* XDCtools Header files */ 
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
@@ -45,9 +46,6 @@
 #include <ti/drivers/PIN.h>
 #include <ti/display/Display.h>
 #include <ti/display/DisplayExt.h>
-#include <ti/drivers/PWM.h>
-#include <unistd.h>
-#include <stddef.h>
 
 /* Board Header files */
 #include "Board.h"
@@ -60,7 +58,8 @@
 
 
 
-/***** Defines *****/
+//-------------------------------------------------------
+//  Defines
 #define CONCENTRATOR_TASK_STACK_SIZE 1024
 #define CONCENTRATOR_TASK_PRIORITY   3
 
@@ -72,13 +71,26 @@
 
 #define CONCENTRATOR_DISPLAY_LINES 8
 
-/***** Type declarations *****/
+//-------------------------------------------------------
+//  Type Declarations
 struct AdcSensorNode {
     uint8_t address;
     uint16_t latestAdcValue;
     uint8_t button;
     int8_t latestRssi;
 };
+
+struct Room {
+    uint8_t     RoomActive;
+    uint8_t     SensorActive;
+    uint8_t     VentActive;
+    uint16_t    DesiredTemp;
+    uint16_t    CurrentTemp;
+    uint16_t    TempFlag;
+    uint16_t    MotionDetected;
+};
+struct Room Room[9];
+
 
 struct ThermostatNode {
     uint8_t address;
@@ -112,7 +124,7 @@ struct ThermostatNode {
 };
 
 
-//---------------------------------------------------------------------
+//-------------------------------------------------------
 //  Variable Declarations
 static Task_Params concentratorTaskParams;
 Task_Struct concentratorTask;    /* not static so you can see in ROV */
@@ -128,19 +140,27 @@ static struct ThermostatNode* lastAddedThermostatNode = knownThermostatNodes;
 static Display_Handle hDisplayLcd;
 static Display_Handle hDisplaySerial;
 
+uint8_t ventAddress = 0x20;
+uint8_t n = 0x01;
+
+uint8_t RoomActiveAddress = 0x00;
+uint8_t RoomFilter = 0xF0;
+uint8_t DeviceFilter = 0x0F;
+
+uint8_t SpecificRoomFilter = 0x00;
+uint8_t SensorFilter = (0x08);
+uint8_t VentFilter = (0x07);
 
 /* Period and duty in microseconds */
-uint16_t   pwmPeriod = 10000;
-uint16_t   duty = 450;
-uint16_t   dutyInc = 50;
+//
+//uint16_t   duty = 450;
+//uint16_t   dutyInc = 50;
+//
+///* Sleep time in microseconds */
+//uint32_t   slptime = 50000;
 
-/* Sleep time in microseconds */
-uint32_t   slptime = 50000;
-PWM_Handle pwm1 = NULL;
-PWM_Handle pwm2 = NULL;
-PWM_Params PWMparams;
 
-//---------------------------------------------------------------------
+//-------------------------------------------------------
 //  Prototypes
 static void concentratorTaskFunction(UArg arg0, UArg arg1);
 static void packetReceivedCallback(union ConcentratorPacket* packet, int8_t rssi);
@@ -149,8 +169,11 @@ static void addNewNode(struct AdcSensorNode* AdcNode, struct ThermostatNode* The
 static void updateNode(struct AdcSensorNode* AdcNode, struct ThermostatNode* ThermostatNode);
 static uint8_t isKnownNodeAddress(uint8_t AdcAddress, uint8_t ThermostatAddress);
 
+uint16_t TempFilter(uint16_t AdcValue);
+uint16_t MotionFilter(uint16_t AdcValue);
 
-//---------------------------------------------------------------------
+
+//-------------------------------------------------------
 //  Function Definitions
 void ConcentratorTask_init(void) {
 
@@ -166,6 +189,57 @@ void ConcentratorTask_init(void) {
     concentratorTaskParams.priority = CONCENTRATOR_TASK_PRIORITY;
     concentratorTaskParams.stack = &concentratorTaskStack;
     Task_construct(&concentratorTask, concentratorTaskFunction, &concentratorTaskParams, NULL);
+
+//    PWM_init();
+//    PWM_Params_init(&PWMparams);
+//    PWMparams.dutyUnits = PWM_DUTY_US;
+//    PWMparams.dutyValue = 0;
+//    PWMparams.periodUnits = PWM_PERIOD_US;
+//    PWMparams.periodValue = pwmPeriod;
+//    pwmPeriod = 10000;
+
+}
+
+uint16_t TempFilter(uint16_t AdcValue)
+{
+    //AdcValue includes two different superimposed values from the Sensor Controller Studio
+    //AdcValue is a uint16_t
+
+    // 0b 0000 0000 0000 0000
+    //         [000 0000 0000] - Temperature 0x07FF
+    //        [0]              - Motion Detection 0x0800
+    //
+
+
+    int Temp;
+    int TempAdc;
+    int TempFilter = 0x07FF;
+
+    // Note: Temperature ADC Values are 10X the actual temperature in Celcius
+    TempAdc = AdcValue & TempFilter;
+
+    // Hence the division by 10
+    Temp = TempAdc / 10;
+    return(Temp);
+}
+
+uint16_t MotionFilter(uint16_t AdcValue)
+{
+    //AdcValue includes two different superimposed values from the Sensor Controller Studio
+    //AdcValue is a uint16_t
+
+    //0b 0000 0000 0000 0000
+    //        [000 0000 0000] - Temperature 0x07FF
+    //       [0]              - Motion Detection 0x0800
+
+    int Motion;
+    int MotionAdc;
+    int MotionFilter = 0x0800;
+
+    //To get either a 1 or a 0 for motion, must divide by the placeholder
+    MotionAdc = AdcValue & MotionFilter;
+    Motion = MotionAdc / 0x0800;
+    return(Motion);
 }
 
 static void concentratorTaskFunction(UArg arg0, UArg arg1)
@@ -202,39 +276,72 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
     /* Register a packet received callback with the radio task */
     ConcentratorRadioTask_registerPacketReceivedCallback(packetReceivedCallback);
 
-    PWM_init();
+    /* Period and duty in microseconds */
+    uint16_t   pwmPeriod = 10000;
+    uint16_t   duty = 1000;
+    uint16_t   dutyInc = 100;
 
+    /* Sleep time in microseconds */
+    uint32_t   time = 50000;
+    PWM_Handle pwm1 = NULL;
+//    PWM_Handle pwm2 = NULL;
+    PWM_Params PWMparams;
+
+    /* Call driver init functions. */
+    PWM_init();
 
     PWM_Params_init(&PWMparams);
     PWMparams.dutyUnits = PWM_DUTY_US;
     PWMparams.dutyValue = 0;
     PWMparams.periodUnits = PWM_PERIOD_US;
     PWMparams.periodValue = pwmPeriod;
-
     pwm1 = PWM_open(Board_PWM0, &PWMparams);
+
+
+
+
+
+//    if (Board_PWM1 != Board_PWM0) {
+//        pwm2 = PWM_open(Board_PWM1, &params);
+//
+//        if (pwm2 == NULL) {
+//            /* Board_PWM0 did not open */
+//            while (1);
+//        }
+//
+//        PWM_start(pwm2);
+//    }
+
     if (pwm1 == NULL) {
         /* Board_PWM0 did not open */
         while (1);
     }
-
     PWM_start(pwm1);
 
-    if (Board_PWM1 != Board_PWM0) {
-        pwm2 = PWM_open(Board_PWM1, &PWMparams);
-
-        if (pwm2 == NULL) {
-            /* Board_PWM0 did not open */
-            while (1);
-        }
-
-        PWM_start(pwm2);
-    }
 
 
     /* Enter main task loop */
     while(1) {
+
+
         /* Wait for event */
         uint32_t events = Event_pend(concentratorEventHandle, 0, CONCENTRATOR_EVENT_ALL, BIOS_WAIT_FOREVER);
+
+
+//        if (duty >= 1900 || (!duty)) {
+//            //dutyInc = -dutyInc;
+//            duty = 1000;
+//        }
+//        else if (duty <= 1000 || (!duty)) {
+//            //dutyInc = -dutyInc;
+//            duty = 1900;
+//        }
+//        else if ((duty > 1000 & duty < 1900) || (!duty))
+//        {
+//            duty = 1000;
+//        }
+//        PWM_setDuty(pwm1, duty);
+//        usleep(time);
 
         /* If we got a new ADC sensor value */
         if(events & CONCENTRATOR_EVENT_NEW_ADC_SENSOR_VALUE) {
@@ -248,10 +355,48 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
                 addNewNode(&latestActiveAdcSensorNode, NULL);
             }
 
+
+            //Sets the Active Room Address as the latest address pulled in from the connected node
+            RoomActiveAddress = latestActiveAdcSensorNode.address;
+
+            // room n is set by doing a bitwise and operation on the top bit of the
+            // node address, which, by convention is the room number
+            //n = ((RoomActiveAddress & RoomFilter)/0x10);
+            n = (ventAddress / 0x10);
+
+            // Specific Room Filter adds another filtering value for getting the rest of the important values
+            SpecificRoomFilter = (0x10*n);
+
+            // Checks if the room is active by testing the filtered Active Room Address and Specific Room Filter
+            Room[n].RoomActive = ((RoomActiveAddress & RoomFilter) == SpecificRoomFilter);
+
+
+            // Gets the type of node connected (Sensor Node or Vent Node)
+            // if it is a sensor node, Gets the current temperature and Motion data
+            if((RoomActiveAddress & RoomFilter) == SpecificRoomFilter){
+                if( ((RoomActiveAddress & DeviceFilter) == SensorFilter) & ((RoomActiveAddress & RoomFilter) == SpecificRoomFilter) ){
+                    Room[n].SensorActive = 1;
+                    Room[n].CurrentTemp = TempFilter(latestActiveAdcSensorNode.latestAdcValue);
+                    Room[n].MotionDetected = MotionFilter(latestActiveAdcSensorNode.latestAdcValue);
+                    //ventData = Room[n].CurrentTemp + (Room[n].DesiredTemp * 0x0100);
+                }
+                else if(  ((RoomActiveAddress & DeviceFilter) <= VentFilter) & ((RoomActiveAddress & RoomFilter) == SpecificRoomFilter) ){
+                    Room[n].VentActive = 1;
+                }
+                else {
+                    Room[n].SensorActive = 0;
+                    Room[n].VentActive = 0;
+                }
+//                if(Room[n].RoomActive){
+//                    Room[n].CurrentTemp = TempFilter(latestActiveAdcSensorNode.latestAdcValue);
+//                    Room[n].MotionDetected = MotionFilter(latestActiveAdcSensorNode.latestAdcValue);
+//                }
+            }
+
             /* Update the values on the LCD */
             updateLcd();
         }
-        else if(events & CONCENTRATOR_EVENT_NEW_THERMOSTAT_VALUE) {
+        if(events & CONCENTRATOR_EVENT_NEW_THERMOSTAT_VALUE) {
             /* If we knew this node from before, update the value */
             if(isKnownNodeAddress(NULL, latestActiveThermostatNode.address)) {
                 updateNode(NULL, &latestActiveThermostatNode);
@@ -260,24 +405,33 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
                 /* Else add it */
                 addNewNode(NULL, &latestActiveThermostatNode);
             }
-
-            PWM_setDuty(pwm1, duty);
-
-            if (pwm2) {
-                PWM_setDuty(pwm2, duty);
-            }
-
-            duty = (duty + dutyInc);
-
-            if (duty >= 2200 || (!duty)) {
-                dutyInc = -dutyInc;
-            }
-            if (duty <= 450 || (!duty)) {
-                dutyInc = -dutyInc;
-            }
+            Room[1].DesiredTemp = latestActiveThermostatNode.roomTempD1;
+            Room[2].DesiredTemp = latestActiveThermostatNode.roomTempD2;
+            Room[3].DesiredTemp = latestActiveThermostatNode.roomTempD3;
+            Room[4].DesiredTemp = latestActiveThermostatNode.roomTempD4;
+            Room[5].DesiredTemp = latestActiveThermostatNode.roomTempD5;
+            Room[6].DesiredTemp = latestActiveThermostatNode.roomTempD6;
+            Room[7].DesiredTemp = latestActiveThermostatNode.roomTempD7;
+            Room[8].DesiredTemp = latestActiveThermostatNode.roomTempD8;
+//
+//            for(n = 1; n < 9; n++){
+//                if (Room[n].CurrentTemp < Room[n].DesiredTemp){
+//                    Room[n].TempFlag = 1;
+//                }
+//            }
             /* Update the values on the LCD */
             updateLcd();
 //            usleep(slptime);
+        }
+        if (Room[n].CurrentTemp < Room[n].DesiredTemp){
+            duty = 1000;
+            PWM_setDuty(pwm1, duty);
+            usleep(time);
+        }
+        else if (Room[n].CurrentTemp >= Room[n].DesiredTemp){
+            duty = 1900;
+            PWM_setDuty(pwm1, duty);
+            usleep(time);
         }
     }
 }
@@ -458,18 +612,37 @@ static void updateLcd(void) {
     currentLcdLine = 1;
 
     /* Write one line per node */
-    while ((nodePointer1 < &knownSensorNodes[CONCENTRATOR_MAX_NODES]) &&
+    while ((nodePointer < &knownSensorNodes[CONCENTRATOR_MAX_NODES]) &&
+          (nodePointer->address != 0) &&
+          (currentLcdLine < CONCENTRATOR_DISPLAY_LINES))
+    {
+        /* print to LCD */
+        Display_printf(hDisplayLcd, currentLcdLine, 0, "0x%02x  %04d  %d   %04d",
+                       nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
+                       nodePointer->latestRssi);
+
+        /* print to UART */
+        Display_printf(hDisplaySerial, 0, 0, "0x%02x    %04d    %d    %04d",
+                       nodePointer->address, nodePointer->latestAdcValue, nodePointer->button,
+                       nodePointer->latestRssi);
+
+//        Display_printf(hDisplaySerial, 0, 0,
+
+        nodePointer++;
+        currentLcdLine++;
+    }
+    while ((nodePointer1 < &knownThermostatNodes[CONCENTRATOR_MAX_NODES]) &&
           (nodePointer1->address != 0) &&
           (currentLcdLine < CONCENTRATOR_DISPLAY_LINES))
     {
         /* print to LCD */
         Display_printf(hDisplayLcd, currentLcdLine, 0, "0x%02x  %04d  %d   %04d",
-                nodePointer1->address, nodePointer1->roomTempC2, nodePointer1->button,
+                nodePointer1->address, nodePointer1->roomTempD2, nodePointer1->button,
                 nodePointer1->latestRssi);
 
         /* print to UART */
         Display_printf(hDisplaySerial, 0, 0, "0x%02x    %04d    %d    %04d",
-                nodePointer1->address, nodePointer1->roomTempC2, nodePointer1->button,
+                nodePointer1->address, nodePointer1->roomTempD2, nodePointer1->button,
                 nodePointer1->latestRssi);
 
 //        Display_printf(hDisplaySerial, 0, 0,

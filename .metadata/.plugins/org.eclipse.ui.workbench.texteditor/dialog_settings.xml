@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="PWM_Params_init" key="selection"/>
+		<item value="params" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="params"/>
+			<item value="PWMparams"/>
 			<item value="PWM_Params_init"/>
 			<item value="time"/>
 			<item value="nodePointer1"/>
 			<item value="SENSOR"/>
 			<item value="sensor"/>
 			<item value="packetReceivedCallback"/>
-			<item value="RADIO_PACKET_TYPE_DM_SENSOR_PACKET"/>
-			<item value="dmSensorPacket"/>
 		</list>
 		<list key="replacehistory">
+			<item value="PWMparams"/>
 			<item value="NODE_EVENT_NEW_THERMOSTAT_VALUE"/>
 			<item value="dmThermostatPacket"/>
 			<item value="roomTemp8"/>
@@ -25,7 +26,6 @@
 			<item value="roomTemp6"/>
 			<item value="roomTemp5"/>
 			<item value="roomTemp4"/>
-			<item value="roomTemp3"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -72,7 +72,8 @@
 #include "ble_adv/BleAdv.h"
 #endif
 
-/***** Defines *****/
+//-------------------------------------------------------
+//  Defines
 #define NODERADIO_TASK_STACK_SIZE 1024
 #define NODERADIO_TASK_PRIORITY   3
 
@@ -89,7 +90,8 @@
 #define NODERADIO_ACK_TIMEOUT_TIME_MS (160)
 
 
-/***** Type declarations *****/
+//-------------------------------------------------------
+//  Type Declarations
 struct RadioOperation {
     EasyLink_TxPacket easyLinkTxPacket;
     uint8_t retriesDone;
@@ -99,7 +101,8 @@ struct RadioOperation {
 };
 
 
-/***** Variable declarations *****/
+//-------------------------------------------------------
+//  Variable Declarations
 static Task_Params nodeRadioTaskParams;
 Task_Struct nodeRadioTask;        /* not static so you can see in ROV */
 static uint8_t nodeRadioTaskStack[NODERADIO_TASK_STACK_SIZE];
@@ -121,7 +124,8 @@ static uint32_t prevTicks;
 /* Pin driver handle */
 extern PIN_Handle ledPinHandle;
 
-/***** Prototypes *****/
+//-------------------------------------------------------
+//  Prototypes
 static void nodeRadioTaskFunction(UArg arg0, UArg arg1);
 static void returnRadioOperationStatus(enum NodeRadioOperationStatus status);
 static void sendDmPacket(struct DualModeSensorPacket sensorPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs);
@@ -134,7 +138,8 @@ static void bleAdv_updateTlmCB(uint16_t *pVbatt, uint16_t *pTemp, uint32_t *pTim
 static void bleAdv_updateMsButtonCB(uint8_t *pButton);
 #endif
 
-/***** Function definitions *****/
+//-------------------------------------------------------
+//  Function Declarations
 void NodeRadioTask_init(void) {
 
     /* Create semaphore used for exclusive radio access */

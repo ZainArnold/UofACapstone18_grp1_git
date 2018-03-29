@@ -30,9 +30,18 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <ti/drivers/PWM.h>
+#include <unistd.h>
+#include <stddef.h>
+
 #ifndef TASKS_CONCENTRATORTASK_H_
 #define TASKS_CONCENTRATORTASK_H_
 
+
+PWM_Params PWMparams;
+uint16_t   pwmPeriod;
+PWM_Handle pwm3;
+PWM_Handle pwm4;
 /* Create the ConcentratorRadioTask and creates all TI-RTOS objects */
 void ConcentratorTask_init(void);
 

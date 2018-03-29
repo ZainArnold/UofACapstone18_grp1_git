@@ -69,9 +69,9 @@
 #define NODE_TASK_PRIORITY   3
 
 #define NODE_EVENT_ALL                      0xFFFFFFFF
-#define NODE_EVENT_NEW_ADC_VALUE            (uint32_t)(1 << 0)
-#define NODE_EVENT_NEW_THERMOSTAT_VALUE     (uint32_t)(1 << 1)
-#define NODE_EVENT_UPDATE_LCD               (uint32_t)(1 << 2)
+//#define NODE_EVENT_NEW_ADC_VALUE            (uint32_t)(1 << 0)
+#define NODE_EVENT_NEW_THERMOSTAT_VALUE     (uint32_t)(1 << 0)
+#define NODE_EVENT_UPDATE_LCD               (uint32_t)(1 << 1)
 
 /* A change mask of 0xFF0 means that changes in the lower 4 bits does not trigger a wakeup. */
 #define NODE_ADCTASK_CHANGE_MASK                    0xFF0
@@ -247,7 +247,7 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
     }
 
     Room[1].DesiredTemp = 20;
-    Room[2].DesiredTemp = 20;
+    Room[2].DesiredTemp = 25;
     Room[3].DesiredTemp = 20;
     Room[4].DesiredTemp = 20;
     Room[5].DesiredTemp = 20;

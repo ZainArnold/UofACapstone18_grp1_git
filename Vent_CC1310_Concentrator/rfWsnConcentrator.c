@@ -48,6 +48,11 @@
 #include <ti/drivers/UART.h>
 #include <ti/drivers/SPI.h>
 
+#include <pthread.h>
+
+
+
+
 /* Board Header files */
 #include "Board.h"
 
@@ -55,22 +60,65 @@
 #include "ConcentratorRadioTask.h"
 #include "ConcentratorTask.h"
 
+
 /*
  *  ======== main ========
  */
 int main(void)
 {
+    pthread_t           thread;
+    pthread_attr_t      attrs;
+    struct sched_param  priParam;
+    int                 retc;
+    int                 detachState;
+
     /* Call driver init functions. */
     Board_initGeneral();
+
 
     /* Initialise the UART and SPI for the display driver. */
     Display_init();
     UART_init();
     SPI_init();
 
-    /* Initialize concentrator tasks */
+    /* Set priority and stack size attributes */
+
+//    pwm3 = NULL;
+//    pwm4 = NULL;
+//    PWM_init();
+//    PWM_Params_init(&PWMparams);
+//    PWMparams.dutyUnits = PWM_DUTY_US;
+//    PWMparams.dutyValue = 0;
+//    PWMparams.periodUnits = PWM_PERIOD_US;
+//    PWMparams.periodValue = pwmPeriod;
+//
+//    pwm3 = PWM_open(Board_PWM2, &PWMparams);
+//    if (pwm3 == NULL) {
+//        /* Board_PWM0 did not open */
+//        while (1);
+//    }
+//
+//    PWM_start(pwm4);
+//
+//    if (Board_PWM3 != Board_PWM2) {
+//        pwm4 = PWM_open(Board_PWM3, &PWMparams);
+//
+//        if (pwm4 == NULL) {
+//            /* Board_PWM0 did not open */
+//            while (1);
+//        }
+//
+//        PWM_start(pwm4);
+//    }
+
     ConcentratorRadioTask_init();
     ConcentratorTask_init();
+
+
+
+
+    /* Initialize concentrator tasks */
+
 
     /* Start BIOS */
     BIOS_start();

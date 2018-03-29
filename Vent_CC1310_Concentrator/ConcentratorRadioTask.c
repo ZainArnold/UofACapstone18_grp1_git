@@ -70,7 +70,7 @@
 #define NORERADIO_ACK_TIMEOUT_TIME_MS (160)
 
 
-#define CONCENTRATOR_ACTIVITY_LED Board_PIN_LED0
+#define CONCENTRATOR_ACTIVITY_LED Board_PIN_LED1
 
 //---------------------------------------------------------------------
 //  Type Declarations

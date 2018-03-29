@@ -61,7 +61,8 @@
 #include "ble_adv/BleAdv.h"
 #endif
 
-/***** Defines *****/
+//-------------------------------------------------------
+//  Defines
 #define NODE_TASK_STACK_SIZE 1024
 #define NODE_TASK_PRIORITY   3
 
@@ -81,7 +82,8 @@
 
 #define NUM_EDDYSTONE_URLS      5
 
-/***** Variable declarations *****/
+//-------------------------------------------------------
+//  Variable Declaration
 static Task_Params nodeTaskParams;
 Task_Struct nodeTask;    /* not static so you can see in ROV */
 static uint8_t nodeTaskStack[NODE_TASK_STACK_SIZE];
@@ -133,7 +135,8 @@ static uint8_t nodeAddress = 0;
 static BleAdv_Stats bleAdvStats = {0};
 #endif
 
-/***** Prototypes *****/
+//-------------------------------------------------------
+//  Prototypes
 static void nodeTaskFunction(UArg arg0, UArg arg1);
 static void updateLcd(void);
 static void fastReportTimeoutCallback(UArg arg0);
@@ -141,7 +144,8 @@ static void adcCallback(uint16_t adcValue);
 static void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 
 
-/***** Function definitions *****/
+//-------------------------------------------------------
+//  Function Definitions
 void NodeTask_init(void)
 {
 

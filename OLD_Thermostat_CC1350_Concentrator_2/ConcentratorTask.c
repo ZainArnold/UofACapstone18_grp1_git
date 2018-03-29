@@ -30,7 +30,9 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/***** Includes *****/
+//-------------------------------------------------------
+//  Includes
+
 /* XDCtools Header files */ 
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
@@ -57,7 +59,8 @@
 
 
 
-/***** Defines *****/
+//-------------------------------------------------------
+//  Defines
 #define CONCENTRATOR_TASK_STACK_SIZE 1536
 #define CONCENTRATOR_TASK_PRIORITY   3
 
@@ -69,7 +72,8 @@
 
 #define CONCENTRATOR_DISPLAY_LINES 8
 
-/***** Type declarations *****/
+//-------------------------------------------------------
+//  Type Declarations
 struct AdcSensorNode {
     uint8_t address;
     uint16_t latestAdcValue;
@@ -88,7 +92,8 @@ struct Room {
 struct Room Room[9];
 
 
-/***** Variable declarations *****/
+//-------------------------------------------------------
+//  Variable Declarations
 static Task_Params concentratorTaskParams;
 Task_Struct concentratorTask;    /* not static so you can see in ROV */
 static uint8_t concentratorTaskStack[CONCENTRATOR_TASK_STACK_SIZE];
@@ -111,7 +116,8 @@ uint8_t SpecificRoomFilter = 0x00;
 uint8_t SensorFilter = (0x08);
 uint8_t VentFilter = (0x07);
 
-/***** Prototypes *****/
+//-------------------------------------------------------
+//  Prototypes
 static void concentratorTaskFunction(UArg arg0, UArg arg1);
 static void packetReceivedCallback(union ConcentratorPacket* packet, int8_t rssi);
 static void updateLcd();
@@ -124,7 +130,8 @@ uint16_t MotionFilter(uint16_t AdcValue);
 
 uint16_t ventData;
 
-//Function Declaration
+//-------------------------------------------------------
+//  Function Declarations
 void ConcentratorTask_init(void) {
 
     /* Create event used internally for state changes */

@@ -30,7 +30,8 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/***** Includes *****/
+//-------------------------------------------------------
+//  Includes
 /* XDCtools Header files */
 #include <xdc/std.h>
 #include <xdc/runtime/System.h>
@@ -70,7 +71,8 @@
 #include "ble_adv/BleAdv.h"
 #endif
 
-/***** Defines *****/
+//-------------------------------------------------------
+//  Defines
 #define NODERADIO_TASK_STACK_SIZE 1024
 #define NODERADIO_TASK_PRIORITY   3
 
@@ -87,7 +89,8 @@
 #define NORERADIO_ACK_TIMEOUT_TIME_MS (160)
 
 
-/***** Type declarations *****/
+//-------------------------------------------------------
+//  Type Declarations
 struct RadioOperation {
     EasyLink_TxPacket easyLinkTxPacket;
     uint8_t retriesDone;
@@ -97,7 +100,8 @@ struct RadioOperation {
 };
 
 
-/***** Variable declarations *****/
+//-------------------------------------------------------
+//  Variable Declarations
 static Task_Params nodeRadioTaskParams;
 Task_Struct nodeRadioTask;        /* not static so you can see in ROV */
 static uint8_t nodeRadioTaskStack[NODERADIO_TASK_STACK_SIZE];
@@ -146,7 +150,8 @@ static uint32_t prevTicks;
 /* Pin driver handle */
 extern PIN_Handle ledPinHandle;
 
-/***** Prototypes *****/
+//-------------------------------------------------------
+//  Prototypes
 static void nodeRadioTaskFunction(UArg arg0, UArg arg1);
 static void returnRadioOperationStatus(enum NodeRadioOperationStatus status);
 static void sendDmPacket(struct DualModeThermostatPacket thermostatPacket, uint8_t maxNumberOfRetries, uint32_t ackTimeoutMs);
@@ -159,7 +164,8 @@ static void bleAdv_updateTlmCB(uint16_t *pVbatt, uint16_t *pTemp, uint32_t *pTim
 static void bleAdv_updateMsButtonCB(uint8_t *pButton);
 #endif
 
-/***** Function definitions *****/
+//-------------------------------------------------------
+//  Function Definitions
 void NodeRadioTask_init(void) {
 
     /* Create semaphore used for exclusive radio access */
@@ -229,16 +235,17 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
     Power_setDependency(PowerCC26XX_PERIPH_TRNG);
     TRNGEnable();
     /* Do not accept the same address as the concentrator, in that case get a new random value */
-    do
-    {
-        while (!(TRNGStatusGet() & TRNG_NUMBER_READY))
-        {
-            //wait for random number generator
-        }
-        nodeAddress = (uint8_t)TRNGNumberGet(TRNG_LOW_WORD);
-    } while (nodeAddress == RADIO_CONCENTRATOR_ADDRESS);
-    TRNGDisable();
-    Power_releaseDependency(PowerCC26XX_PERIPH_TRNG);
+//    do
+//    {
+//        while (!(TRNGStatusGet() & TRNG_NUMBER_READY))
+//        {
+//            //wait for random number generator
+//        }
+//        nodeAddress = (uint8_t)TRNGNumberGet(TRNG_LOW_WORD);
+//    } while (nodeAddress == RADIO_CONCENTRATOR_ADDRESS);
+//    TRNGDisable();
+//    Power_releaseDependency(PowerCC26XX_PERIPH_TRNG);
+    nodeAddress = (uint8_t)0x20;
 
     /* Set the filter to the generated random address */
     if (EasyLink_enableRxAddrFilter(&nodeAddress, 1, 1) != EasyLink_Status_Success)
@@ -296,26 +303,26 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
             dmThermostatPacket.roomTempC1 = TempC1;
             dmThermostatPacket.roomTempD1 = TempD1;
 
-            dmThermostatPacket.roomTempC1 = TempC2;
-            dmThermostatPacket.roomTempD1 = TempD2;
+            dmThermostatPacket.roomTempC2 = TempC2;
+            dmThermostatPacket.roomTempD2 = TempD2;
 
-            dmThermostatPacket.roomTempC1 = TempC3;
-            dmThermostatPacket.roomTempD1 = TempD3;
+            dmThermostatPacket.roomTempC3 = TempC3;
+            dmThermostatPacket.roomTempD3 = TempD3;
 
-            dmThermostatPacket.roomTempC1 = TempC4;
-            dmThermostatPacket.roomTempD1 = TempD4;
+            dmThermostatPacket.roomTempC4 = TempC4;
+            dmThermostatPacket.roomTempD4 = TempD4;
 
-            dmThermostatPacket.roomTempC1 = TempC5;
-            dmThermostatPacket.roomTempD1 = TempD5;
+            dmThermostatPacket.roomTempC5 = TempC5;
+            dmThermostatPacket.roomTempD5 = TempD5;
 
-            dmThermostatPacket.roomTempC1 = TempC6;
-            dmThermostatPacket.roomTempD1 = TempD6;
+            dmThermostatPacket.roomTempC6 = TempC6;
+            dmThermostatPacket.roomTempD6 = TempD6;
 
-            dmThermostatPacket.roomTempC1 = TempC7;
-            dmThermostatPacket.roomTempD1 = TempD7;
+            dmThermostatPacket.roomTempC7 = TempC7;
+            dmThermostatPacket.roomTempD7 = TempD7;
 
-            dmThermostatPacket.roomTempC1 = TempC8;
-            dmThermostatPacket.roomTempD1 = TempD8;
+            dmThermostatPacket.roomTempC8 = TempC8;
+            dmThermostatPacket.roomTempD8 = TempD8;
 
             dmThermostatPacket.button = !PIN_getInputValue(Board_PIN_BUTTON0);
 

@@ -6,8 +6,7 @@
 'Building file: "../ConcentratorTask.c"'
 'Invoking: ARM Compiler'
 "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/bin/armcl" -mv7M3 --code_state=16 --float_support=vfplib -me --include_path="C:/git/UofACapstone18_grp1_git/Vent_CC1310_Concentrator" --include_path="C:/ti/simplelink_cc13x0_sdk_1_50_00_08/kernel/tirtos/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.7.LTS/include" --define=BOARD_DISPLAY_USE_LCD=1 --define=DeviceFamily_CC13X0 -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --preproc_with_compile --preproc_dependency="ConcentratorTask.d_raw" --cmd_file="C:/git/UofACapstone18_grp1_git/tirtos_builds_CC1310_LAUNCHXL_release_ccs/Debug/configPkg/compiler.opt" "../ConcentratorTask.c"
-"../ConcentratorTask.c", line 460: warning #43-D: operand types are incompatible ("struct ThermostatNode *" and "struct AdcSensorNode *")
-"../ConcentratorTask.c", line 445: warning #179-D: variable "nodePointer" was declared but never referenced
+"../ConcentratorTask.c", line 282: warning #179-D: variable "dutyInc" was declared but never referenced
 'Finished building: "../ConcentratorTask.c"'
  
 'Building target: "Vent_CC1310_Concentrator.out"'
