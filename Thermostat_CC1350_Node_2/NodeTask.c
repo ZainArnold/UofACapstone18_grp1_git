@@ -57,6 +57,9 @@
 #include "NodeTask.h"
 #include "NodeRadioTask.h"
 
+//#include <ti/drivers/GPIO.h>
+//#include <ti/drivers/I2C.h>
+
 #ifdef FEATURE_BLE_ADV
 #include "ble_adv/BleAdv.h"
 #endif
@@ -74,7 +77,7 @@
 #define NODE_EVENT_UPDATE_LCD               (uint32_t)(1 << 1)
 
 /* A change mask of 0xFF0 means that changes in the lower 4 bits does not trigger a wakeup. */
-#define NODE_ADCTASK_CHANGE_MASK                    0xFF0
+#define NODE_ADCTASK_CHANGE_MASK                    0xFFFF
 
 /* Minimum slow Report interval is 50s (in units of samplingTime)*/
 #define NODE_ADCTASK_REPORTINTERVAL_SLOW                50
@@ -94,6 +97,7 @@ struct Room {
     uint8_t     VentActive;
     uint16_t    DesiredTemp;
     uint16_t    CurrentTemp;
+    uint16_t    OpenVent;
     uint16_t    MotionDetected;
 };
 struct Room Room[9];
@@ -106,6 +110,7 @@ static uint8_t nodeTaskStack[NODE_TASK_STACK_SIZE];
 Event_Struct nodeEvent;  /* not static so you can see in ROV */
 static Event_Handle nodeEventHandle;
 static uint16_t latestAdcValue;
+static uint16_t latestDigitalValue;
 
 /* Clock for the fast report timeout */
 Clock_Struct fastReportTimeoutClock;     /* not static so you can see in ROV */
@@ -139,9 +144,9 @@ PIN_Config pinTable[] = {
  */
 PIN_Config buttonPinTable[] = {
     Board_PIN_BUTTON0  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
-#ifdef FEATURE_BLE_ADV
-    Board_PIN_BUTTON1  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
-#endif
+//#ifdef FEATURE_BLE_ADV
+//    Board_PIN_BUTTON1  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
+//#endif
     PIN_TERMINATE
 };
 
@@ -167,6 +172,7 @@ static void nodeTaskFunction(UArg arg0, UArg arg1);
 static void updateLcd(void);
 static void fastReportTimeoutCallback(UArg arg0);
 //static void adcCallback(uint16_t adcValue);
+static void digitalCallback(uint16_t digitalValue);
 static void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 
 
@@ -174,7 +180,23 @@ static void buttonCallback(PIN_Handle handle, PIN_Id pinId);
 //  Function Definitions
 void NodeTask_init(void)
 {
+    Room[1].CurrentTemp = 190;
+    Room[2].CurrentTemp = 190;
+    Room[3].CurrentTemp = 210;
+    Room[4].CurrentTemp = 210;
+    Room[5].CurrentTemp = 210;
+    Room[6].CurrentTemp = 210;
+    Room[7].CurrentTemp = 210;
+    Room[8].CurrentTemp = 210;
 
+    Room[1].DesiredTemp = 180;
+    Room[2].DesiredTemp = 180;
+    Room[3].DesiredTemp = 180;
+    Room[4].DesiredTemp = 180;
+    Room[5].DesiredTemp = 180;
+    Room[6].DesiredTemp = 180;
+    Room[7].DesiredTemp = 180;
+    Room[8].DesiredTemp = 180;
     /* Create event used internally for state changes */
     Event_Params eventParam;
     Event_Params_init(&eventParam);
@@ -246,24 +268,71 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
         System_abort("Error initializing board 3.3V domain pins\n");
     }
 
-    Room[1].DesiredTemp = 20;
-    Room[2].DesiredTemp = 25;
-    Room[3].DesiredTemp = 20;
-    Room[4].DesiredTemp = 20;
-    Room[5].DesiredTemp = 20;
-    Room[6].DesiredTemp = 20;
-    Room[7].DesiredTemp = 20;
-    Room[8].DesiredTemp = 20;
 
-    Room[1].CurrentTemp = 19;
-    Room[2].CurrentTemp = 19;
-    Room[3].CurrentTemp = 21;
-    Room[4].CurrentTemp = 21;
-    Room[5].CurrentTemp = 21;
-    Room[6].CurrentTemp = 21;
-    Room[7].CurrentTemp = 21;
-    Room[8].CurrentTemp = 21;
 
+
+
+//    unsigned int    i;
+//    uint16_t        temperature;
+//    uint8_t         txBuffer[1];
+//    uint8_t         rxBuffer[2];
+//    I2C_Handle      i2c;
+//    I2C_Params      i2cParams;
+//    I2C_Transaction i2cTransaction;
+//
+//    /* Create I2C for usage */
+//    I2C_Params_init(&i2cParams);
+//    i2cParams.bitRate = I2C_400kHz;
+//    i2c = I2C_open(Board_I2C_TMP, &i2cParams);
+//    if (i2c == NULL) {
+//        System_abort("Error Initializing I2C\n");
+//    }
+//    else {
+//        System_printf("I2C Initialized!\n");
+//    }
+//
+//    /* Point to the T ambient register and read its 2 bytes */
+//    txBuffer[0] = 0x01;
+//    i2cTransaction.slaveAddress = 0x41;
+//    i2cTransaction.writeBuf = txBuffer;
+//    i2cTransaction.writeCount = 1;
+//    i2cTransaction.readBuf = rxBuffer;
+//    i2cTransaction.readCount = 2;
+
+    /* Take 20 samples and print them out onto the console */
+//    for (i = 0; i < 20; i++) {
+//        if (I2C_transfer(i2c, &i2cTransaction)) {
+//            /* Extract degrees C from the received data; see TMP102 datasheet */
+//            temperature = (rxBuffer[0] << 6) | (rxBuffer[1] >> 2);
+//
+//            /*
+//             * If the MSB is set '1', then we have a 2's complement
+//             * negative value which needs to be sign extended
+//             */
+//            if (rxBuffer[0] & 0x80) {
+//                temperature |= 0xF000;
+//            }
+//           /*
+//            * For simplicity, divide the temperature value by 32 to get rid of
+//            * the decimal precision; see TI's TMP006 datasheet
+//            */
+//            temperature /= 32;
+//
+//            System_printf("Sample %u: %d (C)\n", i, temperature);
+//        }
+//        else {
+//            System_printf("I2C Bus fault\n");
+//        }
+//
+//        System_flush();
+////        Task_sleep(1000);
+//    }
+
+//    /* Deinitialized I2C */
+//    I2C_close(i2c);
+////    System_printf("I2C closed!\n");
+//
+//    System_flush();
 
     //Random Number Generator
 //    Power_setDependency(PowerCC26XX_PERIPH_TRNG);
@@ -281,20 +350,21 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
 //    Power_releaseDependency(PowerCC26XX_PERIPH_TRNG);
 
 //    if (Room[2].CurrentTemp < Room[2].DesiredTemp){
-        Event_post(nodeEventHandle, NODE_EVENT_NEW_THERMOSTAT_VALUE);
+//        Event_post(nodeEventHandle, NODE_EVENT_NEW_THERMOSTAT_VALUE);
 //    }
 
-    //    /* Start the SCE ADC task with 1s sample period and reacting to change in ADC value. */
-//    SceAdc_init(0x00010000, NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
+        /* Start the SCE ADC task with 1s sample period and reacting to change in ADC value. */
+    SceAdc_init(0x00010000, NODE_ADCTASK_REPORTINTERVAL_FAST, NODE_ADCTASK_CHANGE_MASK);
 //    SceAdc_registerAdcCallback(adcCallback);
-//    SceAdc_start();
-//
-//    /* setup timeout for fast report timeout */
-//    Clock_setTimeout(fastReportTimeoutClockHandle,
-//            NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS * 1000 / Clock_tickPeriod);
-//
-//    /* start fast report and timeout */
-//    Clock_start(fastReportTimeoutClockHandle);
+    SceAdc_registerDigitalCallback(digitalCallback);
+    SceAdc_start();
+
+    /* setup timeout for fast report timeout */
+    Clock_setTimeout(fastReportTimeoutClockHandle,
+            NODE_ADCTASK_REPORTINTERVAL_FAST_DURIATION_MS * 1000 / Clock_tickPeriod);
+
+    /* start fast report and timeout */
+    Clock_start(fastReportTimeoutClockHandle);
 
 
     buttonPinHandle = PIN_open(&buttonPinState, buttonPinTable);
@@ -319,6 +389,12 @@ static void nodeTaskFunction(UArg arg0, UArg arg1)
             /* Toggle activity LED */
             PIN_setOutputValue(ledPinHandle, NODE_ACTIVITY_LED,!PIN_getOutputValue(NODE_ACTIVITY_LED));
 
+            if(latestDigitalValue == 1) {
+                Room[2].DesiredTemp += 5;
+            }
+            if(latestDigitalValue == 2) {
+                Room[2].DesiredTemp -= 5;
+            }
             /* Send ADC value to concentrator */
             NodeRadioTask_sendThermostatData(Room[1].CurrentTemp, Room[1].DesiredTemp,
                                              Room[2].CurrentTemp, Room[2].DesiredTemp,
@@ -381,18 +457,18 @@ static void updateLcd(void)
          strncpy(advMode, "None", 4);
     }
 
-    /* print to LCD */
-    Display_printf(hDisplayLcd, 2, 0, "Adv Mode:");
-    Display_printf(hDisplayLcd, 3, 0, "%s", advMode);
-    Display_printf(hDisplayLcd, 4, 0, "Adv successful | failed");
-    Display_printf(hDisplayLcd, 5, 0, "%04d | %04d",
-                   bleAdvStats.successCnt + bleAdvStats.failCnt);
-
-    /* print to UART */
-    Display_printf(hDisplaySerial, 0, 0, "Advertiser Mode: %s", advMode);
-    Display_printf(hDisplaySerial, 0, 0, "Advertisement success: %d out of %d",
-                   bleAdvStats.successCnt,
-                   bleAdvStats.successCnt + bleAdvStats.failCnt);
+//    /* print to LCD */
+//    Display_printf(hDisplayLcd, 2, 0, "Adv Mode:");
+//    Display_printf(hDisplayLcd, 3, 0, "%s", advMode);
+//    Display_printf(hDisplayLcd, 4, 0, "Adv successful | failed");
+//    Display_printf(hDisplayLcd, 5, 0, "%04d | %04d",
+//                   bleAdvStats.successCnt + bleAdvStats.failCnt);
+//
+//    /* print to UART */
+//    Display_printf(hDisplaySerial, 0, 0, "Advertiser Mode: %s", advMode);
+//    Display_printf(hDisplaySerial, 0, 0, "Advertisement success: %d out of %d",
+//                   bleAdvStats.successCnt,
+//                   bleAdvStats.successCnt + bleAdvStats.failCnt);
 #endif
 }
 
@@ -402,8 +478,17 @@ static void updateLcd(void)
 //    latestAdcValue = adcValue;
 //
 //    /* Post event */
-//    Event_post(nodeEventHandle, NODE_EVENT_NEW_ADC_VALUE);
+//    Event_post(nodeEventHandle, NODE_EVENT_NEW_THERMOSTAT_VALUE);
 //}
+
+static void digitalCallback(uint16_t digitalValue)
+{
+    /* Save latest value */
+    latestDigitalValue = digitalValue;
+
+    /* Post event */
+    Event_post(nodeEventHandle, NODE_EVENT_NEW_THERMOSTAT_VALUE);
+}
 
 /*
  *  ======== buttonCallback ========

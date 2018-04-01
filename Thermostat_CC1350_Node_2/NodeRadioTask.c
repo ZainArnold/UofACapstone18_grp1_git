@@ -81,6 +81,7 @@
 #define RADIO_EVENT_DATA_ACK_RECEIVED   (uint32_t)(1 << 1)
 #define RADIO_EVENT_ACK_TIMEOUT         (uint32_t)(1 << 2)
 #define RADIO_EVENT_SEND_FAIL           (uint32_t)(1 << 3)
+
 #ifdef FEATURE_BLE_ADV
 #define NODE_EVENT_UBLE                 (uint32_t)(1 << 4)
 #endif
@@ -605,10 +606,10 @@ static void rxDoneCallback(EasyLink_RxPacket * rxPacket, EasyLink_Status status)
 {
     struct PacketHeader* packetHeader;
 
-#if defined(Board_DIO30_SWPWR)
-    /* Rx is now complete. Turn off the RF switch power */
-    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 0);
-#endif
+//#if defined(Board_DIO30_SWPWR)
+//    /* Rx is now complete. Turn off the RF switch power */
+//    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 0);
+//#endif
 
     /* If this callback is called because of a packet received */
     if (status == EasyLink_Status_Success)

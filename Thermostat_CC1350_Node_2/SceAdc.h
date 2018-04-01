@@ -38,6 +38,7 @@
 
 
 typedef void(*SceAdc_adcCallback)(uint16_t adcValue);
+typedef void(*SceAdc_digitalCallback)(uint16_t digitalValue);
 
 /* Intializes the SCE ADC sampling task.
  *
@@ -69,6 +70,8 @@ void SceAdc_setReportInterval(uint32_t minReportInterval, uint16_t adcChangeMask
  * Note that only one callback may be registered at a time.
  */
 void SceAdc_registerAdcCallback(SceAdc_adcCallback callback);
+
+void SceAdc_registerDigitalCallback(SceAdc_digitalCallback callback);
 
 /* Starts the SCE ADC sampling task.
  *

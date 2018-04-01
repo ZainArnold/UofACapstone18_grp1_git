@@ -219,7 +219,7 @@ uint16_t TempFilter(uint16_t AdcValue)
     TempAdc = AdcValue & TempFilter;
 
     // Hence the division by 10
-    Temp = TempAdc / 10;
+    Temp = TempAdc;
     return(Temp);
 }
 
@@ -400,19 +400,21 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
             /* If we knew this node from before, update the value */
             if(isKnownNodeAddress(NULL, latestActiveThermostatNode.address)) {
                 updateNode(NULL, &latestActiveThermostatNode);
+
             }
             else {
                 /* Else add it */
                 addNewNode(NULL, &latestActiveThermostatNode);
             }
-            Room[1].DesiredTemp = latestActiveThermostatNode.roomTempD1;
-            Room[2].DesiredTemp = latestActiveThermostatNode.roomTempD2;
-            Room[3].DesiredTemp = latestActiveThermostatNode.roomTempD3;
-            Room[4].DesiredTemp = latestActiveThermostatNode.roomTempD4;
-            Room[5].DesiredTemp = latestActiveThermostatNode.roomTempD5;
-            Room[6].DesiredTemp = latestActiveThermostatNode.roomTempD6;
-            Room[7].DesiredTemp = latestActiveThermostatNode.roomTempD7;
-            Room[8].DesiredTemp = latestActiveThermostatNode.roomTempD8;
+            //                Room[1].DesiredTemp = latestActiveThermostatNode.roomTempD1;
+                            Room[2].DesiredTemp = latestActiveThermostatNode.roomTempD2;
+            //                Room[3].DesiredTemp = latestActiveThermostatNode.roomTempD3;
+            //                Room[4].DesiredTemp = latestActiveThermostatNode.roomTempD4;
+            //                Room[5].DesiredTemp = latestActiveThermostatNode.roomTempD5;
+            //                Room[6].DesiredTemp = latestActiveThermostatNode.roomTempD6;
+            //                Room[7].DesiredTemp = latestActiveThermostatNode.roomTempD7;
+            //                Room[8].DesiredTemp = latestActiveThermostatNode.roomTempD8;
+
 //
 //            for(n = 1; n < 9; n++){
 //                if (Room[n].CurrentTemp < Room[n].DesiredTemp){
@@ -466,30 +468,30 @@ static void packetReceivedCallback(union ConcentratorPacket* packet, int8_t rssi
 
         /* Save the values */
         latestActiveThermostatNode.address = packet->header.sourceAddress;
-
-        latestActiveThermostatNode.roomTempC1 = packet->dmThermostatPacket.roomTempC1;
-        latestActiveThermostatNode.roomTempD1 = packet->dmThermostatPacket.roomTempD1;
+//
+//        latestActiveThermostatNode.roomTempC1 = packet->dmThermostatPacket.roomTempC1;
+//        latestActiveThermostatNode.roomTempD1 = packet->dmThermostatPacket.roomTempD1;
 
         latestActiveThermostatNode.roomTempC2 = packet->dmThermostatPacket.roomTempC2;
         latestActiveThermostatNode.roomTempD2 = packet->dmThermostatPacket.roomTempD2;
 
-        latestActiveThermostatNode.roomTempC3 = packet->dmThermostatPacket.roomTempC3;
-        latestActiveThermostatNode.roomTempD3 = packet->dmThermostatPacket.roomTempD3;
-
-        latestActiveThermostatNode.roomTempC4 = packet->dmThermostatPacket.roomTempC4;
-        latestActiveThermostatNode.roomTempD4 = packet->dmThermostatPacket.roomTempD4;
-
-        latestActiveThermostatNode.roomTempC5 = packet->dmThermostatPacket.roomTempC5;
-        latestActiveThermostatNode.roomTempD5 = packet->dmThermostatPacket.roomTempD5;
-
-        latestActiveThermostatNode.roomTempC6 = packet->dmThermostatPacket.roomTempC6;
-        latestActiveThermostatNode.roomTempD6 = packet->dmThermostatPacket.roomTempD6;
-
-        latestActiveThermostatNode.roomTempC7 = packet->dmThermostatPacket.roomTempC7;
-        latestActiveThermostatNode.roomTempD7 = packet->dmThermostatPacket.roomTempD7;
-
-        latestActiveThermostatNode.roomTempC8 = packet->dmThermostatPacket.roomTempC8;
-        latestActiveThermostatNode.roomTempD8 = packet->dmThermostatPacket.roomTempD8;
+//        latestActiveThermostatNode.roomTempC3 = packet->dmThermostatPacket.roomTempC3;
+//        latestActiveThermostatNode.roomTempD3 = packet->dmThermostatPacket.roomTempD3;
+//
+//        latestActiveThermostatNode.roomTempC4 = packet->dmThermostatPacket.roomTempC4;
+//        latestActiveThermostatNode.roomTempD4 = packet->dmThermostatPacket.roomTempD4;
+//
+//        latestActiveThermostatNode.roomTempC5 = packet->dmThermostatPacket.roomTempC5;
+//        latestActiveThermostatNode.roomTempD5 = packet->dmThermostatPacket.roomTempD5;
+//
+//        latestActiveThermostatNode.roomTempC6 = packet->dmThermostatPacket.roomTempC6;
+//        latestActiveThermostatNode.roomTempD6 = packet->dmThermostatPacket.roomTempD6;
+//
+//        latestActiveThermostatNode.roomTempC7 = packet->dmThermostatPacket.roomTempC7;
+//        latestActiveThermostatNode.roomTempD7 = packet->dmThermostatPacket.roomTempD7;
+//
+//        latestActiveThermostatNode.roomTempC8 = packet->dmThermostatPacket.roomTempC8;
+//        latestActiveThermostatNode.roomTempD8 = packet->dmThermostatPacket.roomTempD8;
 
         latestActiveThermostatNode.button = packet->dmSensorPacket.button;
         latestActiveThermostatNode.latestRssi = rssi;
@@ -537,7 +539,7 @@ static void updateNode(struct AdcSensorNode* AdcNode, struct ThermostatNode* The
             }
         }
     }
-    else if (AdcNode != NULL){
+    else if (ThermostatNode != NULL){
         for (i = 0; i < CONCENTRATOR_MAX_NODES; i++) {
             if (knownThermostatNodes[i].address == ThermostatNode->address)
             {

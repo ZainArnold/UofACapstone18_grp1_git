@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="params" key="selection"/>
+		<item value="rfSwitchCallback " key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="#ifdef FEATURE_BLE_ADV"/>
+			<item value="rfSwitchCallback "/>
+			<item value="NodeTask_advStatsCB"/>
+			<item value="SceAdc_registerAdcCallback"/>
+			<item value="SceAdc_setReportInterval"/>
 			<item value="params"/>
 			<item value="PWMparams"/>
 			<item value="PWM_Params_init"/>
-			<item value="time"/>
-			<item value="nodePointer1"/>
-			<item value="SENSOR"/>
-			<item value="sensor"/>
-			<item value="packetReceivedCallback"/>
 		</list>
 		<list key="replacehistory">
 			<item value="PWMparams"/>
@@ -32,7 +32,7 @@
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="845" key="DIALOG_X_ORIGIN"/>
-		<item value="150" key="DIALOG_Y_ORIGIN"/>
+		<item value="1341" key="DIALOG_X_ORIGIN"/>
+		<item value="103" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -45,6 +45,7 @@
 
 /***** Variable declarations *****/
 static SceAdc_adcCallback adcCallback;
+static SceAdc_digitalCallback digitalCallback;
 
 
 /***** Prototypes *****/
@@ -84,6 +85,10 @@ void SceAdc_registerAdcCallback(SceAdc_adcCallback callback) {
     adcCallback = callback;
 }
 
+void SceAdc_registerDigitalCallback(SceAdc_digitalCallback callback) {
+    digitalCallback = callback;
+}
+
 static void ctrlReadyCallback(void) {
     /* Do nothing */
 }
@@ -101,9 +106,12 @@ static void taskAlertCallback(void) {
         SCIF_ADC_SAMPLE_OUTPUT_T* pOutput = scifGetTaskStruct(SCIF_ADC_SAMPLE_TASK_ID, SCIF_STRUCT_OUTPUT);
 
         /* Send new ADC value to application via callback */
-        if (adcCallback)
-        {
-            adcCallback(pOutput->adcValue);
+//        if (adcCallback){
+//            adcCallback(pOutput->adcValue);
+//        }
+
+        if(digitalCallback){
+            digitalCallback(pOutput->digitalValue);
         }
     }
 
