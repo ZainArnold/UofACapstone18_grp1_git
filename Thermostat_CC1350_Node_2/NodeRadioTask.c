@@ -233,8 +233,8 @@ static void nodeRadioTaskFunction(UArg arg0, UArg arg1)
      */
 
     /* Use the True Random Number Generator to generate sensor node address randomly */;
-    Power_setDependency(PowerCC26XX_PERIPH_TRNG);
-    TRNGEnable();
+//    Power_setDependency(PowerCC26XX_PERIPH_TRNG);
+//    TRNGEnable();
     /* Do not accept the same address as the concentrator, in that case get a new random value */
 //    do
 //    {

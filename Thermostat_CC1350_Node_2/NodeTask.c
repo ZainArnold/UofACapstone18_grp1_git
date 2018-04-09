@@ -144,9 +144,9 @@ PIN_Config pinTable[] = {
  */
 PIN_Config buttonPinTable[] = {
     Board_PIN_BUTTON0  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
-//#ifdef FEATURE_BLE_ADV
-//    Board_PIN_BUTTON1  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
-//#endif
+#ifdef FEATURE_BLE_ADV
+    Board_PIN_BUTTON1  | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,
+#endif
     PIN_TERMINATE
 };
 
@@ -558,8 +558,8 @@ static void fastReportTimeoutCallback(UArg arg0)
 void rfSwitchCallback(RF_Handle h, RF_ClientEvent event, void* arg){
 #if defined(Board_DIO30_SWPWR)
     //Turn on switch
-    PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 1);
+    //PIN_setOutputValue(blePinHandle, Board_DIO30_SWPWR, 1);
 #endif
-    PIN_setOutputValue(blePinHandle, RF_SWITCH_PIN, 1);
+    //PIN_setOutputValue(blePinHandle, RF_SWITCH_PIN, 1);
 }
 #endif

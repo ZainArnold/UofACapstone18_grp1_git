@@ -69,6 +69,8 @@
 
 #define CONCENTRATOR_MAX_NODES 7
 
+
+
 #define CONCENTRATOR_DISPLAY_LINES 8
 
 //-------------------------------------------------------
@@ -171,7 +173,6 @@ static uint8_t isKnownNodeAddress(uint8_t AdcAddress, uint8_t ThermostatAddress)
 
 uint16_t TempFilter(uint16_t AdcValue);
 uint16_t MotionFilter(uint16_t AdcValue);
-
 
 //-------------------------------------------------------
 //  Function Definitions
@@ -317,6 +318,9 @@ static void concentratorTaskFunction(UArg arg0, UArg arg1)
         while (1);
     }
     PWM_start(pwm1);
+//    duty = 1000;
+//    PWM_setDuty(pwm1, duty);
+//    usleep(time);
 
 
 

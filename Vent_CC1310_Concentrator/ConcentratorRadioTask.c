@@ -71,6 +71,7 @@
 
 
 #define CONCENTRATOR_ACTIVITY_LED Board_PIN_LED1
+#define CONCENTRATOR_SERVO_PIN Board_PIN_LED0
 
 //---------------------------------------------------------------------
 //  Type Declarations
@@ -109,6 +110,7 @@ static PIN_State ledPinState;
 /* Configure LED Pin */
 PIN_Config ledPinTable[] = {
         CONCENTRATOR_ACTIVITY_LED | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
+        //CONCENTRATOR_SERVO_PIN | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
     PIN_TERMINATE
 };
 
